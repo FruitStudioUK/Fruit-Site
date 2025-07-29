@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --primary-dark: #140c04;
-  --sub-background: #9b744b;
-  --sub-alt-1: #c4a081;
-  --sub-alt-2: #4a4a4a;
-  --primary-orange: #f48819;
-  --secondary-green: #85b543;
-  --text-white: #ffffff;
-  --text-gray: #e5e7eb;
+  --primary-dark: #1e120b;         /* Deep brown/black background */
+  --sub-background: #3c2b1e;       /* Warm brown for containers */
+  --sub-alt-1: #e98c1f;            /* Orange button */
+  --sub-alt-2: #88c043;            /* Green button */
+  --primary-orange: #e98c1f;       /* Reused for accent */
+  --secondary-green: #88c043;
+  --text-white: #fff8e6;           /* Soft off-white text */
+  --text-gray: #d6c3b4;            /* Secondary text */
   --font-inter: 'Inter', sans-serif;
   --font-baloo2: 'Baloo 2', cursive;
 }
