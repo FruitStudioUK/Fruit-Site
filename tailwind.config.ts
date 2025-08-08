@@ -53,8 +53,8 @@ const config: Config = {
         },
       },
       backgroundImage: {
-  'hero-gradient': 'linear-gradient(135deg, #140c04 0%, rgba(60, 43, 30, 0.3) 100%)',
-  'card-gradient': 'linear-gradient(135deg, rgba(60, 43, 30, 0.2) 0%, rgba(60, 43, 30, 0.1) 100%)',
+  'hero-gradient': '#140c04', // or your solid background color
+  'card-gradient': '#9b744b',
 },
     },
   },
