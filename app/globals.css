@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --primary-dark: #140c04;
-  --sub-background: #9b744b;
-  --sub-alt-1: #c4a081;
-  --sub-alt-2: #9b744b;
-  --primary-orange: #f48819;
-  --secondary-green: #85b543;
-  --text-white: #ffffff;
-  --text-gray: #e5e7eb;
-  --font-inter: 'Inter', sans-serif;
-  --font-baloo2: 'Baloo 2', cursive;
+  --primary-dark: #1e120b;        /* Dark chocolate background */
+  --sub-background: #3c2b1e;      /* Brown for cards/containers */
+  --sub-alt-1: #e98c1f;           /* Orange button */
+  --sub-alt-2: #88c043;           /* Green button */
+  --primary-orange: #e98c1f;      /* Accent orange */
+  --secondary-green: #88c043;     /* Accent green */
+  --text-white: #fff8e6;          /* Warm off-white for text */
+  --text-gray: #d6c3b4;           /* Light brown-gray secondary text */
+  --font-inter: "Inter", sans-serif;
+  --font-baloo2: "Baloo 2", cursive;
 }
 
 @layer base {
