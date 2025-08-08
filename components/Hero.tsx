@@ -3,15 +3,16 @@ import { ArrowRight, Play, Star, Users, Award } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen hero-gradient flex items-center overflow-hidden">
+    <section className="relative min-h-screen bg-primary-dark flex items-center overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 opacity-10">
+      {/*{<div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary-orange rounded-full blur-3xl animate-float"></div>
         <div
           className="absolute bottom-20 right-10 w-96 h-96 bg-secondary-green rounded-full blur-3xl animate-float"
           style={{ animationDelay: "2s" }}
         ></div>
       </div>
+        */}
 
       <div className="container-max section-padding relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -123,7 +124,6 @@ export function Hero() {
             </div>
 
             {/* Background decoration */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary-orange/20 to-secondary-green/20 rounded-2xl blur-3xl -z-10 transform rotate-3"></div>
           </div>
         </div>
       </div>
