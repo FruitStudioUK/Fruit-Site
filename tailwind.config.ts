@@ -10,12 +10,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-  'primary-dark': '#1e120b',
-  'sub-background': '#3c2b1e',
-  'sub-alt-1': '#e98c1f',
-  'sub-alt-2': '#88c043',
-  'primary-orange': '#e98c1f',
-  'secondary-green': '#88c043',
+  'primary-dark': '#140c04',
+  'sub-background': '#9b744b',
+  'sub-alt-1': '#f48819',
+  'sub-alt-2': '#85b543',
+  'primary-orange': '#f48819',
+  'secondary-green': '#85b543',
   'text-white': '#fff8e6',
   'text-gray': '#d6c3b4',
 },
@@ -53,7 +53,7 @@ const config: Config = {
         },
       },
       backgroundImage: {
-  'hero-gradient': 'linear-gradient(135deg, #1e120b 0%, rgba(60, 43, 30, 0.3) 100%)',
+  'hero-gradient': 'linear-gradient(135deg, #140c04 0%, rgba(60, 43, 30, 0.3) 100%)',
   'card-gradient': 'linear-gradient(135deg, rgba(60, 43, 30, 0.2) 0%, rgba(60, 43, 30, 0.1) 100%)',
 },
     },
