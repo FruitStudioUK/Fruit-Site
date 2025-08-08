@@ -10,15 +10,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'primary-dark': '#140c04',
-        'sub-background': '#9b744b',
-        'sub-alt-1': '#c4a081',
-        'sub-alt-2': '#4a4a4a',
-        'primary-orange': '#f48819',
-        'secondary-green': '#85b543',
-        'text-white': '#ffffff',
-        'text-gray': '#e5e7eb',
-      },
+  'primary-dark': '#1e120b',
+  'sub-background': '#3c2b1e',
+  'sub-alt-1': '#e98c1f',
+  'sub-alt-2': '#88c043',
+  'primary-orange': '#e98c1f',
+  'secondary-green': '#88c043',
+  'text-white': '#fff8e6',
+  'text-gray': '#d6c3b4',
+},
       fontFamily: {
         inter: ['var(--font-inter)', 'sans-serif'],
         baloo2: ['var(--font-baloo2)', 'cursive'],
@@ -53,9 +53,9 @@ const config: Config = {
         },
       },
       backgroundImage: {
-        'hero-gradient': 'linear-gradient(135deg, #140c04 0%, rgba(155, 116, 75, 0.3) 100%)',
-        'card-gradient': 'linear-gradient(135deg, rgba(155, 116, 75, 0.2) 0%, rgba(155, 116, 75, 0.1) 100%)',
-      },
+  'hero-gradient': 'linear-gradient(135deg, #1e120b 0%, rgba(60, 43, 30, 0.3) 100%)',
+  'card-gradient': 'linear-gradient(135deg, rgba(60, 43, 30, 0.2) 0%, rgba(60, 43, 30, 0.1) 100%)',
+},
     },
   },
   plugins: [require('tailwindcss-animate')],
