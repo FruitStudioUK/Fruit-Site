@@ -48,7 +48,7 @@ export function Navigation() {
               <Video className="w-6 h-6 text-white" />
             </div>
             <span className="text-2xl font-baloo2 font-bold text-white">
-              CreatorHub
+              Fruit.
             </span>
           </Link>
 
