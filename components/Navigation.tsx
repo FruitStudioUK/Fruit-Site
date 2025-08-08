@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, Video, Users, User, Mail, Briefcase } from "lucide-react";
 import Image from "next/image";
-import Logo from "../app/images/logo.jpg";
+import Logo from "../app/images/logo.png";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
