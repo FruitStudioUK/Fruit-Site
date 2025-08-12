@@ -22,10 +22,10 @@
   }
 
   body {
-    @apply bg-primary-dark text-white;
-    font-family: var(--font-body);
-    font-weight: 500; /* Medium by default for stronger readability */
-  }
+  @apply bg-primary-dark text-white antialiased;
+  font-family: var(--font-body);
+  font-weight: 500; /* Force medium weight for default body text */
+}
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
