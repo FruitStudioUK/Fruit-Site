@@ -1,11 +1,11 @@
-{/* import { Portfolio } from '@/components/Portfolio';
+import { Portfolio } from '@/components/Portfolio';
 import { ArrowRight } from 'lucide-react';
 
 export default function PortfolioPage() {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-{/* <section className="section-padding bg-hero-gradient">
+ <section className="section-padding bg-hero-gradient">
         <div className="container-max">
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-baloo2 font-bold text-white mb-6">
@@ -25,10 +25,10 @@ export default function PortfolioPage() {
       </section>
 
       {/* Portfolio Section */}
-{/* <Portfolio />
+ <Portfolio />
 
       {/* Results Section */}
-{/* <section className="section-padding bg-primary-dark">
+ <section className="section-padding bg-primary-dark">
         <div className="container-max">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-white mb-4">
@@ -84,4 +84,4 @@ export default function PortfolioPage() {
       </section>
     </div>
   );
-} */}
+} 
