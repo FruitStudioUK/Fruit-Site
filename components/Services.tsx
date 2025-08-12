@@ -130,7 +130,7 @@ export function Services() {
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-text rounded-full"></div>
+                      <div className="w-2 h-2 bg-text-white rounded-full"></div>
                       <span className="font-nunito font-bold text-white">{feature}</span>
                     </li>
                   ))}
