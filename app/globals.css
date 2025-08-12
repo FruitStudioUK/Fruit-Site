@@ -11,8 +11,9 @@
   --secondary-green: #85b543;     /* Accent green */
   --text-white: #fff8e6;          /* Warm off-white for text */
   --text-gray: #d6c3b4;           /* Light brown-gray secondary text */
+  --text-dark: #140c04;           /* Opposite colour text, on sub-background */
   --font-inter: "Inter", sans-serif;
-  --font-baloo2: "Baloo 2", cursive;
+  --font-baloo2: "Inter", cursive;
 }
 
 @layer base {
