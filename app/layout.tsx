@@ -1,14 +1,19 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Baloo_2 } from "next/font/google";
+import { Nunito, Baloo_2 } from "next/font/google";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const nunito = Nunito({
+  subsets: ["latin"],
+  variable: "--font-nunito",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
 const baloo2 = Baloo_2({
   subsets: ["latin"],
   variable: "--font-baloo2",
-  weight: ["700"], // only bold weight for headings
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -42,8 +47,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${baloo2.variable}`}>
-      <body className="bg-primary-dark text-white antialiased">
+    <html lang="en" className={`${nunito.variable} ${baloo2.variable}`}>
+      <body className="bg-primary-dark text-white font-body antialiased">
         <Navigation />
         <main className="min-h-screen">{children}</main>
         <Footer />
