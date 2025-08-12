@@ -119,7 +119,7 @@ export function Services() {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="w-16 h-16 bg-primary-orange rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="w-8 h-8 text-white" />
+                  <service.icon className="w-8 h-8 text-dark" />
                 </div>
                 <h4 className="text-2xl font-baloo2 font-bold text-dark mb-4">
                   {service.title}
@@ -160,19 +160,19 @@ export function Services() {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="w-16 h-16 bg-secondary-green rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="w-8 h-8 text-white" />
+                  <service.icon className="w-8 h-8 text-dark" />
                 </div>
-                <h4 className="text-2xl font-baloo2 font-bold text-white mb-4">
+                <h4 className="text-2xl font-baloo2 font-bold text-dark mb-4">
                   {service.title}
                 </h4>
-                <p className="text-text-gray mb-6 leading-relaxed">
+                <p className="text-text-dark mb-6 leading-relaxed">
                   {service.description}
                 </p>
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-secondary-green rounded-full"></div>
-                      <span className="text-text-gray">{feature}</span>
+                      <span className="text-text-dark">{feature}</span>
                     </li>
                   ))}
                 </ul>
