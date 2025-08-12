@@ -44,7 +44,7 @@
   }
   
   .card {
-    @apply bg-sub-background/20 backdrop-blur-sm border border-sub-background/30 rounded-xl p-6 hover:bg-sub-background/30 transition-all duration-300;
+    @apply bg-sub-background backdrop-blur-sm border border-sub-background/30 rounded-xl p-6 hover:bg-sub-background/30 transition-all duration-300;
   }
   
   .section-padding {
