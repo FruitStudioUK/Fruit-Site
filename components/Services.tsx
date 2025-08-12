@@ -124,7 +124,7 @@ export function Services() {
                 <h4 className="text-2xl font-baloo2 font-bold text-dark mb-4">
                   {service.title}
                 </h4>
-                <p className="text-text-gray mb-6 leading-relaxed">
+                <p className="text-text-dark mb-6 leading-relaxed">
                   {service.description}
                 </p>
                 <ul className="space-y-2">
