@@ -18,6 +18,7 @@ const config: Config = {
   'secondary-green': '#85b543',
   'text-white': '#fff8e6',
   'text-gray': '#d6c3b4',
+  'text-dark': '#140c04',
 },
       fontFamily: {
         inter: ['var(--font-inter)', 'sans-serif'],
