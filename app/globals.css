@@ -13,7 +13,7 @@
   --text-gray: #d6c3b4;           /* Light brown-gray secondary text */
   --text-dark: #140c04;           /* Opposite colour text, on sub-background */
   --font-inter: "Inter", sans-serif;
-  --font-baloo2: "Inter", cursive;
+  --font-baloo2: "Baloo 2", cursive; /* FIX: now correct font name */
 }
 
 @layer base {
@@ -24,9 +24,9 @@
     @apply bg-primary-dark text-white;
     font-family: var(--font-inter);
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-штеук);
+    font-family: var(--font-baloo2);
     font-weight: 800;
   }
 }
