@@ -121,17 +121,17 @@ export function Services() {
                 <div className="w-16 h-16 bg-primary-orange rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <service.icon className="w-8 h-8 text-dark" />
                 </div>
-                <h4 className="text-2xl font-baloo2 font-bold text-text-white mb-4">
+                <h4 className="text-2xl font-baloo2 font-bold text-white mb-4">
                   {service.title}
                 </h4>
-                <p className="font-nunito font-bold text-text-white mb-6 leading-relaxed">
+                <p className="font-nunito font-bold text-white mb-6 leading-relaxed">
                   {service.description}
                 </p>
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-text-white rounded-full"></div>
-                      <span className="font-nunito font-bold text-text-white">{feature}</span>
+                      <div className="w-2 h-2 bg-text rounded-full"></div>
+                      <span className="font-nunito font-bold text-white">{feature}</span>
                     </li>
                   ))}
                 </ul>
