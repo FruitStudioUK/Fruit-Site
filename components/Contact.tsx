@@ -49,7 +49,7 @@ export function Contact() {
             Get In Touch
           </h2>
           <p className="text-xl text-text-gray max-w-3xl mx-auto">
-            Ready to transform your content? Let's discuss your project and
+            Ready to transform your content? Let&apos;s discuss your project and
             create something amazing together.
           </p>
         </div>
@@ -59,12 +59,12 @@ export function Contact() {
           <div className="space-y-8 animate-slide-in-left">
             <div>
               <h3 className="text-3xl font-baloo2 font-bold text-white mb-6">
-                Let's Start a Conversation
+                Let&apos;s Start a Conversation
               </h3>
               <p className="text-text-gray leading-relaxed mb-8">
-                Whether you're looking for professional creative services or
-                want to explore brand partnership opportunities, we're here to
-                help you take your content to the next level.
+                Whether you&apos;re looking for professional creative services
+                or want to explore brand partnership opportunities, we&apos;re
+                here to help you take your content to the next level.
               </p>
             </div>
 
@@ -78,6 +78,12 @@ export function Contact() {
                     Email Us
                   </h4>
                   <p className="text-text-gray">hello@creatorhub.com</p>
+                  <a
+                    href="mailto:hello@creatorhub.com"
+                    className="inline-block mt-2 py-2 px-4 bg-primary-orange text-white rounded-lg hover:bg-opacity-90 transition-all duration-300"
+                  >
+                    Send an Email
+                  </a>
                 </div>
               </div>
 
@@ -90,6 +96,12 @@ export function Contact() {
                     Call Us
                   </h4>
                   <p className="text-text-gray">+1 (555) 123-4567</p>
+                  <a
+                    href="tel:+15551234567"
+                    className="inline-block mt-2 py-2 px-4 bg-secondary-green text-white rounded-lg hover:bg-opacity-90 transition-all duration-300"
+                  >
+                    Call Now
+                  </a>
                 </div>
               </div>
 
@@ -102,6 +114,14 @@ export function Contact() {
                     Visit Us
                   </h4>
                   <p className="text-text-gray">Los Angeles, CA</p>
+                  <a
+                    href="https://maps.google.com/?q=Los+Angeles,+CA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-2 py-2 px-4 bg-sub-background text-white rounded-lg hover:bg-opacity-90 transition-all duration-300"
+                  >
+                    View on Map
+                  </a>
                 </div>
               </div>
             </div>
@@ -238,5 +258,5 @@ export function Contact() {
         </div>
       </div>
     </section>
-  );
+  );
 }
