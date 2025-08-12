@@ -77,9 +77,9 @@ export function Contact() {
                   <h4 className="text-xl font-baloo2 font-bold text-white">
                     Email Us
                   </h4>
-                  <p className="text-text-gray">hello@creatorhub.com</p>
+                  <p className="text-text-gray">contact.fruitstudio@gmail.com</p>
                   <a
-                    href="mailto:hello@creatorhub.com"
+                    href="mailto:contact.fruitstudio@gmail.com"
                     className="inline-block mt-2 py-2 px-4 bg-primary-orange text-white rounded-lg hover:bg-opacity-90 transition-all duration-300"
                   >
                     Send an Email
@@ -113,9 +113,9 @@ export function Contact() {
                   <h4 className="text-xl font-baloo2 font-bold text-white">
                     Visit Us
                   </h4>
-                  <p className="text-text-gray">Los Angeles, CA</p>
+                  <p className="text-text-gray">London, United Kingdom</p>
                   <a
-                    href="https://maps.google.com/?q=Los+Angeles,+CA"
+                    href="https://maps.google.com/?q=London,+UK"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block mt-2 py-2 px-4 bg-sub-background text-white rounded-lg hover:bg-opacity-90 transition-all duration-300"
