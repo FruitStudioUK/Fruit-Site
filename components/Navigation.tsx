@@ -25,7 +25,6 @@ export function Navigation() {
     { href: "/", label: "Home", icon: Video },
     { href: "/services", label: "Services", icon: Briefcase },
     { href: "/about", label: "About", icon: User },
-    {/*  { href: "/portfolio", label: "Portfolio", icon: Users }, */},
     { href: "/contact", label: "Contact", icon: Mail },
   ];
 
