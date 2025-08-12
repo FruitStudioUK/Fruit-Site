@@ -7,13 +7,15 @@ import { Footer } from "@/components/Footer";
 const nunito = Nunito({
   subsets: ["latin"],
   variable: "--font-nunito",
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700", "800", "900"], // All weights loaded for flexibility
+  display: "swap",
 });
 
 const baloo2 = Baloo_2({
   subsets: ["latin"],
   variable: "--font-baloo2",
   weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -48,7 +50,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${nunito.variable} ${baloo2.variable}`}>
-      <body className="bg-primary-dark text-white font-body antialiased">
+      <body className="bg-primary-dark text-white font-body font-medium antialiased">
         <Navigation />
         <main className="min-h-screen">{children}</main>
         <Footer />
