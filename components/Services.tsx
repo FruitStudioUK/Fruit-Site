@@ -121,7 +121,7 @@ export function Services() {
                 <div className="w-16 h-16 bg-primary-orange rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
-                <h4 className="text-2xl font-baloo2 font-bold text-white mb-4">
+                <h4 className="text-2xl font-baloo2 font-bold text-dark mb-4">
                   {service.title}
                 </h4>
                 <p className="text-text-gray mb-6 leading-relaxed">
@@ -131,7 +131,7 @@ export function Services() {
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-primary-orange rounded-full"></div>
-                      <span className="text-text-gray">{feature}</span>
+                      <span className="text-text-dark">{feature}</span>
                     </li>
                   ))}
                 </ul>
