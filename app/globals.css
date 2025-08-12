@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --primary-dark: #140c04;        /* Dark chocolate background */
-  --sub-background: #9b744b;      /* Brown for cards/containers */
-  --sub-alt-1: #f48819;           /* Orange button */
-  --sub-alt-2: #85b543;           /* Green button */
-  --primary-orange: #f48819;      /* Accent orange */
-  --secondary-green: #85b543;     /* Accent green */
-  --text-white: #fff8e6;          /* Warm off-white for text */
-  --text-gray: #d6c3b4;           /* Light brown-gray secondary text */
-  --text-dark: #140c04;           /* Opposite colour text, on sub-background */
+  --primary-dark: #140c04;
+  --sub-background: #9b744b;
+  --sub-alt-1: #f48819;
+  --sub-alt-2: #85b543;
+  --primary-orange: #f48819;
+  --secondary-green: #85b543;
+  --text-white: #fff8e6;
+  --text-gray: #d6c3b4;
+  --text-dark: #140c04;
   --font-body: "Nunito", sans-serif;
   --font-heading: "Baloo 2", cursive;
 }
@@ -24,6 +24,7 @@
   body {
     @apply bg-primary-dark text-white;
     font-family: var(--font-body);
+    font-weight: 500; /* Medium by default for stronger readability */
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -31,6 +32,7 @@
     font-weight: 800;
   }
 }
+
 
 @layer components {
   .btn-primary {
