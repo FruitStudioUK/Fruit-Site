@@ -94,7 +94,7 @@ export function Navigation() {
               {navItems.map(({ href, label, icon: Icon }) => (
                 <Link
                   key={href}
-                  // href={href} //
+                  href={href}
                   onClick={() => setIsOpen(false)}
                   className={`flex items-center space-x-3 px-4 py-3 mx-4 rounded-lg transition-all duration-300 ${
                     isActive(href)
