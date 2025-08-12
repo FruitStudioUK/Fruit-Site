@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const baloo2 = Baloo_2({
   subsets: ["latin"],
   variable: "--font-baloo2",
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["800"], // only bold weight for headings
 });
 
 export const metadata: Metadata = {
@@ -43,7 +43,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${baloo2.variable}`}>
-      <body className="bg-primary-dark text-white font-inter antialiased">
+      <body className="bg-primary-dark text-white antialiased">
         <Navigation />
         <main className="min-h-screen">{children}</main>
         <Footer />
