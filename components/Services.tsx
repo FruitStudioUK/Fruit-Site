@@ -131,7 +131,7 @@ export function Services() {
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-primary-orange rounded-full"></div>
-                      <span className="text-text-dark">{feature}</span>
+                      <span className="font-baloo2 font-bold text-text-dark">{feature}</span>
                     </li>
                   ))}
                 </ul>
