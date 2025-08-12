@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const baloo2 = Baloo_2({
   subsets: ["latin"],
   variable: "--font-baloo2",
-  weight: ["800"], // only bold weight for headings
+  weight: ["700"], // only bold weight for headings
 });
 
 export const metadata: Metadata = {
