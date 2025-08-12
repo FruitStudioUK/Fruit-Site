@@ -10,18 +10,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-  'primary-dark': '#140c04',
-  'sub-background': '#9b744b',
-  'sub-alt-1': '#f48819',
-  'sub-alt-2': '#85b543',
-  'primary-orange': '#f48819',
-  'secondary-green': '#85b543',
-  'text-white': '#fff8e6',
-  'text-gray': '#d6c3b4',
-  'text-dark': '#140c04',
-},
+        'primary-dark': '#140c04',
+        'sub-background': '#9b744b',
+        'sub-alt-1': '#f48819',
+        'sub-alt-2': '#85b543',
+        'primary-orange': '#f48819',
+        'secondary-green': '#85b543',
+        'text-white': '#fff8e6',
+        'text-gray': '#d6c3b4',
+        'text-dark': '#140c04',
+      },
       fontFamily: {
-        inter: ['var(--font-inter)', 'sans-serif'],
+        nunito: ['var(--font-nunito)', 'sans-serif'], // changed from inter → nunito
         baloo2: ['var(--font-baloo2)', 'cursive'],
       },
       animation: {
@@ -54,9 +54,9 @@ const config: Config = {
         },
       },
       backgroundImage: {
-  'hero-gradient': '#140c04', // or your solid background color
-  'card-gradient': '#9b744b',
-},
+        'hero-gradient': '#140c04', // or your solid background color
+        'card-gradient': '#9b744b',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
