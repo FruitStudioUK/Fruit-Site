@@ -121,7 +121,7 @@ export function Services() {
                 <div className="w-16 h-16 bg-primary-orange rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <service.icon className="w-8 h-8 text-text-white" />
                 </div>
-                <h4 className="text-2xl font-baloo2 font-bold text-white mb-4">
+                <h4 className="text-2xl font-baloo2 font-bold text-text-dark mb-4">
                   {service.title}
                 </h4>
                 <p className="font-nunito font-bold text-text-lightdark mb-6 leading-relaxed">
