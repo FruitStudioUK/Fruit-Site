@@ -12,22 +12,23 @@
   --text-white: #fff8e6;          /* Warm off-white for text */
   --text-gray: #d6c3b4;           /* Light brown-gray secondary text */
   --text-dark: #140c04;           /* Opposite colour text, on sub-background */
-  --font-inter: "Inter", sans-serif;
-  --font-baloo2: "Baloo 2", cursive; /* FIX: now correct font name */
+  --font-body: "Nunito", sans-serif;
+  --font-heading: "Baloo 2", cursive;
 }
 
 @layer base {
   * {
     @apply border-0;
   }
+
   body {
     @apply bg-primary-dark text-white;
-    font-family: var(--font-inter);
+    font-family: var(--font-body);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-baloo2);
-    font-weight: 700;
+    font-family: var(--font-heading);
+    font-weight: 800;
   }
 }
 
