@@ -19,25 +19,25 @@ const baloo2 = Baloo_2({
 });
 
 export const metadata: Metadata = {
-  title: "CreatorHub - Professional Creative & Brand Partnerships",
+  title: "Fruit. - Professional Creative & Brand Partnerships",
   description:
     "Transform your content with professional creative services and unlock brand partnership opportunities. We help content creators elevate their work and grow their reach.",
   keywords:
     "content creator, video editing, brand partnerships, influencer marketing, content creation, social media editing",
-  authors: [{ name: "CreatorHub" }],
+  authors: [{ name: "Fruit." }],
   viewport: "width=device-width, initial-scale=1",
   themeColor: "#140c04",
   robots: "index, follow",
   openGraph: {
-    title: "CreatorHub - Professional Creative & Brand Partnerships",
+    title: "Fruit. - Professional Creative & Brand Partnerships",
     description:
       "Transform your content with professional creative services and unlock brand partnership opportunities.",
     type: "website",
-    locale: "en_US",
+    locale: "en_UK",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CreatorHub - Professional Creative & Brand Partnerships",
+    title: "Fruit. - Professional Creative & Brand Partnerships",
     description:
       "Transform your content with professional creative services and unlock brand partnership opportunities.",
   },
