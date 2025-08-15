@@ -81,7 +81,7 @@ export function Hero() {
           <div className="relative animate-slide-in-right">
             <div className="relative z-10">
               <img
-                src="https://images.pexels.com/photos/7533346/pexels-photo-7533346.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="https://cdn.pixabay.com/photo/2017/06/22/08/59/editing-2430030_1280.jpgauto=compress&cs=tinysrgb&w=800"
                 alt="Content creator working with professional editing setup"
                 className="w-full h-96 lg:h-[500px] object-cover rounded-2xl shadow-2xl"
               />
