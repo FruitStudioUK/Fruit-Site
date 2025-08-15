@@ -144,9 +144,9 @@ export default function ServicesPage() {
                 <span>Start Your Project</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <a href="/portfolio" className="btn-outline inline-flex items-center space-x-2">
+              {/* <a href="/portfolio" className="btn-outline inline-flex items-center space-x-2">
                 <span>View Our Work</span>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
