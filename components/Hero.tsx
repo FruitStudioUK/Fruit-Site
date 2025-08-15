@@ -22,7 +22,7 @@ export function Hero() {
               <div className="flex items-center space-x-2 text-primary-orange">
                 <Star className="w-5 h-5 fill-current" />
                 <span className="text-sm font-medium uppercase tracking-wide">
-                  Trusted by 500+ Creators
+                  Trusted by 50+ Creators
                 </span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-baloo2 font-bold text-white leading-tight">
@@ -58,19 +58,19 @@ export function Hero() {
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center">
                 <div className="text-3xl font-baloo2 font-bold text-primary-orange">
-                  500+
+                  50+
                 </div>
                 <div className="text-text-gray text-sm">Happy Creators</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-baloo2 font-bold text-secondary-green">
-                  10M+
+                  2M+
                 </div>
                 <div className="text-text-gray text-sm">Views Generated</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-baloo2 font-bold text-white">
-                  98%
+                  97%
                 </div>
                 <div className="text-text-gray text-sm">Satisfaction Rate</div>
               </div>
