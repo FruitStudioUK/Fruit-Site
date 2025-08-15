@@ -23,7 +23,7 @@ export default function ContactPage() {
       icon: Headphones,
       action: 'Start Chat',
       color: 'sub-background'
-    } */},
+    } */}
   ];
 
   return (
