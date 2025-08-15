@@ -2,9 +2,9 @@ import { Award, Users, Target, Heart, ArrowRight } from 'lucide-react';
 
 export default function AboutPage() {
   const stats = [
-    { number: '500+', label: 'Happy Creators', icon: Users },
-    { number: '10M+', label: 'Views Generated', icon: Target },
-    { number: '98%', label: 'Satisfaction Rate', icon: Award },
+    { number: '50+', label: 'Happy Creators', icon: Users },
+    { number: '2M+', label: 'Views Generated', icon: Target },
+    { number: '97%', label: 'Satisfaction Rate', icon: Award },
     { number: '3', label: 'Years Experience', icon: Heart }
   ];
 
@@ -149,16 +149,16 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: 'Sarah Chen',
-                role: 'Creative Director',
-                image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400',
-                bio: 'Former Netflix editor with 8+ years of experience in storytelling and visual effects.'
+                name: 'Daniel Rose',
+                role: 'Creator Manager & Community Lead',
+                image: 'https://i.postimg.cc/kGTvt3tY/Untitled-design-4.png',
+                bio: 'Former Marketing & Sales Director with 8+ years of experience in creator and brand management.'
               },
               {
-                name: 'Marcus Rodriguez',
+                name: 'Dev Buchiti',
                 role: 'Brand Partnerships Lead',
                 image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=400',
-                bio: 'Ex-Instagram partnerships manager who has facilitated $50M+ in brand collaborations.'
+                bio: 'Ex-Social Media partnerships manager who has facilitated $1M+ in brand collaborations.'
               },
               {
                 name: 'Emily Taylor',
