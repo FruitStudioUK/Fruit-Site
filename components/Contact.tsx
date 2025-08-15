@@ -95,9 +95,9 @@ export function Contact() {
                   <h4 className="text-xl font-baloo2 font-bold text-white">
                     Call Us
                   </h4>
-                  <p className="text-text-gray">+1 (555) 123-4567</p>
+                  <p className="text-text-gray">+447691227509</p>
                   <a
-                    href="tel:+15551234567"
+                    href="tel:+447691227509"
                     className="inline-block mt-2 py-2 px-4 bg-secondary-green text-white rounded-lg hover:bg-opacity-90 transition-all duration-300"
                   >
                     Call Now
