@@ -32,30 +32,30 @@ export function Footer() {
               and meaningful brand partnerships.
             </p>
             <div className="flex space-x-4">
-              <a
+           {/*   <a
                 href="#"
                 className="text-text-gray hover:text-primary-orange transition-colors duration-300"
               >
                 <Twitter className="w-5 h-5" />
-              </a>
+              </a> */}
               <a
-                href="#"
-                className="text-text-gray hover:text-primary-orange transition-colors duration-300"
+                href="https://www.instagram.com/fruit.uk"
+                className="text-text-gray hover:text-primary-orange transition-colors duration-300" 
               >
                 <Instagram className="w-5 h-5" />
+              </a> {/*
+              <a
+                href="https://www.instagram.com/fruit.uk"
+                className="text-text-gray hover:text-primary-orange transition-colors duration-300"
+              >
+                {/*  <Youtube className="w-5 h-5" />
               </a>
               <a
                 href="#"
                 className="text-text-gray hover:text-primary-orange transition-colors duration-300"
               >
-                <Youtube className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="text-text-gray hover:text-primary-orange transition-colors duration-300"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
+                <Linkedin className="w-5 h-5" /> 
+              </a> */}
             </div>
           </div>
 
