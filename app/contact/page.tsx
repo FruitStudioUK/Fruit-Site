@@ -45,7 +45,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Options */}
-      <section className="section-padding bg-primary-dark">
+      {/*  <section className="section-padding bg-primary-dark">
         <div className="container-max">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {contactOptions.map((option, index) => (
@@ -61,8 +61,8 @@ export default function ContactPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </div> 
+      </section> */}
 
       {/* Contact Form */}
       <Contact />
