@@ -24,7 +24,7 @@ export function Footer() {
                 <Video className="w-6 h-6 text-white" />
               </div>
               <span className="text-2xl font-baloo2 font-bold text-white">
-                Fruit.
+                fruit.
               </span>
             </div>
             <p className="text-text-gray leading-relaxed">
