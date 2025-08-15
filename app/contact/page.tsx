@@ -16,14 +16,14 @@ export default function ContactPage() {
       icon: Calendar,
       action: 'Book Call',
       color: 'secondary-green'
-    }
+    },
     {/* {
       title: 'Live Chat',
       description: 'Chat with our team instantly for immediate assistance.',
       icon: Headphones,
       action: 'Start Chat',
       color: 'sub-background'
-    } */}
+    } */},
   ];
 
   return (
