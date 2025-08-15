@@ -157,13 +157,13 @@ export default function AboutPage() {
               {
                 name: 'Dev Buchiti',
                 role: 'Brand Partnerships Lead',
-                image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=400',
+                image: 'https://i.postimg.cc/J4wkPhR3/image-2025-08-15-143606477.png',
                 bio: 'Ex-Social Media partnerships manager who has facilitated $1M+ in brand collaborations.'
               },
               {
                 name: 'Emily Taylor',
                 role: 'Senior Video Editor',
-                image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400',
+                image: 'https://i.postimg.cc/KzMYMnk6/image-2024-08-19-181207250.png',
                 bio: 'Award-winning editor specializing in viral content and social media optimization.'
               }
             ].map((member, index) => (
