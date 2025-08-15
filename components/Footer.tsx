@@ -24,7 +24,7 @@ export function Footer() {
                 <Video className="w-6 h-6 text-white" />
               </div>
               <span className="text-2xl font-baloo2 font-bold text-white">
-                CreatorHub
+                Fruit.
               </span>
             </div>
             <p className="text-text-gray leading-relaxed">
@@ -90,14 +90,14 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link
+                {/*     <Link
                   href="/portfolio"
                   className="text-text-gray hover:text-primary-orange transition-colors duration-300"
                 >
                   Portfolio
                 </Link>
               </li>
-              <li>
+              <li> */}
                 <Link
                   href="/contact"
                   className="text-text-gray hover:text-primary-orange transition-colors duration-300"
@@ -140,7 +140,7 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary-orange" />
-                <span className="text-text-gray">hello@creatorhub.com</span>
+                <span className="text-text-gray">hey@thisisfruit.co.uk</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary-orange" />
@@ -148,7 +148,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-primary-orange" />
-                <span className="text-text-gray">Los Angeles, CA</span>
+                <span className="text-text-gray">London, UK</span>
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@ export function Footer() {
 
         <div className="border-t border-sub-background/30 mt-12 pt-8 text-center">
           <p className="text-text-gray">
-            © {currentYear} CreatorHub. All rights reserved. |
+            © {currentYear} Fruit. All rights reserved. |
             <Link
               href="/privacy"
               className="hover:text-primary-orange transition-colors duration-300 ml-1"
