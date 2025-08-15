@@ -197,9 +197,9 @@ export default function AboutPage() {
                 <span>Get Started</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <a href="/portfolio" className="btn-outline inline-flex items-center space-x-2">
-                <span>View Portfolio</span>
-              </a>
+              {/*  <a href="/portfolio" className="btn-outline inline-flex items-center space-x-2">
+                <span>View Portfolio</span> 
+              </a> */}
             </div>
           </div>
         </div>
