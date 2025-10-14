@@ -11,7 +11,7 @@ export default function LayoutContent({ children }: { children: React.ReactNode 
 
   useEffect(() => {
     if (role) {
-      const timer = setTimeout(() => setShowSite(true), 1200);
+      const timer = setTimeout(() => setShowSite(true), 1000);
       return () => clearTimeout(timer);
     } else {
       setShowSite(false);
@@ -19,7 +19,7 @@ export default function LayoutContent({ children }: { children: React.ReactNode 
   }, [role]);
 
   if (!role) {
-    return <>{children}</>; // just the selector
+    return <>{children}</>;
   }
 
   return (
