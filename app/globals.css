@@ -216,9 +216,9 @@
   position: absolute;
   border-radius: 50%;
   transform: scale(0);
-  animation: ripple 600ms linear;
+  opacity: 0.6;
   pointer-events: none;
-  z-index: 0; /* behind button text */
+  z-index: 0;
 }
 
 .ripple-orange {
@@ -231,10 +231,15 @@
 
 @keyframes ripple {
   to {
-    transform: scale(6); /* expand well beyond button */
+    transform: scale(8); /* expand further outside the button */
     opacity: 0;
   }
 }
+
+.ripple {
+  animation: ripple 1.2s ease-out forwards; /* slower, smoother */
+}
+
 
 
 
