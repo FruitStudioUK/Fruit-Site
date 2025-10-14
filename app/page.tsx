@@ -28,7 +28,7 @@ export default function HomePage() {
           animating ? 'opacity-0' : 'opacity-100'
         }`}
       >
-        <div className="relative">
+        <div className="relative overflow-hidden">
   <button
     onClick={(e) => {
       createRipple(e, "ripple-orange");
@@ -40,7 +40,7 @@ export default function HomePage() {
   </button>
 </div>
 
-<div className="relative">
+<div className="relative overflow-hidden">
   <button
     onClick={(e) => {
       createRipple(e, "ripple-green");
@@ -51,6 +51,7 @@ export default function HomePage() {
     I'm a Brand
   </button>
 </div>
+
 
 
 
