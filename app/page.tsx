@@ -20,25 +20,26 @@ export default function HomePage() {
 
   if (!role) {
   return (
-    <div className="role-selector">
-      <h2 className="text-2xl mb-6">Who are you?</h2>
-      <div className="flex flex-col md:flex-row gap-4">
-        <button
-          onClick={() => handleSelect('creator')}
-          className="btn-primary"
-        >
-          I'm a Creator
-        </button>
-        <button
-          onClick={() => handleSelect('brand')}
-          className="btn-secondary"
-        >
-          I'm a Brand
-        </button>
-      </div>
+    <div className="flex flex-col md:flex-row items-center justify-center h-screen gap-6">
+      <button
+        onClick={() => handleSelect('creator')}
+        className="btn-primary"
+      >
+        I'm a Creator
+      </button>
+
+      <h2 className="text-2xl font-bold">Who are you?</h2>
+
+      <button
+        onClick={() => handleSelect('brand')}
+        className="btn-secondary"
+      >
+        I'm a Brand
+      </button>
     </div>
   );
 }
+
 
 
   return (
