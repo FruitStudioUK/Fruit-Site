@@ -64,27 +64,26 @@ export default function HomePage() {
   colorClass: string
 ) {
   const button = event.currentTarget;
+  const wrapper = button.parentElement as HTMLElement; // the relative container
   const circle = document.createElement("span");
-  const diameter = Math.max(button.clientWidth, button.clientHeight) * 3; // bigger
+  const diameter = Math.max(button.clientWidth, button.clientHeight) * 3;
   const radius = diameter / 2;
 
   circle.style.width = circle.style.height = `${diameter}px`;
-  circle.style.left = `${event.clientX - button.getBoundingClientRect().left - radius}px`;
-  circle.style.top = `${event.clientY - button.getBoundingClientRect().top - radius}px`;
+  circle.style.left = `${event.clientX - wrapper.getBoundingClientRect().left - radius}px`;
+  circle.style.top = `${event.clientY - wrapper.getBoundingClientRect().top - radius}px`;
   circle.classList.add("ripple", colorClass);
 
-  // Remove old ripple if present
-  const ripple = button.parentElement?.querySelector(".ripple");
+  const ripple = wrapper.querySelector(".ripple");
   if (ripple) ripple.remove();
 
-  // Append ripple to parent container so it can overflow
-  button.parentElement?.appendChild(circle);
+  wrapper.appendChild(circle);
 
-  // Clean up after animation
   setTimeout(() => {
     circle.remove();
-  }, 1200); // match animation duration
+  }, 1200);
 }
+
 
 
 
