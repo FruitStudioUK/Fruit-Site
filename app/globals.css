@@ -217,13 +217,21 @@
   border-radius: 50%;
   transform: scale(0);
   animation: ripple 600ms linear;
-  background-color: rgba(255, 255, 255, 0.7); /* white ripple overlay */
   pointer-events: none;
+  z-index: 0; /* behind button text */
+}
+
+.ripple-orange {
+  background-color: var(--primary-orange);
+}
+
+.ripple-green {
+  background-color: var(--secondary-green);
 }
 
 @keyframes ripple {
   to {
-    transform: scale(4);
+    transform: scale(6); /* expand well beyond button */
     opacity: 0;
   }
 }
