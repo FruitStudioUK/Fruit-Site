@@ -11,7 +11,7 @@ export default function LayoutContent({ children }: { children: React.ReactNode 
 
   useEffect(() => {
     if (role) {
-      const timer = setTimeout(() => setShowSite(true), 1000);
+      const timer = setTimeout(() => setShowSite(true), 1200);
       return () => clearTimeout(timer);
     } else {
       setShowSite(false);
