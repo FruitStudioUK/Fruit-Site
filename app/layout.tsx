@@ -1,13 +1,16 @@
+'use client';
+
 import "./globals.css";
 import type { Metadata } from "next";
 import { Nunito, Baloo_2 } from "next/font/google";
+import { useEffect, useState } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 
 const nunito = Nunito({
   subsets: ["latin"],
   variable: "--font-nunito",
-  weight: ["400", "500", "600", "700", "800", "900"], // All weights loaded for flexibility
+  weight: ["400", "500", "600", "700", "800", "900"],
   display: "swap",
 });
 
@@ -48,12 +51,20 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const [role, setRole] = useState<string | null>(null);
+
+  useEffect(() => {
+    const storedRole = localStorage.getItem("userRole");
+    setRole(storedRole);
+  }, []);
+
   return (
     <html lang="en" className={`${nunito.variable} ${baloo2.variable}`}>
       <body className="bg-primary-dark text-white font-body font-medium antialiased">
-        <Navigation />
+        {/* Only show Navigation and Footer if role is chosen */}
+        {role && <Navigation />}
         <main className="min-h-screen">{children}</main>
-        <Footer />
+        {role && <Footer />}
       </body>
     </html>
   );
