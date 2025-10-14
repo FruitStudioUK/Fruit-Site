@@ -7,16 +7,6 @@ import { useState, useEffect } from "react";
 
 export default function LayoutContent({ children }: { children: React.ReactNode }) {
   const { role } = useRole();
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    if (role) {
-      const timer = setTimeout(() => setVisible(true), 50);
-      return () => clearTimeout(timer);
-    } else {
-      setVisible(false);
-    }
-  }, [role]);
 
   if (!role) {
     return <>{children}</>;
@@ -24,17 +14,16 @@ export default function LayoutContent({ children }: { children: React.ReactNode 
 
   return (
     <>
-      <div className={visible ? "animate-fade-in-delayed" : "opacity-0"}>
+      <div className="animate-fade-in-delayed">
         <Navigation />
       </div>
 
-      <main className={visible ? "animate-fade-in-delayed" : "opacity-0"}>
-        {children}
-      </main>
+      {children}
 
-      <div className={visible ? "animate-fade-in-delayed" : "opacity-0"}>
+      <div className="animate-fade-in-delayed">
         <Footer />
       </div>
     </>
   );
 }
+
