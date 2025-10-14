@@ -23,10 +23,12 @@ export default function LayoutContent({ children }: { children: React.ReactNode 
   }
 
   return (
-    <div className={`${showSite ? 'animate-fade-in-delayed' : 'opacity-0'}`}>
-      <Navigation />
-      <main className="min-h-screen">{children}</main>
-      <Footer />
-    </div>
+    <>
+      {showSite && <Navigation className="animate-fade-in-delayed" />}
+      <main className={showSite ? "animate-fade-in-delayed" : "opacity-0"}>
+        {children}
+      </main>
+      {showSite && <Footer className="animate-fade-in-delayed" />}
+    </>
   );
 }
