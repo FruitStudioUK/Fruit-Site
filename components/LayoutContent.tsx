@@ -14,16 +14,15 @@ export default function LayoutContent({ children }: { children: React.ReactNode 
 
   return (
     <>
-      <div className="animate-fade-in-delayed">
-        <Navigation />
-      </div>
+      {/* Header = Navigation (logo + menus) */}
+      <Navigation className="animate-fade-in-delayed" />
 
+      {/* Main content fades in separately via siteVisible in page.tsx */}
       {children}
 
-      <div className="animate-fade-in-delayed">
-        <Footer />
-      </div>
+      <Footer className="animate-fade-in-delayed" />
     </>
   );
 }
+
 
