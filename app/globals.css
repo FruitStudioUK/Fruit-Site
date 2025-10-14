@@ -219,6 +219,8 @@
   opacity: 0.6;
   pointer-events: none;
   z-index: 0;
+  width: 0;
+  height: 0;
 }
 
 .ripple-orange {
@@ -231,14 +233,15 @@
 
 @keyframes ripple {
   to {
-    transform: scale(8); /* expand further outside the button */
+    transform: scale(8);
     opacity: 0;
   }
 }
 
 .ripple {
-  animation: ripple 1.2s ease-out forwards; /* slower, smoother */
+  animation: ripple 1.2s ease-out forwards;
 }
+
 
 
 
