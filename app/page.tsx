@@ -20,32 +20,41 @@ export default function HomePage() {
 
   if (!role) {
     return (
-      <div style={{ textAlign: 'center', marginTop: '100px' }}>
-        <h2>Who are you?</h2>
-        <button onClick={() => handleSelect('creator')}>I'm a Creator</button>
-        <button onClick={() => handleSelect('brand')}>I'm a Brand</button>
+      <div className="role-selector">
+        <h2 className="text-2xl mb-6">Who are you?</h2>
+        <button
+          onClick={() => handleSelect('creator')}
+          className="btn-primary"
+        >
+          I'm a Creator
+        </button>
+        <button
+          onClick={() => handleSelect('brand')}
+          className="btn-secondary"
+        >
+          I'm a Brand
+        </button>
       </div>
     );
   }
 
   return (
     <main>
-      <h1 style={{ textAlign: 'center' }}>
+      <h1 className="text-center text-3xl font-bold mb-6">
         Welcome, {role === 'creator' ? 'Creator' : 'Brand'}!
       </h1>
 
-      {/* Optional: role-specific intro */}
       {role === 'creator' ? (
-        <p style={{ textAlign: 'center' }}>
+        <p className="text-center mb-10 text-lg">
           Let’s help you monetize, collaborate, and grow.
         </p>
       ) : (
-        <p style={{ textAlign: 'center' }}>
+        <p className="text-center mb-10 text-lg">
           Let’s help you find creators and run powerful campaigns.
         </p>
       )}
 
-      {/* Shared components */}
+      {/* Shared site sections */}
       <Hero />
       <Services />
       <Portfolio />
