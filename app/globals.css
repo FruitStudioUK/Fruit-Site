@@ -168,6 +168,18 @@
   }
 }
 
+  @keyframes fadeInDelayed {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-fade-in-delayed {
+  animation: fadeInDelayed 0.8s ease-out;
+  animation-delay: 0.2s; /* small delay after mount */
+  animation-fill-mode: both; /* keep final state */
+}
+
+
 /* Scroll behavior */
 html { scroll-behavior: smooth; }
 
