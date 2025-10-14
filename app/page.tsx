@@ -64,7 +64,7 @@ export default function HomePage() {
 ) {
   const button = event.currentTarget;
   const circle = document.createElement("span");
-  const diameter = Math.max(button.clientWidth, button.clientHeight) * 2;
+  const diameter = Math.max(button.clientWidth, button.clientHeight) * 3; // bigger
   const radius = diameter / 2;
 
   circle.style.width = circle.style.height = `${diameter}px`;
@@ -74,18 +74,17 @@ export default function HomePage() {
 
   // Remove old ripple if present
   const ripple = button.parentElement?.querySelector(".ripple");
-  if (ripple) {
-    ripple.remove();
-  }
+  if (ripple) ripple.remove();
 
-  // Append ripple to the button’s parent container so it can overflow
+  // Append ripple to parent container so it can overflow
   button.parentElement?.appendChild(circle);
 
   // Clean up after animation
   setTimeout(() => {
     circle.remove();
-  }, 600);
+  }, 1200); // match animation duration
 }
+
 
 
 
