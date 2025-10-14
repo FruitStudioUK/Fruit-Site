@@ -21,6 +21,32 @@ export default function HomePage() {
     }, 1000);
   };
 
+  // --- Ripple function (click‑point) ---
+  function createRipple(
+    event: React.MouseEvent<HTMLButtonElement>,
+    colorClass: string
+  ) {
+    const button = event.currentTarget;
+    const circle = document.createElement("span");
+    const diameter = Math.max(button.clientWidth, button.clientHeight) * 3;
+    const radius = diameter / 2;
+
+    circle.style.width = circle.style.height = `${diameter}px`;
+    circle.style.left = `${event.clientX - button.getBoundingClientRect().left - radius}px`;
+    circle.style.top = `${event.clientY - button.getBoundingClientRect().top - radius}px`;
+    circle.classList.add("ripple", colorClass);
+
+    // Remove old ripple if present
+    const ripple = button.getElementsByClassName("ripple")[0];
+    if (ripple) ripple.remove();
+
+    button.appendChild(circle);
+
+    setTimeout(() => {
+      circle.remove();
+    }, 1200); // match animation duration
+  }
+
   if (!role) {
     return (
       <div
@@ -29,69 +55,27 @@ export default function HomePage() {
         }`}
       >
         <button
-  onClick={() => handleSelect('creator')}
-  className="btn-primary btn-ripple btn-ripple-orange text-2xl py-5 px-10"
->
-  I'm a Creator
-</button>
+          onClick={(e) => {
+            createRipple(e, "ripple-orange");
+            handleSelect('creator');
+          }}
+          className="btn-primary text-2xl py-5 px-10 relative overflow-hidden"
+        >
+          I'm a Creator
+        </button>
 
-<button
-  onClick={() => handleSelect('brand')}
-  className="btn-secondary btn-ripple btn-ripple-green text-2xl py-5 px-10"
->
-  I'm a Brand
-</button>
-
-
-<div className="relative overflow-hidden">
-  <button
-    onClick={(e) => {
-      createRipple(e, "ripple-green");
-      handleSelect("brand");
-    }}
-    className="btn-secondary text-2xl py-5 px-10 relative z-10"
-  >
-    I'm a Brand
-  </button>
-</div>
-
-
-
-
+        <button
+          onClick={(e) => {
+            createRipple(e, "ripple-green");
+            handleSelect('brand');
+          }}
+          className="btn-secondary text-2xl py-5 px-10 relative overflow-hidden"
+        >
+          I'm a Brand
+        </button>
       </div>
     );
   }
-  
-  function createRipple(
-  event: React.MouseEvent<HTMLButtonElement>,
-  colorClass: string
-) {
-  const button = event.currentTarget;
-  const wrapper = button.parentElement as HTMLElement; // relative container
-  const circle = document.createElement("span");
-  const diameter = Math.max(button.clientWidth, button.clientHeight) * 2;
-  const radius = diameter / 2;
-
-  circle.style.width = circle.style.height = `${diameter}px`;
-  circle.style.left = `${event.clientX - wrapper.getBoundingClientRect().left - radius}px`;
-  circle.style.top = `${event.clientY - wrapper.getBoundingClientRect().top - radius}px`;
-  circle.classList.add("ripple", colorClass);
-
-  // Remove old ripple if present
-  const ripple = wrapper.querySelector(".ripple");
-  if (ripple) ripple.remove();
-
-  wrapper.appendChild(circle);
-
-  setTimeout(() => {
-    circle.remove();
-  }, 600); // match animation duration
-}
-
-
-
-
-
 
   return (
     <main className="animate-fade-in-delayed">
