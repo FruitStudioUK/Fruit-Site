@@ -53,24 +53,35 @@ export default function HomePage() {
     );
   }
   
-  function createRipple(event: React.MouseEvent<HTMLButtonElement>) {
+  function createRipple(
+  event: React.MouseEvent<HTMLButtonElement>,
+  colorClass: string
+) {
   const button = event.currentTarget;
   const circle = document.createElement("span");
-  const diameter = Math.max(button.clientWidth, button.clientHeight);
+  const diameter = Math.max(button.clientWidth, button.clientHeight) * 2;
   const radius = diameter / 2;
 
   circle.style.width = circle.style.height = `${diameter}px`;
   circle.style.left = `${event.clientX - button.getBoundingClientRect().left - radius}px`;
   circle.style.top = `${event.clientY - button.getBoundingClientRect().top - radius}px`;
-  circle.classList.add("ripple");
+  circle.classList.add("ripple", colorClass);
 
-  const ripple = button.getElementsByClassName("ripple")[0];
+  // Remove old ripple if present
+  const ripple = button.parentElement?.querySelector(".ripple");
   if (ripple) {
     ripple.remove();
   }
 
-  button.appendChild(circle);
+  // Append ripple to the button’s parent container so it can overflow
+  button.parentElement?.appendChild(circle);
+
+  // Clean up after animation
+  setTimeout(() => {
+    circle.remove();
+  }, 600);
 }
+
 
 
   return (
