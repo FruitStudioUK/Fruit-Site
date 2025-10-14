@@ -4,12 +4,13 @@ import { Services } from '@/components/Services';
 import { Portfolio } from '@/components/Portfolio';
 import { Contact } from '@/components/Contact';
 import { useRole } from '@/context/RoleContext';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function HomePage() {
   const { role, setRole } = useRole();
   const [animating, setAnimating] = useState(false);
   const [selected, setSelected] = useState<'creator' | 'brand' | null>(null);
+  const [siteVisible, setSiteVisible] = useState(false);
 
   const handleSelect = (selectedRole: 'creator' | 'brand') => {
     setSelected(selectedRole);
@@ -48,43 +49,53 @@ export default function HomePage() {
     }, 1200);
   }
 
+  // --- Control site fade‑in ---
+  useEffect(() => {
+    if (role) {
+      // small delay so fade‑in animation can trigger
+      const timer = setTimeout(() => setSiteVisible(true), 50);
+      return () => clearTimeout(timer);
+    } else {
+      setSiteVisible(false);
+    }
+  }, [role]);
+
   if (!role) {
-  return (
-    <div
-      className={`flex flex-col md:flex-row items-center justify-center h-screen gap-8 transition-opacity duration-700 ${
-        animating ? 'opacity-0' : 'opacity-100'
-      }`}
-    >
-      <div className="relative">
-        <button
-          onClick={(e) => {
-            createRipple(e, "ripple-orange");
-            handleSelect("creator");
-          }}
-          className="btn-primary text-2xl py-5 px-10 relative z-10"
-        >
-          I'm a Creator
-        </button>
+    return (
+      <div
+        className={`flex flex-col md:flex-row items-center justify-center h-screen gap-8 transition-opacity duration-700 ${
+          animating ? 'opacity-0' : 'opacity-100'
+        }`}
+      >
+        <div className="relative">
+          <button
+            onClick={(e) => {
+              createRipple(e, "ripple-orange");
+              handleSelect("creator");
+            }}
+            className="btn-primary text-2xl py-5 px-10 relative z-10"
+          >
+            I'm a Creator
+          </button>
+        </div>
+
+        <div className="relative">
+          <button
+            onClick={(e) => {
+              createRipple(e, "ripple-green");
+              handleSelect("brand");
+            }}
+            className="btn-secondary text-2xl py-5 px-10 relative z-10"
+          >
+            I'm a Brand
+          </button>
+        </div>
       </div>
-
-      <div className="relative">
-        <button
-          onClick={(e) => {
-            createRipple(e, "ripple-green");
-            handleSelect("brand");
-          }}
-          className="btn-secondary text-2xl py-5 px-10 relative z-10"
-        >
-          I'm a Brand
-        </button>
-      </div>
-    </div>
-  );
-}
-
+    );
+  }
 
   return (
-    <main className="animate-fade-in-delayed">
+    <main className={siteVisible ? "animate-fade-in-delayed" : "opacity-0"}>
       <Hero />
       <Services />
       <Portfolio />
