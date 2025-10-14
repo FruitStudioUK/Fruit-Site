@@ -1,70 +1,22 @@
-'use client';
-
+// app/layout.tsx (server)
 import "./globals.css";
 import type { Metadata } from "next";
 import { Nunito, Baloo_2 } from "next/font/google";
-import { useEffect, useState } from "react";
-import { Navigation } from "@/components/Navigation";
-import { Footer } from "@/components/Footer";
-
-const nunito = Nunito({
-  subsets: ["latin"],
-  variable: "--font-nunito",
-  weight: ["400", "500", "600", "700", "800", "900"],
-  display: "swap",
-});
-
-const baloo2 = Baloo_2({
-  subsets: ["latin"],
-  variable: "--font-baloo2",
-  weight: ["400", "500", "600", "700", "800"],
-  display: "swap",
-});
+import RoleLayout from "@/components/RoleLayout";
 
 export const metadata: Metadata = {
   title: "Fruit. - Professional Creative & Brand Partnerships",
-  description:
-    "Transform your content with professional creative services and unlock brand partnership opportunities. We help content creators elevate their work and grow their reach.",
-  keywords:
-    "content creator, video editing, brand partnerships, influencer marketing, content creation, social media editing",
-  authors: [{ name: "Fruit." }],
-  viewport: "width=device-width, initial-scale=1",
-  themeColor: "#140c04",
-  robots: "index, follow",
-  openGraph: {
-    title: "Fruit. - Professional Creative & Brand Partnerships",
-    description:
-      "Transform your content with professional creative services and unlock brand partnership opportunities.",
-    type: "website",
-    locale: "en_UK",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Fruit. - Professional Creative & Brand Partnerships",
-    description:
-      "Transform your content with professional creative services and unlock brand partnership opportunities.",
-  },
+  description: "Transform your content with professional creative services...",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  const [role, setRole] = useState<string | null>(null);
+const nunito = Nunito({ subsets: ["latin"], variable: "--font-nunito" });
+const baloo2 = Baloo_2({ subsets: ["latin"], variable: "--font-baloo2" });
 
-  useEffect(() => {
-    const storedRole = localStorage.getItem("userRole");
-    setRole(storedRole);
-  }, []);
-
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${nunito.variable} ${baloo2.variable}`}>
       <body className="bg-primary-dark text-white font-body font-medium antialiased">
-        {/* Only show Navigation and Footer if role is chosen */}
-        {role && <Navigation />}
-        <main className="min-h-screen">{children}</main>
-        {role && <Footer />}
+        <RoleLayout>{children}</RoleLayout>
       </body>
     </html>
   );
