@@ -23,29 +23,30 @@ export default function HomePage() {
 
   // --- Ripple function (click‑point) ---
   function createRipple(
-    event: React.MouseEvent<HTMLButtonElement>,
-    colorClass: string
-  ) {
-    const button = event.currentTarget;
-    const circle = document.createElement("span");
-    const diameter = Math.max(button.clientWidth, button.clientHeight) * 3;
-    const radius = diameter / 2;
+  event: React.MouseEvent<HTMLButtonElement>,
+  colorClass: string
+) {
+  const button = event.currentTarget;
+  const wrapper = button.parentElement as HTMLElement; // the relative container
+  const circle = document.createElement("span");
+  const diameter = Math.max(button.clientWidth, button.clientHeight) * 3;
+  const radius = diameter / 2;
 
-    circle.style.width = circle.style.height = `${diameter}px`;
-    circle.style.left = `${event.clientX - button.getBoundingClientRect().left - radius}px`;
-    circle.style.top = `${event.clientY - button.getBoundingClientRect().top - radius}px`;
-    circle.classList.add("ripple", colorClass);
+  circle.style.width = circle.style.height = `${diameter}px`;
+  circle.style.left = `${event.clientX - wrapper.getBoundingClientRect().left - radius}px`;
+  circle.style.top = `${event.clientY - wrapper.getBoundingClientRect().top - radius}px`;
+  circle.classList.add("ripple", colorClass);
 
-    // Remove old ripple if present
-    const ripple = button.getElementsByClassName("ripple")[0];
-    if (ripple) ripple.remove();
+  // Remove old ripple if present
+  const ripple = wrapper.querySelector(".ripple");
+  if (ripple) ripple.remove();
 
-    button.appendChild(circle);
+  wrapper.appendChild(circle);
 
-    setTimeout(() => {
-      circle.remove();
-    }, 1200); // match animation duration
-  }
+  setTimeout(() => {
+    circle.remove();
+  }, 1200);
+}
 
   if (!role) {
     return (
