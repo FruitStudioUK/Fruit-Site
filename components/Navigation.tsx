@@ -3,16 +3,28 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, Video, User, Mail, Briefcase, RefreshCcw } from "lucide-react";
+import {
+  Menu,
+  X,
+  Video,
+  User,
+  Mail,
+  Briefcase,
+  RefreshCcw,
+} from "lucide-react";
 import Image from "next/image";
 import Logo from "../app/images/logo.png";
-import { useRole } from "@/context/RoleContext"; // ✅ import context
+import { useRole } from "@/context/RoleContext";
 
-export function Navigation() {
+type NavigationProps = {
+  className?: string; // ✅ allow external classes
+};
+
+export function Navigation({ className = "" }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
-  const { setRole } = useRole(); // ✅ get setter
+  const { setRole } = useRole();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,7 +49,7 @@ export function Navigation() {
         isScrolled
           ? "bg-primary-dark/95 backdrop-blur-md shadow-lg"
           : "bg-transparent"
-      }`}
+      } ${className}`}
     >
       <div className="container-max">
         <div className="flex items-center justify-between py-4">
