@@ -16,20 +16,23 @@ export default function HomePage() {
     return (
       <div className="flex flex-col md:flex-row items-center justify-center h-screen gap-8">
         <button
-          onClick={() => handleSelect('creator')}
-          className="btn-primary text-2xl py-5 px-10"
-        >
-          I'm a Creator
-        </button>
+  onClick={() => handleSelect('creator')}
+  className={`btn-primary text-2xl py-5 px-10 relative ${
+    animating && selected === 'creator' ? 'animate-pulse-orange' : ''
+  }`}
+>
+  I'm a Creator
+</button>
 
-        <h2 className="text-3xl md:text-4xl font-extrabold">Who are you?</h2>
+<button
+  onClick={() => handleSelect('brand')}
+  className={`btn-secondary text-2xl py-5 px-10 relative ${
+    animating && selected === 'brand' ? 'animate-pulse-green' : ''
+  }`}
+>
+  I'm a Brand
+</button>
 
-        <button
-          onClick={() => handleSelect('brand')}
-          className="btn-secondary text-2xl py-5 px-10"
-        >
-          I'm a Brand
-        </button>
       </div>
     );
   }
