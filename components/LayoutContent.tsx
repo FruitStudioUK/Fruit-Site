@@ -18,27 +18,21 @@ export default function LayoutContent({ children }: { children: React.ReactNode 
     }
   }, [role]);
 
-  // If no role chosen, just render the selector (children)
   if (!role) {
-    return <>{children}</>;
+    return <>{children}</>; // just the selector
   }
 
-  // Once role is chosen, fade in header, main, footer
   return (
     <>
-      {showSite && (
-        <div className="animate-fade-in-delayed">
-          <Navigation />
-        </div>
-      )}
+      <div className={showSite ? "animate-fade-in-delayed" : "opacity-0"}>
+        <Navigation />
+      </div>
       <main className={showSite ? "animate-fade-in-delayed" : "opacity-0"}>
         {children}
       </main>
-      {showSite && (
-        <div className="animate-fade-in-delayed">
-          <Footer />
-        </div>
-      )}
+      <div className={showSite ? "animate-fade-in-delayed" : "opacity-0"}>
+        <Footer />
+      </div>
     </>
   );
 }
