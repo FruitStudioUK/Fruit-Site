@@ -49,38 +49,39 @@ export default function HomePage() {
   }
 
   if (!role) {
-    return (
-      <div
-        className={`flex flex-col md:flex-row items-center justify-center h-screen gap-8 transition-opacity duration-700 ${
-          animating ? 'opacity-0' : 'opacity-100'
-        }`}
-      >
-        <div className="relative">
-          <button
-            onClick={(e) => {
-              createRipple(e, "ripple-orange");
-              handleSelect("creator");
-            }}
-            className="btn-primary text-2xl py-5 px-10 relative z-10"
-          >
-            I'm a Creator
-          </button>
-        </div>
+  return (
+    <div
+      className={`flex flex-col md:flex-row items-center justify-center h-screen gap-8 transition-opacity duration-700 ${
+        animating ? 'opacity-0' : 'opacity-100'
+      }`}
+    >
+      <div className="relative">
+        <button
+          onClick={(e) => {
+            createRipple(e, "ripple-orange");
+            handleSelect("creator");
+          }}
+          className="btn-primary text-2xl py-5 px-10 relative z-10"
+        >
+          I'm a Creator
+        </button>
+      </div>
 
-        <div className="relative">
-          <button
-            onClick={(e) => {
-              createRipple(e, "ripple-green");
-              handleSelect("brand");
-            }}
-            className="btn-secondary text-2xl py-5 px-10 relative z-10"
-          >
-            I'm a Brand
-          </button>
-        </div>
-      </div>   {/* ✅ close the parent div here */}
-    );
-  }
+      <div className="relative">
+        <button
+          onClick={(e) => {
+            createRipple(e, "ripple-green");
+            handleSelect("brand");
+          }}
+          className="btn-secondary text-2xl py-5 px-10 relative z-10"
+        >
+          I'm a Brand
+        </button>
+      </div>
+    </div>
+  );
+}
+
 
   return (
     <main className="animate-fade-in-delayed">
