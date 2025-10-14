@@ -1,9 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Nunito, Baloo_2 } from "next/font/google";
-import { Navigation } from "@/components/Navigation";
-import { Footer } from "@/components/Footer";
-import { RoleProvider, useRole } from "@/context/RoleContext";
+import { RoleProvider } from "@/context/RoleContext";
+import LayoutContent from "@/components/LayoutContent";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -24,18 +23,6 @@ export const metadata: Metadata = {
   description:
     "Transform your content with professional creative services and unlock brand partnership opportunities.",
 };
-
-function LayoutContent({ children }: { children: React.ReactNode }) {
-  const { role } = useRole();
-
-  return (
-    <>
-      {role && <Navigation />}
-      <main className="min-h-screen">{children}</main>
-      {role && <Footer />}
-    </>
-  );
-}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
