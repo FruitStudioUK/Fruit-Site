@@ -44,6 +44,16 @@ export default function HomePage() {
         Welcome, {role === 'creator' ? 'Creator' : 'Brand'}!
       </h1>
 
+      <button
+    onClick={() => {
+      localStorage.removeItem('userRole');
+      setRole(null);
+    }}
+    className="btn-outline mt-4"
+  >
+    Switch Role
+  </button>
+
       {role === 'creator' ? (
         <p className="text-center mb-10 text-lg">
           Let’s help you monetize, collaborate, and grow.
