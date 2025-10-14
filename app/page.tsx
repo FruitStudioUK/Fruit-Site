@@ -64,9 +64,9 @@ export default function HomePage() {
   colorClass: string
 ) {
   const button = event.currentTarget;
-  const wrapper = button.parentElement as HTMLElement; // the relative container
+  const wrapper = button.parentElement as HTMLElement; // relative container
   const circle = document.createElement("span");
-  const diameter = Math.max(button.clientWidth, button.clientHeight) * 3;
+  const diameter = Math.max(button.clientWidth, button.clientHeight) * 2;
   const radius = diameter / 2;
 
   circle.style.width = circle.style.height = `${diameter}px`;
@@ -74,6 +74,7 @@ export default function HomePage() {
   circle.style.top = `${event.clientY - wrapper.getBoundingClientRect().top - radius}px`;
   circle.classList.add("ripple", colorClass);
 
+  // Remove old ripple if present
   const ripple = wrapper.querySelector(".ripple");
   if (ripple) ripple.remove();
 
@@ -81,8 +82,9 @@ export default function HomePage() {
 
   setTimeout(() => {
     circle.remove();
-  }, 1200);
+  }, 600); // match animation duration
 }
+
 
 
 
