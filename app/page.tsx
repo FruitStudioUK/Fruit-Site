@@ -54,26 +54,29 @@ export default function HomePage() {
           animating ? 'opacity-0' : 'opacity-100'
         }`}
       >
-        <button
-          onClick={(e) => {
-            createRipple(e, "ripple-orange");
-            handleSelect('creator');
-          }}
-          className="btn-primary text-2xl py-5 px-10 relative overflow-hidden"
-        >
-          I'm a Creator
-        </button>
+        <div className="relative">
+  <button
+    onClick={(e) => {
+      createRipple(e, "ripple-orange");
+      handleSelect("creator");
+    }}
+    className="btn-primary text-2xl py-5 px-10 relative z-10"
+  >
+    I'm a Creator
+  </button>
+</div>
 
-        <button
-          onClick={(e) => {
-            createRipple(e, "ripple-green");
-            handleSelect('brand');
-          }}
-          className="btn-secondary text-2xl py-5 px-10 relative overflow-hidden"
-        >
-          I'm a Brand
-        </button>
-      </div>
+<div className="relative">
+  <button
+    onClick={(e) => {
+      createRipple(e, "ripple-green");
+      handleSelect("brand");
+    }}
+    className="btn-secondary text-2xl py-5 px-10 relative z-10"
+  >
+    I'm a Brand
+  </button>
+</div>
     );
   }
 
