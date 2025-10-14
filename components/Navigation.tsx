@@ -3,20 +3,21 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, Video, Users, User, Mail, Briefcase } from "lucide-react";
+import { Menu, X, Video, User, Mail, Briefcase, RefreshCcw } from "lucide-react";
 import Image from "next/image";
 import Logo from "../app/images/logo.png";
+import { useRole } from "@/context/RoleContext"; // ✅ import context
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+  const { setRole } = useRole(); // ✅ get setter
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -25,7 +26,6 @@ export function Navigation() {
     { href: "/", label: "Home", icon: Video },
     { href: "/services", label: "Services", icon: Briefcase },
     { href: "/about", label: "About", icon: User },
-    // { href: "/portfolio", label: "Portfolio", icon: Users }, //
     { href: "/contact", label: "Contact", icon: Mail },
   ];
 
@@ -43,7 +43,7 @@ export function Navigation() {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="w-20 h-20 bg-primary- rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <div className="w-20 h-20 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
               <Image src={Logo} alt={"logo"} className="rounded-lg" />
               <Video className="w-6 h-6 text-white" />
             </div>
@@ -68,6 +68,15 @@ export function Navigation() {
                 <span className="font-medium">{label}</span>
               </Link>
             ))}
+
+            {/* Switch Role Button */}
+            <button
+              onClick={() => setRole(null)}
+              className="flex items-center space-x-1 px-3 py-2 rounded-lg border border-white text-white hover:bg-white hover:text-black transition"
+            >
+              <RefreshCcw className="w-4 h-4" />
+              <span className="font-medium">Switch Role</span>
+            </button>
           </div>
 
           {/* CTA Button */}
@@ -106,6 +115,21 @@ export function Navigation() {
                   <span className="font-medium">{label}</span>
                 </Link>
               ))}
+
+              {/* Switch Role Button (Mobile) */}
+              <div className="px-4">
+                <button
+                  onClick={() => {
+                    setRole(null);
+                    setIsOpen(false);
+                  }}
+                  className="w-full flex items-center justify-center space-x-2 px-4 py-3 rounded-lg border border-white text-white hover:bg-white hover:text-black transition"
+                >
+                  <RefreshCcw className="w-5 h-5" />
+                  <span className="font-medium">Switch Role</span>
+                </button>
+              </div>
+
               <div className="px-4 pt-2">
                 <Link
                   href="/contact"
