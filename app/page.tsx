@@ -8,8 +8,6 @@ import { useState } from 'react';
 
 export default function HomePage() {
   const { role, setRole } = useRole();
-
-  // ✅ define state for animation and selection
   const [animating, setAnimating] = useState(false);
   const [selected, setSelected] = useState<'creator' | 'brand' | null>(null);
 
@@ -17,7 +15,6 @@ export default function HomePage() {
     setSelected(selectedRole);
     setAnimating(true);
 
-    // After 1s, set role and show site
     setTimeout(() => {
       setRole(selectedRole);
       setAnimating(false);
@@ -56,18 +53,6 @@ export default function HomePage() {
 
   return (
     <main className="animate-fade-in-delayed">
-      <h1 className="text-center text-3xl font-bold mb-6">
-        Welcome, {role === 'creator' ? 'Creator' : 'Brand'}!
-      </h1>
-      {role === 'creator' ? (
-        <p className="text-center mb-10 text-lg">
-          Let’s help you monetize, collaborate, and grow.
-        </p>
-      ) : (
-        <p className="text-center mb-10 text-lg">
-          Let’s help you find creators and run powerful campaigns.
-        </p>
-      )}
       <Hero />
       <Services />
       <Portfolio />
