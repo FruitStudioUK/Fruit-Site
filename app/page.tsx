@@ -19,9 +19,10 @@ export default function HomePage() {
   };
 
   if (!role) {
-    return (
-      <div className="role-selector">
-        <h2 className="text-2xl mb-6">Who are you?</h2>
+  return (
+    <div className="role-selector">
+      <h2 className="text-2xl mb-6">Who are you?</h2>
+      <div className="flex flex-col md:flex-row gap-4">
         <button
           onClick={() => handleSelect('creator')}
           className="btn-primary"
@@ -35,8 +36,10 @@ export default function HomePage() {
           I'm a Brand
         </button>
       </div>
-    );
-  }
+    </div>
+  );
+}
+
 
   return (
     <main>
