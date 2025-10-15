@@ -5,6 +5,7 @@ import {
   Handshake,
   TrendingUp,
   Target,
+  Search,
 } from "lucide-react";
 
 export function Services() {
