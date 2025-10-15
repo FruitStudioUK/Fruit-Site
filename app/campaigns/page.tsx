@@ -61,7 +61,7 @@ export default function ServicesPage() {
               From cutting-edge video editing to strategic brand partnerships, we provide comprehensive solutions 
               that help you create outstanding content and grow your audience.
             </p>
-            <a href="/contact" className="btn-secondary inline-flex items-center space-x-2">
+            <a href="/support" className="btn-secondary inline-flex items-center space-x-2">
               <span>Get Started Today</span>
               <ArrowRight className="w-5 h-5" />
             </a>
@@ -140,7 +140,7 @@ export default function ServicesPage() {
               Join hundreds of successful creators who trust us with their content. Let's discuss your project today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact" className="btn-secondary inline-flex items-center space-x-2">
+              <a href="/support" className="btn-secondary inline-flex items-center space-x-2">
                 <span>Start Your Project</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
