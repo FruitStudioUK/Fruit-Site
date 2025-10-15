@@ -141,20 +141,25 @@ export function Navigation({ className = "" }: NavigationProps) {
           <div className="md:hidden absolute top-full left-0 right-0 bg-primary-dark/95 backdrop-blur-md border-t border-sub-background/30">
             <div className="py-4 space-y-2">
               {navItems.map(({ href, label, icon: Icon }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  onClick={() => setIsOpen(false)}
-                  className={`flex items-center space-x-3 px-4 py-3 mx-4 rounded-lg transition-all duration-300 ${
-                    isActive(href)
-                      ? "text-primary-orange bg-sub-background/20"
-                      : "text-white hover:text-primary-orange hover:bg-sub-background/20"
-                  }`}
-                >
-                  <Icon className="w-5 h-5" />
-                  <span className="font-medium">{label}</span>
-                </Link>
-              ))}
+  <Link
+    key={href}
+    href={href}
+    onClick={() => setIsOpen(false)}
+    className={`flex items-center space-x-3 px-4 py-3 mx-4 rounded-lg transition-all duration-300 ${
+      isActive(href)
+        ? role === "creator"
+          ? "text-primary-orange bg-sub-background/20"
+          : "text-secondary-green bg-sub-background/20"
+        : role === "creator"
+          ? "text-white hover:text-primary-orange hover:bg-sub-background/20"
+          : "text-white hover:text-secondary-green hover:bg-sub-background/20"
+    }`}
+  >
+    <Icon className="w-5 h-5" />
+    <span className="font-medium">{label}</span>
+  </Link>
+))}
+
 
               {/* Role Switch (Mobile) */}
               <div className="px-4">
