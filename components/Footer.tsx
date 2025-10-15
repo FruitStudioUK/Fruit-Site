@@ -4,17 +4,20 @@ import {
   Mail,
   Phone,
   MapPin,
-  Twitter,
   Instagram,
-  Youtube,
-  Linkedin,
 } from "lucide-react";
 
-export function Footer() {
+type FooterProps = {
+  className?: string;
+};
+
+export function Footer({ className = "" }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary-dark border-t border-sub-background/30">
+    <footer
+      className={`bg-primary-dark border-t border-sub-background/30 ${className}`}
+    >
       <div className="container-max section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -32,30 +35,12 @@ export function Footer() {
               and meaningful brand partnerships.
             </p>
             <div className="flex space-x-4">
-           {/*   <a
-                href="#"
-                className="text-text-gray hover:text-primary-orange transition-colors duration-300"
-              >
-                <Twitter className="w-5 h-5" />
-              </a> */}
               <a
                 href="https://www.instagram.com/fruit.uk"
-                className="text-text-gray hover:text-primary-orange transition-colors duration-300" 
+                className="text-text-gray hover:text-primary-orange transition-colors duration-300"
               >
                 <Instagram className="w-5 h-5" />
-              </a> {/*
-              <a
-                href="https://www.instagram.com/fruit.uk"
-                className="text-text-gray hover:text-primary-orange transition-colors duration-300"
-              >
-                {/*  <Youtube className="w-5 h-5" />
               </a>
-              <a
-                href="#"
-                className="text-text-gray hover:text-primary-orange transition-colors duration-300"
-              >
-                <Linkedin className="w-5 h-5" /> 
-              </a> */}
             </div>
           </div>
 
@@ -90,14 +75,6 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                {/*     <Link
-                  href="/portfolio"
-                  className="text-text-gray hover:text-primary-orange transition-colors duration-300"
-                >
-                  Portfolio
-                </Link>
-              </li>
-              <li> */}
                 <Link
                   href="/contact"
                   className="text-text-gray hover:text-primary-orange transition-colors duration-300"
@@ -114,21 +91,11 @@ export function Footer() {
               Services
             </h3>
             <ul className="space-y-2">
-              <li>
-                <span className="text-text-gray">Video Editing</span>
-              </li>
-              <li>
-                <span className="text-text-gray">Audio Enhancement</span>
-              </li>
-              <li>
-                <span className="text-text-gray">Color Correction</span>
-              </li>
-              <li>
-                <span className="text-text-gray">Brand Partnerships</span>
-              </li>
-              <li>
-                <span className="text-text-gray">Content Strategy</span>
-              </li>
+              <li><span className="text-text-gray">Video Editing</span></li>
+              <li><span className="text-text-gray">Audio Enhancement</span></li>
+              <li><span className="text-text-gray">Color Correction</span></li>
+              <li><span className="text-text-gray">Brand Partnerships</span></li>
+              <li><span className="text-text-gray">Content Strategy</span></li>
             </ul>
           </div>
 
