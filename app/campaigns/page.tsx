@@ -5,44 +5,44 @@ export default function ServicesPage() {
   const processSteps = [
     {
       step: '01',
-      title: 'Initial Consultation',
-      description: 'We discuss your goals, brand, and vision to understand your unique needs.',
+      title: 'Discovery Call',
+      description: 'We learn about your brand, campaign goals, and target audience to define success metrics.',
       icon: Clock
     },
     {
       step: '02',
-      title: 'Project Planning',
-      description: 'We create a detailed plan and timeline tailored to your project requirements.',
+      title: 'Campaign Planning',
+      description: 'We design a tailored campaign strategy, timeline, and deliverables aligned with your objectives.',
       icon: Shield
     },
     {
       step: '03',
-      title: 'Content Creation',
-      description: 'Our experts work their magic, keeping you updated throughout the process.',
+      title: 'Activation',
+      description: 'Our creators and production team bring your campaign to life, with full transparency and updates.',
       icon: Zap
     },
     {
       step: '04',
-      title: 'Review & Deliver',
-      description: 'We refine based on your feedback and deliver the final polished content.',
+      title: 'Reporting & ROI',
+      description: 'We deliver daily analytics, refine based on performance, and provide a final ROI‑focused report.',
       icon: Award
     }
   ];
 
   const guarantees = [
     {
-      title: '48-Hour Turnaround',
-      description: 'Quick delivery without compromising quality',
+      title: '0% Fees on First Campaign',
+      description: 'No management fees or hidden costs on your first activation.',
       icon: Clock
     },
     {
-      title: 'Satisfaction Guarantee',
-      description: 'Unlimited revisions until you\'re 100% happy',
+      title: '24/7 Support',
+      description: 'Our team is available around the clock to answer questions and adjust campaigns.',
       icon: Shield
     },
     {
-      title: 'Professional Quality',
-      description: 'Industry-standard tools and techniques',
+      title: 'ROI-Driven Results',
+      description: 'Daily analytical reports and proven strategies to maximize your return on investment.',
       icon: Award
     }
   ];
@@ -54,15 +54,15 @@ export default function ServicesPage() {
         <div className="container-max">
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-baloo2 font-bold text-white mb-6">
-              Professional Services for 
-              <span className="text-secondary-green"> Content Creators</span>
+              Strategic Services for 
+              <span className="text-secondary-green"> Ambitious Brands</span>
             </h1>
             <p className="text-xl text-text-gray mb-8 leading-relaxed">
-              From cutting-edge video editing to strategic brand partnerships, we provide comprehensive solutions 
-              that help you create outstanding content and grow your audience.
+              From campaign strategy to creator activations, we provide end‑to‑end solutions that help brands 
+              reach new audiences, drive conversions, and achieve measurable ROI.
             </p>
             <a href="/support" className="btn-secondary inline-flex items-center space-x-2">
-              <span>Get Started Today</span>
+              <span>Launch Your Campaign</span>
               <ArrowRight className="w-5 h-5" />
             </a>
           </div>
@@ -80,7 +80,7 @@ export default function ServicesPage() {
               Our Process
             </h2>
             <p className="text-xl text-text-gray max-w-3xl mx-auto">
-              We follow a proven 4-step process to ensure your project exceeds expectations every time.
+              A proven 4‑step framework that ensures every campaign is efficient, transparent, and ROI‑focused.
             </p>
           </div>
 
@@ -111,7 +111,7 @@ export default function ServicesPage() {
               Our Guarantees
             </h2>
             <p className="text-xl text-text-gray max-w-3xl mx-auto">
-              We stand behind our work with industry-leading guarantees that give you peace of mind.
+              We back every campaign with clear guarantees so your brand can invest with confidence.
             </p>
           </div>
 
@@ -134,18 +134,19 @@ export default function ServicesPage() {
         <div className="container-max">
           <div className="bg-card-gradient rounded-2xl p-8 md:p-12 text-center animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-baloo2 font-bold text-white mb-4">
-              Ready to Transform Your Content?
+              Ready to Maximize Your ROI?
             </h2>
             <p className="text-xl text-text-gray mb-8 max-w-2xl mx-auto">
-              Join hundreds of successful creators who trust us with their content. Let's discuss your project today.
+              Join leading brands who trust Fruit to deliver campaigns with measurable impact. 
+              Let’s design your next activation together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/support" className="btn-secondary inline-flex items-center space-x-2">
-                <span>Start Your Project</span>
+                <span>Start Your Campaign</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
-              {/* <a href="/portfolio" className="btn-outline inline-flex items-center space-x-2">
-                <span>View Our Work</span>
+              {/* <a href="/case-studies" className="btn-outline inline-flex items-center space-x-2">
+                <span>View Case Studies</span>
               </a> */}
             </div>
           </div>
