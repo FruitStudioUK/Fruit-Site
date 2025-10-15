@@ -5,44 +5,44 @@ export default function ServicesPage() {
   const processSteps = [
     {
       step: '01',
-      title: 'Initial Consultation',
-      description: 'We discuss your goals, brand, and vision to understand your unique needs.',
+      title: 'Discovery Call',
+      description: 'We learn about your channel, audience, and sponsorship goals to define success metrics.',
       icon: Clock
     },
     {
       step: '02',
-      title: 'Project Planning',
-      description: 'We create a detailed plan and timeline tailored to your project requirements.',
+      title: 'Strategy & Planning',
+      description: 'We design a tailored sponsorship and growth strategy aligned with your brand and audience.',
       icon: Shield
     },
     {
       step: '03',
-      title: 'Content Creation',
-      description: 'Our experts work their magic, keeping you updated throughout the process.',
+      title: 'Partnership Activation',
+      description: 'We handle outreach, negotiations, and campaign management while keeping you updated.',
       icon: Zap
     },
     {
       step: '04',
-      title: 'Review & Deliver',
-      description: 'We refine based on your feedback and deliver the final polished content.',
+      title: 'Reporting & Growth',
+      description: 'We deliver performance reports, insights, and next steps to maximize ROI and long-term growth.',
       icon: Award
     }
   ];
 
   const guarantees = [
     {
-      title: '48-Hour Turnaround',
-      description: 'Quick delivery without compromising quality',
+      title: 'Consistent Opportunities',
+      description: 'A reliable pipeline of brand partnerships tailored to your niche.',
       icon: Clock
     },
     {
-      title: 'Satisfaction Guarantee',
-      description: 'Unlimited revisions until you\'re 100% happy',
+      title: 'Creator-First Approach',
+      description: 'You always have the final say on deals — we protect your reputation and audience trust.',
       icon: Shield
     },
     {
-      title: 'Professional Quality',
-      description: 'Industry-standard tools and techniques',
+      title: 'Proven Results',
+      description: 'Daily analytics, strategic consulting, and measurable ROI from every campaign.',
       icon: Award
     }
   ];
@@ -54,12 +54,12 @@ export default function ServicesPage() {
         <div className="container-max">
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-baloo2 font-bold text-white mb-6">
-              Professional Services for 
-              <span className="text-primary-orange"> Content Creators</span>
+              Strategic Services for 
+              <span className="text-primary-orange"> Creators</span>
             </h1>
             <p className="text-xl text-text-gray mb-8 leading-relaxed">
-              From cutting-edge video editing to strategic brand partnerships, we provide comprehensive solutions 
-              that help you create outstanding content and grow your audience.
+              From sponsorship outreach and deal management to growth strategy and community support, 
+              we provide everything you need to secure partnerships, save time, and scale your channel with confidence.
             </p>
             <a href="/contact" className="btn-primary inline-flex items-center space-x-2">
               <span>Get Started Today</span>
@@ -80,7 +80,7 @@ export default function ServicesPage() {
               Our Process
             </h2>
             <p className="text-xl text-text-gray max-w-3xl mx-auto">
-              We follow a proven 4-step process to ensure your project exceeds expectations every time.
+              A clear 4‑step framework that ensures every sponsorship and partnership is efficient, transparent, and ROI‑focused.
             </p>
           </div>
 
@@ -111,7 +111,7 @@ export default function ServicesPage() {
               Our Guarantees
             </h2>
             <p className="text-xl text-text-gray max-w-3xl mx-auto">
-              We stand behind our work with industry-leading guarantees that give you peace of mind.
+              We stand behind our work with creator‑first guarantees that give you peace of mind and protect your growth.
             </p>
           </div>
 
@@ -134,18 +134,19 @@ export default function ServicesPage() {
         <div className="container-max">
           <div className="bg-card-gradient rounded-2xl p-8 md:p-12 text-center animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-baloo2 font-bold text-white mb-4">
-              Ready to Transform Your Content?
+              Ready to Unlock Sponsorships?
             </h2>
             <p className="text-xl text-text-gray mb-8 max-w-2xl mx-auto">
-              Join hundreds of successful creators who trust us with their content. Let's discuss your project today.
+              Join creators who are landing brand deals, saving time, and building sustainable growth with Fruit. 
+              Let’s design your sponsorship strategy together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contact" className="btn-primary inline-flex items-center space-x-2">
-                <span>Start Your Project</span>
+                <span>Start Your Journey</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
               {/* <a href="/portfolio" className="btn-outline inline-flex items-center space-x-2">
-                <span>View Our Work</span>
+                <span>See Success Stories</span>
               </a> */}
             </div>
           </div>
