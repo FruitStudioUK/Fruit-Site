@@ -1,4 +1,4 @@
-import { Contact } from '@/components/Support';
+import { Contact } from '@/components/ContactBrand';
 import { MessageCircle, Calendar, Headphones } from 'lucide-react';
 
 export default function ContactPage() {
