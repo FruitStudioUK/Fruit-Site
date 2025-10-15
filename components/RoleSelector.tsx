@@ -1,28 +1,25 @@
-'use client';
+"use client";
 
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 
 export default function RoleSelector() {
   const router = useRouter();
 
-  const handleSelect = (role: 'creator' | 'brand') => {
-    localStorage.setItem('userRole', role);
+  const handleSelect = (role: "creator" | "brand") => {
+    localStorage.setItem("userRole", role);
 
-    if (role === 'brand') {
-      router.push('/dashboard');
+    if (role === "brand") {
+      router.push("/dashboard"); // brand home
     } else {
-      router.push('/creator');
+      router.push("/"); // creator home
     }
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center h-screen gap-8">
-      <button onClick={() => handleSelect('creator')} className="btn-primary">
-        I'm a Creator
-      </button>
-      <button onClick={() => handleSelect('brand')} className="btn-secondary">
-        I'm a Brand
-      </button>
+    <div style={{ textAlign: "center", marginTop: "100px" }}>
+      <h2>Who are you?</h2>
+      <button onClick={() => handleSelect("creator")}>I'm a Creator</button>
+      <button onClick={() => handleSelect("brand")}>I'm a Brand</button>
     </div>
   );
 }
