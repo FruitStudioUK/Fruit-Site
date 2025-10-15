@@ -1,29 +1,23 @@
 import { Contact } from '@/components/ContactBrand';
-import { MessageCircle, Calendar, Headphones } from 'lucide-react';
+import { MessageCircle, Calendar } from 'lucide-react';
 
 export default function ContactPage() {
   const contactOptions = [
     {
       title: 'Quick Quote',
-      description: 'Get a personalized quote for your project within 24 hours.',
+      description: 'Get a tailored campaign quote within 24 hours — with 0% management fees on your first campaign.',
       icon: MessageCircle,
       action: 'Get Quote',
-      color: 'primary-orange'
+      color: 'secondary-green'
     },
     {
       title: 'Schedule Call',
-      description: 'Book a free 30-minute consultation to discuss your needs.',
+      description: 'Book a free 30‑minute consultation to explore how Fruit can deliver ROI for your brand.',
       icon: Calendar,
       action: 'Book Call',
-      color: 'secondary-green'
+      color: 'primary-orange'
     },
-    {/* {
-      title: 'Live Chat',
-      description: 'Chat with our team instantly for immediate assistance.',
-      icon: Headphones,
-      action: 'Start Chat',
-      color: 'sub-background'
-    } */}
+    // Live Chat option can be re‑enabled later if needed
   ];
 
   return (
@@ -33,12 +27,12 @@ export default function ContactPage() {
         <div className="container-max">
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-baloo2 font-bold text-white mb-6">
-              Let's Create Something 
-              <span className="text-primary-orange"> Amazing Together</span>
+              Dedicated <span className="text-secondary-green">Support for Brands</span>
             </h1>
             <p className="text-xl text-text-gray mb-8 leading-relaxed">
-              Ready to transform your content and unlock new opportunities? We're here to help you every step of the way. 
-              Choose the best way to connect with our team.
+              Partner with Fruit and unlock campaigns designed for measurable impact. 
+              Enjoy 0% management fees on your first campaign, 24/7 communication, and daily analytical reports 
+              — all backed by our creators and proven ROI‑driven strategies.
             </p>
           </div>
         </div>
@@ -75,35 +69,35 @@ export default function ContactPage() {
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-text-gray max-w-3xl mx-auto">
-              Get quick answers to common questions about our services and process.
+              Everything brands need to know about working with Fruit and running successful campaigns.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                question: 'How long does a typical project take?',
-                answer: 'Most editing projects are completed within 24-48 hours. Brand partnerships can take 1-2 weeks depending on complexity.'
+                question: 'What makes Fruit different for brands?',
+                answer: 'We offer 0% management fees on your first campaign and 0% fees on your first deal. You also get daily analytical reports, 24/7 communication, and guaranteed ROI‑driven deliverables like a free pinned YouTube comment.'
               },
               {
-                question: 'What formats do you work with?',
-                answer: 'We work with all major video formats including 4K, 8K, and support all social media platforms and their specific requirements.'
+                question: 'How quickly can a campaign go live?',
+                answer: 'Most campaigns can be launched within 1–2 weeks depending on scope. Our streamlined process and dedicated support ensure fast turnaround without compromising quality.'
               },
               {
-                question: 'Do you offer revisions?',
-                answer: 'Yes! We offer unlimited revisions until you\'re completely satisfied with the final result.'
+                question: 'What kind of creators do you provide?',
+                answer: 'We match you with vetted creators who align with your brand. For example, your first campaign includes 1 Tech Creator and 1 high‑quality video as part of our USP.'
               },
               {
-                question: 'How do brand partnerships work?',
-                answer: 'We connect you with brands that align with your content and audience, handle negotiations, and ensure fair compensation.'
+                question: 'How do you measure ROI?',
+                answer: 'We provide daily analytical reports covering reach, engagement, and conversions. Our pinned YouTube comment strategy further boosts ROI by driving traffic and visibility.'
               },
               {
-                question: 'What\'s included in your pricing?',
-                answer: 'Our pricing includes all editing work, revisions, and project management. Brand partnerships are commission-based.'
+                question: 'What’s included in your pricing?',
+                answer: 'Transparent pricing covers campaign management, creator deliverables, and reporting. With no hidden fees, you only pay for results — and your first campaign has 0% management fees.'
               },
               {
-                question: 'Can you help with content strategy?',
-                answer: 'Absolutely! We provide strategic advice on content planning, audience growth, and platform optimization.'
+                question: 'Do you offer ongoing support?',
+                answer: 'Yes. Our team is available 24/7 to answer questions, adjust campaigns, and ensure your brand gets maximum value from every partnership.'
               }
             ].map((faq, index) => (
               <div key={index} className="card animate-slide-up" style={{animationDelay: `${index * 0.1}s`}}>
