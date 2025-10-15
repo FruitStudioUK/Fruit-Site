@@ -11,9 +11,9 @@ export default function RoleSelector() {
 
     // redirect based on role
     if (role === "brand") {
-      router.push("/brand/home");
+      router.push("/dashboard");
     } else {
-      router.push("/creator/home");
+      router.push("/");
     }
   };
 
