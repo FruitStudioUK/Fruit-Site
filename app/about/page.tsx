@@ -2,31 +2,31 @@ import { Award, Users, Target, Heart, ArrowRight } from 'lucide-react';
 
 export default function AboutPage() {
   const stats = [
-    { number: '50+', label: 'Happy Creators', icon: Users },
-    { number: '2M+', label: 'Views Generated', icon: Target },
+    { number: '50+', label: 'Creators Supported', icon: Users },
+    { number: '2M+', label: 'Campaign Views Delivered', icon: Target },
     { number: '97%', label: 'Satisfaction Rate', icon: Award },
-    { number: '3', label: 'Years Experience', icon: Heart }
+    { number: '3', label: 'Years Building Partnerships', icon: Heart }
   ];
 
   const values = [
     {
-      title: 'Creativity First',
-      description: 'We believe every creator has a unique voice that deserves to be heard and amplified.',
+      title: 'Creator-First',
+      description: 'Every creator deserves fair opportunities, strong partnerships, and the freedom to grow on their own terms.',
       icon: Heart
     },
     {
-      title: 'Quality Excellence',
-      description: 'We never compromise on quality, ensuring every project meets the highest standards.',
+      title: 'Excellence Always',
+      description: 'From negotiations to reporting, we hold ourselves to the highest standards to protect your reputation and results.',
       icon: Award
     },
     {
       title: 'Authentic Partnerships',
-      description: 'We focus on building genuine relationships between creators and brands that align with their values.',
+      description: 'We connect creators with brands that align with their values, ensuring collaborations feel natural and impactful.',
       icon: Users
     },
     {
       title: 'Growth-Focused',
-      description: 'Our strategies are designed to help creators build sustainable, long-term success.',
+      description: 'Our strategies are designed to unlock new revenue, scale your influence, and build long-term sustainability.',
       icon: Target
     }
   ];
@@ -40,21 +40,21 @@ export default function AboutPage() {
             <div className="animate-slide-in-left">
               <h1 className="text-4xl md:text-6xl font-baloo2 font-bold text-white mb-6">
                 Empowering Creators to 
-                <span className="text-primary-orange"> Reach New Heights</span>
+                <span className="text-primary-orange"> Build Lasting Partnerships</span>
               </h1>
               <p className="text-xl text-text-gray mb-8 leading-relaxed">
-                We're passionate about helping content creators transform their vision into compelling content 
-                that resonates with audiences and builds meaningful connections with brands.
+                We help creators secure sponsorships, manage brand deals, and grow their channels with confidence. 
+                From outreach and negotiations to strategic consulting and community support, Fruit is your partner in long-term success.
               </p>
               <a href="/contact" className="btn-primary inline-flex items-center space-x-2">
-                <span>Work With Us</span>
+                <span>Join Us</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
             <div className="animate-slide-in-right">
               <img 
                 src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                alt="Creative team working on content"
+                alt="Creators collaborating with brands"
                 className="w-full h-96 lg:h-[500px] object-cover rounded-2xl shadow-2xl"
               />
             </div>
@@ -95,13 +95,10 @@ export default function AboutPage() {
                 Our Mission
               </h2>
               <p className="text-xl text-text-gray mb-6 leading-relaxed">
-                To democratize content creation by providing professional-grade editing services and strategic 
-                brand partnerships that enable creators of all sizes to compete at the highest level.
+                To level the playing field for creators by giving them access to sponsorships, strategic guidance, and a supportive community — so they can focus on creating while we handle the business side.
               </p>
               <p className="text-lg text-text-gray leading-relaxed">
-                We believe that great content should be accessible to everyone, regardless of budget or technical expertise. 
-                That's why we've built a platform that combines cutting-edge technology with human creativity to deliver 
-                results that exceed expectations.
+                We believe creators should spend less time chasing emails and more time doing what they love. That’s why we provide outreach, deal management, consulting, and growth tools that save time and unlock new opportunities.
               </p>
             </div>
           </div>
@@ -116,7 +113,7 @@ export default function AboutPage() {
               Our Values
             </h2>
             <p className="text-xl text-text-gray max-w-3xl mx-auto">
-              The principles that guide everything we do and shape how we work with creators and brands.
+              The principles that guide how we support creators and build partnerships that last.
             </p>
           </div>
 
@@ -134,7 +131,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
+            {/* Team Section */}
       <section className="section-padding bg-primary-dark">
         <div className="container-max">
           <div className="text-center mb-16 animate-fade-in">
@@ -142,7 +139,8 @@ export default function AboutPage() {
               Meet Our Team
             </h2>
             <p className="text-xl text-text-gray max-w-3xl mx-auto">
-              A passionate group of creators, editors, and strategists dedicated to your success.
+              A dedicated group of strategists, partnership managers, and growth specialists 
+              committed to helping creators secure sponsorships and build sustainable careers.
             </p>
           </div>
 
@@ -152,22 +150,26 @@ export default function AboutPage() {
                 name: 'Daniel Rose',
                 role: 'Creator Manager & Community Lead',
                 image: 'https://i.postimg.cc/kGTvt3tY/Untitled-design-4.png',
-                bio: 'Former Marketing & Sales Director with 8+ years of experience in creator and brand management.'
+                bio: 'Experienced in guiding creators through sponsorship outreach, negotiations, and community building.'
               },
               {
                 name: 'Dev Buchiti',
                 role: 'Brand Partnerships Lead',
                 image: 'https://i.postimg.cc/J4wkPhR3/image-2025-08-15-143606477.png',
-                bio: 'Ex-Social Media partnerships manager who has facilitated $1M+ in brand collaborations.'
+                bio: 'Specialist in connecting creators with aligned brands and managing high‑value collaborations.'
               },
               {
                 name: 'Emily Taylor',
-                role: 'Senior Video Editor',
+                role: 'Creator Growth Strategist',
                 image: 'https://i.postimg.cc/KzMYMnk6/image-2024-08-19-181207250.png',
-                bio: 'Award-winning editor specializing in viral content and social media optimization.'
+                bio: 'Focused on creator growth, campaign strategy, and ensuring long‑term brand fit for partnerships.'
               }
             ].map((member, index) => (
-              <div key={index} className="card text-center hover:scale-105 transition-all duration-300 animate-slide-up" style={{animationDelay: `${index * 0.2}s`}}>
+              <div
+                key={index}
+                className="card text-center hover:scale-105 transition-all duration-300 animate-slide-up"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
                 <img 
                   src={member.image} 
                   alt={member.name}
@@ -187,18 +189,19 @@ export default function AboutPage() {
         <div className="container-max">
           <div className="bg-card-gradient rounded-2xl p-8 md:p-12 text-center animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-baloo2 font-bold text-white mb-4">
-              Ready to Start Your Journey?
+              Ready to Grow With Us?
             </h2>
             <p className="text-xl text-text-gray mb-8 max-w-2xl mx-auto">
-              Join our community of successful creators and let's build something amazing together.
+              Join a community of creators who are landing sponsorships, saving time, 
+              and building long‑term partnerships with the support of Fruit.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contact" className="btn-primary inline-flex items-center space-x-2">
                 <span>Get Started</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
-              {/*  <a href="/portfolio" className="btn-outline inline-flex items-center space-x-2">
-                <span>View Portfolio</span> 
+              {/* <a href="/portfolio" className="btn-outline inline-flex items-center space-x-2">
+                <span>See Success Stories</span> 
               </a> */}
             </div>
           </div>
