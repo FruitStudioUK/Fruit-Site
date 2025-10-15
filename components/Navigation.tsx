@@ -61,7 +61,6 @@ export function Navigation({ className = "" }: NavigationProps) {
   alt="logo"
   width={80}
   height={80}
-  priority
   unoptimized
   className="rounded-lg"
 />
