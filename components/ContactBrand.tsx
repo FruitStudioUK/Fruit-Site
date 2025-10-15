@@ -49,8 +49,8 @@ export function Contact() {
             Get In Touch
           </h2>
           <p className="text-xl text-text-gray max-w-3xl mx-auto">
-            Ready to transform your content? Let&apos;s discuss your project and
-            create something amazing together.
+            Ready to boost your brand? Let&apos;s discuss your project and
+            perfect your campaign together.
           </p>
         </div>
 
@@ -62,9 +62,9 @@ export function Contact() {
                 Let&apos;s Start a Conversation
               </h3>
               <p className="text-text-gray leading-relaxed mb-8">
-                Whether you&apos;re looking for professional creative services
-                or want to explore brand partnership opportunities, we&apos;re
-                here to help you take your content to the next level.
+                Whether you&apos;re looking for some marketing advice
+                or want to find your perfect creators, we&apos;re
+                here to help you level up your brand's audience.
               </p>
             </div>
 
@@ -196,11 +196,11 @@ export function Contact() {
                     className="w-full px-4 py-3 bg-sub-background/30 border border-sub-background/50 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-secondary-green focus:border-transparent transition-all duration-300"
                   >
                     <option value="">Select a service</option>
-                    <option value="video-editing">Video Editing</option>
-                    <option value="audio-enhancement">Audio Enhancement</option>
-                    <option value="color-correction">Color Correction</option>
+                    <option value="video-editing">Brand Consulation</option>
+                    <option value="audio-enhancement">Influencer Marketing</option>
+                    <option value="color-correction">Campaign Engineering</option>
                     <option value="brand-partnerships">
-                      Brand Partnerships
+                      Creator Showcase
                     </option>
                     <option value="growth-strategy">Growth Strategy</option>
                     <option value="full-package">Full Package</option>
