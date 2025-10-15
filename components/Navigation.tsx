@@ -55,7 +55,7 @@ export function Navigation({ className = "" }: NavigationProps) {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="w-20 h-20 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <div className="w-20 h-20 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300 animate-fade-in-delayed">
               <Image
   src={Logo}
   alt="logo"
