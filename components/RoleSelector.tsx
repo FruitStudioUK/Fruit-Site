@@ -6,14 +6,12 @@ export default function RoleSelector() {
   const router = useRouter();
 
   const handleSelect = (role: "creator" | "brand") => {
-    // persist role if you want to read it later
     localStorage.setItem("userRole", role);
 
-    // redirect based on role
     if (role === "brand") {
-      router.push("/dashboard");
+      router.push("/dashboard"); // brand home
     } else {
-      router.push("/");
+      router.push("/"); // creator home
     }
   };
 
