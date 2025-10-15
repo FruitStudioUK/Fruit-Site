@@ -88,29 +88,41 @@ export function Navigation({ className = "" }: NavigationProps) {
             ))}
 
             {/* Role Switch */}
-            <div className="flex items-center bg-sub-background rounded-full p-1">
-              <button
-                onClick={() => setRole("creator")}
-                className={`flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
-                  role === "creator"
-                    ? "bg-primary-orange text-white"
-                    : "text-text-gray hover:text-primary-orange"
-                }`}
-              >
-                Creator
-              </button>
-              <button
-                onClick={() => setRole("brand")}
-                className={`flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
-                  role === "brand"
-                    ? "bg-primary-green text-white"
-                    : "text-text-gray hover:text-primary-green"
-                }`}
-              >
-                Brand
-              </button>
-            </div>
-          </div>
+            <div className="flex relative bg-sub-background rounded-full p-1 w-48">
+  {/* Sliding highlight */}
+  <span
+    className={`absolute top-1 bottom-1 w-1/2 rounded-full transition-all duration-300 ${
+      role === "creator"
+        ? "left-1 bg-primary-orange"
+        : "left-1/2 bg-primary-green"
+    }`}
+  />
+
+  {/* Creator button */}
+  <button
+    onClick={() => setRole("creator")}
+    className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
+      role === "creator"
+        ? "text-white"
+        : "text-text-gray hover:text-primary-orange"
+    }`}
+  >
+    Creator
+  </button>
+
+  {/* Brand button */}
+  <button
+    onClick={() => setRole("brand")}
+    className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
+      role === "brand"
+        ? "text-white"
+        : "text-text-gray hover:text-primary-green"
+    }`}
+  >
+    Brand
+  </button>
+</div>
+
 
           {/* CTA Button */}
           <div className="hidden md:block">
