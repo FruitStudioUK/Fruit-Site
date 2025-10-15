@@ -10,21 +10,20 @@ import {
   User,
   Mail,
   Briefcase,
-  RefreshCcw,
 } from "lucide-react";
 import Image from "next/image";
 import Logo from "../app/images/logo.png";
 import { useRole } from "@/context/RoleContext";
 
 type NavigationProps = {
-  className?: string; // ✅ allow external classes
+  className?: string;
 };
 
 export function Navigation({ className = "" }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
-  const { setRole } = useRole();
+  const { role, setRole } = useRole(); // ✅ include role here
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,15 +56,13 @@ export function Navigation({ className = "" }: NavigationProps) {
           <Link href="/" className="flex items-center space-x-2 group">
             <div className="w-20 h-20 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300 animate-fade-in-delayed">
               <Image
-  src={Logo}
-  alt="logo"
-  width={80}
-  height={80}
-  priority
-  placeholder="blur"
-  className="rounded-lg"
-/>
-
+                src={Logo}
+                alt="logo"
+                width={80}
+                height={80}
+                priority
+                className="rounded-lg"
+              />
               <Video className="w-6 h-6 text-white" />
             </div>
             <span className="text-2xl font-baloo2 font-bold text-white">
@@ -91,29 +88,29 @@ export function Navigation({ className = "" }: NavigationProps) {
             ))}
 
             {/* Role Switch */}
-<div className="flex items-center bg-sub-background rounded-full p-1">
-  <button
-    onClick={() => setRole("creator")}
-    className={`flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
-      role === "creator"
-        ? "bg-primary-orange text-white"
-        : "text-text-gray hover:text-primary-orange"
-    }`}
-  >
-    Creator
-  </button>
-  <button
-    onClick={() => setRole("brand")}
-    className={`flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
-      role === "brand"
-        ? "bg-primary-green text-white"
-        : "text-text-gray hover:text-primary-green"
-    }`}
-  >
-    Brand
-  </button>
-</div>
-
+            <div className="flex items-center bg-sub-background rounded-full p-1">
+              <button
+                onClick={() => setRole("creator")}
+                className={`flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
+                  role === "creator"
+                    ? "bg-primary-orange text-white"
+                    : "text-text-gray hover:text-primary-orange"
+                }`}
+              >
+                Creator
+              </button>
+              <button
+                onClick={() => setRole("brand")}
+                className={`flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
+                  role === "brand"
+                    ? "bg-primary-green text-white"
+                    : "text-text-gray hover:text-primary-green"
+                }`}
+              >
+                Brand
+              </button>
+            </div>
+          </div>
 
           {/* CTA Button */}
           <div className="hidden md:block">
@@ -152,38 +149,37 @@ export function Navigation({ className = "" }: NavigationProps) {
                 </Link>
               ))}
 
-              {/* Switch Role Button (Mobile) */}
+              {/* Role Switch (Mobile) */}
               <div className="px-4">
-  <div className="flex bg-sub-background rounded-full p-1">
-    <button
-      onClick={() => {
-        setRole("creator");
-        setIsOpen(false);
-      }}
-      className={`flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
-        role === "creator"
-          ? "bg-primary-orange text-white"
-          : "text-text-gray hover:text-primary-orange"
-      }`}
-    >
-      Creator
-    </button>
-    <button
-      onClick={() => {
-        setRole("brand");
-        setIsOpen(false);
-      }}
-      className={`flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
-        role === "brand"
-          ? "bg-primary-green text-white"
-          : "text-text-gray hover:text-primary-green"
-      }`}
-    >
-      Brand
-    </button>
-  </div>
-</div>
-
+                <div className="flex bg-sub-background rounded-full p-1">
+                  <button
+                    onClick={() => {
+                      setRole("creator");
+                      setIsOpen(false);
+                    }}
+                    className={`flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
+                      role === "creator"
+                        ? "bg-primary-orange text-white"
+                        : "text-text-gray hover:text-primary-orange"
+                    }`}
+                  >
+                    Creator
+                  </button>
+                  <button
+                    onClick={() => {
+                      setRole("brand");
+                      setIsOpen(false);
+                    }}
+                    className={`flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
+                      role === "brand"
+                        ? "bg-primary-green text-white"
+                        : "text-text-gray hover:text-primary-green"
+                    }`}
+                  >
+                    Brand
+                  </button>
+                </div>
+              </div>
 
               <div className="px-4 pt-2">
                 <Link
