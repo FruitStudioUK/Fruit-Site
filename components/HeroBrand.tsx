@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Play, Star, Users, Award } from "lucide-react";
 
 export function Hero() {
-  const { role } = useRole(); 
+  const { role } = useRole();
   return (
     <section className="relative min-h-screen bg-primary-dark flex items-center overflow-hidden">
       {/* Background Elements */}
