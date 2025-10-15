@@ -4,16 +4,6 @@ import { ArrowRight, Play, Star, Users, Award } from "lucide-react";
 export function Hero() {
   return (
     <section className="relative min-h-screen bg-primary-dark flex items-center overflow-hidden">
-      {/* Background Elements */}
-      {/*{<div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary-orange rounded-full blur-3xl animate-float"></div>
-        <div
-          className="absolute bottom-20 right-10 w-96 h-96 bg-secondary-green rounded-full blur-3xl animate-float"
-          style={{ animationDelay: "2s" }}
-        ></div>
-      </div>
-        */}
-
       <div className="container-max section-padding relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -26,13 +16,15 @@ export function Hero() {
                 </span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-baloo2 font-bold text-white leading-tight">
-                Transform Your Content,
-                <span className="text-primary-orange"> Amplify Your Reach</span>
+                Land Sponsorships,
+                <span className="text-primary-orange"> Grow Without Limits</span>
               </h1>
               <p className="text-xl text-text-gray leading-relaxed max-w-2xl">
-                Professional creative services and strategic brand partnerships
-                that help content creators build their audience, enhance their
-                content, and monetize their passion.
+                We connect creators with the right brands, manage negotiations,
+                and build lasting partnerships — while you focus on creating.
+                From guaranteed brand pipelines to strategic consulting and
+                community support, Fruit helps you unlock new revenue and
+                long‑term growth.
               </p>
             </div>
 
@@ -42,7 +34,7 @@ export function Hero() {
                 href="/contact"
                 className="btn-primary inline-flex items-center space-x-2"
               >
-                <span>Get Started Today</span>
+                <span>Join Us Today</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
@@ -50,7 +42,7 @@ export function Hero() {
                 className="btn-outline inline-flex items-center space-x-2"
               >
                 <Play className="w-5 h-5" />
-                <span>View Our Work</span>
+                <span>See Creator Success</span>
               </Link>
             </div>
 
@@ -60,13 +52,13 @@ export function Hero() {
                 <div className="text-3xl font-baloo2 font-bold text-primary-orange">
                   50+
                 </div>
-                <div className="text-text-gray text-sm">Happy Creators</div>
+                <div className="text-text-gray text-sm">Creators Supported</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-baloo2 font-bold text-secondary-green">
                   2M+
                 </div>
-                <div className="text-text-gray text-sm">Views Generated</div>
+                <div className="text-text-gray text-sm">Campaign Views</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-baloo2 font-bold text-white">
@@ -82,7 +74,7 @@ export function Hero() {
             <div className="relative z-10">
               <img
                 src="https://cdn.pixabay.com/photo/2017/06/22/08/59/editing-2430030_1280.jpg"
-                alt="Content creator working with professional editing setup"
+                alt="Creator collaborating with brand partners"
                 className="w-full h-96 lg:h-[500px] object-cover rounded-2xl shadow-2xl"
               />
 
@@ -94,10 +86,10 @@ export function Hero() {
                   </div>
                   <div>
                     <div className="text-white font-semibold">
-                      Premium Quality
+                      Strategic Support
                     </div>
                     <div className="text-text-gray text-sm">
-                      Professional Results
+                      Consulting & Reports
                     </div>
                   </div>
                 </div>
@@ -116,13 +108,12 @@ export function Hero() {
                       Brand Partnerships
                     </div>
                     <div className="text-text-gray text-sm">
-                      Grow Your Revenue
+                      Unlock New Revenue
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
             {/* Background decoration */}
           </div>
         </div>
