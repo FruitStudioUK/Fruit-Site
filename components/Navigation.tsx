@@ -79,10 +79,15 @@ export function Navigation({ className = "" }: NavigationProps) {
                 key={href}
                 href={href}
                 className={`flex items-center space-x-1 px-3 py-2 rounded-lg transition-all duration-300 hover:bg-sub-background/20 ${
-                  isActive(href)
-                    ? "text-primary-orange bg-sub-background/20"
-                    : "text-white hover:text-primary-orange"
-                }`}
+  isActive(href)
+    ? role === "creator"
+      ? "text-primary-orange bg-sub-background/20"
+      : "text-secondary-green bg-sub-background/20"
+    : role === "creator"
+      ? "text-white hover:text-primary-orange"
+      : "text-white hover:text-secondary-green"
+}`}
+
               >
                 <Icon className="w-4 h-4" />
                 <span className="font-medium">{label}</span>
