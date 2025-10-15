@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Logo from "../app/images/logo.png"; // adjust path if needed
+import Logo from "../app/images/logo.png";
 import Link from "next/link";
 import { Mail, Phone, MapPin, Instagram } from "lucide-react";
+import { useRole } from "@/context/RoleContext";
 
 type FooterProps = {
   className?: string;
@@ -11,6 +12,45 @@ type FooterProps = {
 
 export function Footer({ className = "" }: FooterProps) {
   const currentYear = new Date().getFullYear();
+  const { role } = useRole();
+
+  // Role‑specific content
+  const tagline =
+    role === "creator"
+      ? "Empowering content creators with professional creative services and meaningful brand partnerships."
+      : "Helping brands connect with creators through impactful campaigns and strategic partnerships.";
+
+  const quickLinks =
+    role === "creator"
+      ? [
+          { href: "/", label: "Home" },
+          { href: "/services", label: "Services" },
+          { href: "/about", label: "About" },
+          { href: "/contact", label: "Contact" },
+        ]
+      : [
+          { href: "/dashboard", label: "Dashboard" },
+          { href: "/campaigns", label: "Campaigns" },
+          { href: "/partners", label: "Partners" },
+          { href: "/support", label: "Support" },
+        ];
+
+  const services =
+    role === "creator"
+      ? [
+          "Video Editing",
+          "Audio Enhancement",
+          "Color Correction",
+          "Brand Partnerships",
+          "Content Strategy",
+        ]
+      : [
+          "Campaign Management",
+          "Influencer Discovery",
+          "Performance Analytics",
+          "Partnership Strategy",
+          "Creative Direction",
+        ];
 
   return (
     <footer
@@ -34,10 +74,7 @@ export function Footer({ className = "" }: FooterProps) {
                 fruit.
               </span>
             </div>
-            <p className="text-text-gray leading-relaxed">
-              Empowering content creators with professional creative services
-              and meaningful brand partnerships.
-            </p>
+            <p className="text-text-gray leading-relaxed">{tagline}</p>
             <div className="flex space-x-4">
               <a
                 href="https://www.instagram.com/fruit.uk"
@@ -54,38 +91,16 @@ export function Footer({ className = "" }: FooterProps) {
               Quick Links
             </h3>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/"
-                  className="text-text-gray hover:text-primary-orange transition-colors duration-300"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services"
-                  className="text-text-gray hover:text-primary-orange transition-colors duration-300"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="text-text-gray hover:text-primary-orange transition-colors duration-300"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-text-gray hover:text-primary-orange transition-colors duration-300"
-                >
-                  Contact
-                </Link>
-              </li>
+              {quickLinks.map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="text-text-gray hover:text-primary-orange transition-colors duration-300"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -95,11 +110,11 @@ export function Footer({ className = "" }: FooterProps) {
               Services
             </h3>
             <ul className="space-y-2">
-              <li><span className="text-text-gray">Video Editing</span></li>
-              <li><span className="text-text-gray">Audio Enhancement</span></li>
-              <li><span className="text-text-gray">Color Correction</span></li>
-              <li><span className="text-text-gray">Brand Partnerships</span></li>
-              <li><span className="text-text-gray">Content Strategy</span></li>
+              {services.map((service) => (
+                <li key={service}>
+                  <span className="text-text-gray">{service}</span>
+                </li>
+              ))}
             </ul>
           </div>
 
