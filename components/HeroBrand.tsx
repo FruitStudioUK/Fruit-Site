@@ -41,29 +41,23 @@ export function Hero() {
             {/* CTA Buttons */}
 <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
   <Link
-    href={role === "creator" ? "/contact" : "/support"}
-    className={`btn-primary inline-flex items-center space-x-2 ${
-      role === "creator"
-        ? "bg-primary-orange hover:bg-primary-orange/90"
-        : "bg-secondary-green hover:bg-secondary-green/90"
-    }`}
+    href="/support"
+    className="btn-primary inline-flex items-center space-x-2 bg-secondary-green hover:bg-secondary-green/90"
   >
-    <span>{role === "creator" ? "Get Started Today" : "Book a call"}</span>
+    <span>Book a call</span>
     <ArrowRight className="w-5 h-5" />
   </Link>
 
   <Link
     href="/portfolio"
-    className={`btn-outline inline-flex items-center space-x-2 ${
-      role === "creator"
-        ? "border-primary-orange text-primary-orange hover:bg-primary-orange/10"
-        : "border-secondary-green text-secondary-green hover:bg-secondary-green/10"
-    }`}
+    className="btn-outline inline-flex items-center space-x-2 border-secondary-green text-secondary-green hover:bg-secondary-green/10"
   >
     <Play className="w-5 h-5" />
     <span>View Our Work</span>
   </Link>
 </div>
+
+
 
 
             {/* Stats */}
@@ -93,7 +87,7 @@ export function Hero() {
           <div className="relative animate-slide-in-right">
             <div className="relative z-10">
               <img
-                src="https://cdn.pixabay.com/photo/2017/06/22/08/59/editing-2430030_1280.jpg"
+                src="https://i.postimg.cc/Gm1hpM6J/Whats-App-Image-2025-10-15-at-17-48-05-c7563f16.jpg"
                 alt="Content creator working with professional editing setup"
                 className="w-full h-96 lg:h-[500px] object-cover rounded-2xl shadow-2xl"
               />
@@ -101,7 +95,7 @@ export function Hero() {
               {/* Floating Cards */}
               <div className="absolute -top-6 -left-6 bg-sub-background/90 backdrop-blur-sm rounded-xl p-4 shadow-lg animate-float">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-secondary-green rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 bg-primary-orange rounded-lg flex items-center justify-center">
                     <Award className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -120,7 +114,7 @@ export function Hero() {
                 style={{ animationDelay: "1s" }}
               >
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-primary-orange rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 bg-secondary-green rounded-lg flex items-center justify-center">
                     <Users className="w-5 h-5 text-white" />
                   </div>
                   <div>
