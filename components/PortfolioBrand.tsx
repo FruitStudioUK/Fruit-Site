@@ -7,90 +7,89 @@ export function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const categories = [
-    { id: "all", label: "All Projects" },
+    { id: "all", label: "All Campaigns" },
     { id: "youtube", label: "YouTube" },
     { id: "tiktok", label: "TikTok" },
     { id: "instagram", label: "Instagram" },
-    { id: "brand", label: "Brand Partnerships" },
   ];
 
   const projects = [
     {
       id: 1,
-      title: "Travel Vlogger Series",
+      title: "How Hogswatch Reached $4.58 CPM",
       category: "youtube",
       image:
-        "https://images.pexels.com/photos/3617500/pexels-photo-3617500.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://cdn.pixabay.com/photo/2014/12/08/14/23/pocket-watch-560937_1280.jpg?auto=compress&cs=tinysrgb&w=800",
       views: "2.3M",
-      likes: "45K",
+      likes: "45K CTR",
       description:
-        "Epic travel documentary series with cinematic creative and stunning visuals.",
-      creator: "AdventureSeeker",
-      tags: ["Travel", "Documentary", "Cinematic"],
+        "One of our biggest campaigns ever",
+      creator: "Hogswatch",
+      tags: ["Luxury", "Watches", "Campaign"],
     },
     {
       id: 2,
-      title: "Cooking Tutorial Campaign",
-      category: "brand",
+      title: "KnifeLife - The Fastest Knife Seller in The UK",
+      category: "youtube",
       image:
-        "https://images.pexels.com/photos/4253302/pexels-photo-4253302.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://cdn.pixabay.com/photo/2021/02/15/17/12/bread-knife-6018548_1280.jpg?auto=compress&cs=tinysrgb&w=800",
       views: "1.8M",
-      likes: "32K",
+      likes: "32K CTR",
       description:
-        "Brand partnership campaign for kitchen appliances with engaging recipe content.",
-      creator: "FoodieChef",
-      tags: ["Cooking", "Brand Partnership", "Tutorial"],
+        "Brand partnership campaign for kitchen knives with engaging recipe content.",
+      creator: "KnifeLife",
+      tags: ["Cooking", "Brand Partnership", "Recipes"],
     },
     {
       id: 3,
-      title: "Fashion Lookbook",
+      title: "Fashiomister Went From $200 to $12000 a month (in 4 months)",
       category: "instagram",
       image:
-        "https://images.pexels.com/photos/5698857/pexels-photo-5698857.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://cdn.pixabay.com/photo/2016/11/22/21/57/apparel-1850804_1280.jpg?auto=compress&cs=tinysrgb&w=800",
       views: "890K",
-      likes: "28K",
+      likes: "28K CTR",
       description:
         "Stylish fashion content with dynamic transitions and color-matched aesthetics.",
-      creator: "StyleGuru",
+      creator: "Fashiomister",
       tags: ["Fashion", "Lifestyle", "Aesthetic"],
     },
     {
       id: 4,
-      title: "Tech Review Series",
+      title: "How Y1 Earbuds Sold 60% More Units Overnight",
       category: "youtube",
       image:
-        "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://cdn.pixabay.com/photo/2016/12/09/11/43/untie-earphone-1894727_960_720.jpg?auto=compress&cs=tinysrgb&w=800",
       views: "3.1M",
-      likes: "67K",
+      likes: "67K CTR",
       description:
         "Comprehensive tech reviews with detailed graphics and professional presentation.",
-      creator: "TechExpert",
+      creator: "Y1 Earbuds",
       tags: ["Technology", "Review", "Educational"],
     },
     {
       id: 5,
-      title: "Dance Challenge Compilation",
+      title: "DanceAcademyUAL Got More Sign Ups in 2 weeks Than in 8 Months",
       category: "tiktok",
       image:
-        "https://images.pexels.com/photos/3737094/pexels-photo-3737094.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://cdn.pixabay.com/photo/2016/11/22/21/43/agility-1850711_1280.jpg?auto=compress&cs=tinysrgb&w=800",
       views: "5.2M",
-      likes: "120K",
+      likes: "120K CTR",
       description:
         "Viral dance content with perfect beat synchronization and creative effects.",
-      creator: "DanceStar",
+      creator: "DanceAcademyUAL",
       tags: ["Dance", "Viral", "Entertainment"],
     },
     {
       id: 6,
-      title: "Fitness Brand Campaign",
+      title: "Fitboi Reached Top 10 Best-Selling Fitness Products in Europe",
       category: "brand",
       image:
-        "https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://cdn.pixabay.com/photo/2016/09/17/23/52/fitness-1677212_1280.jpg?auto=compress&cs=tinysrgb&w=800",
       views: "1.4M",
-      likes: "35K",
+      likes: "35K CTR",
       description:
         "Motivational fitness content created for major sportswear brand partnership.",
-      creator: "FitnessInfluencer",
+      creator: "Fitboi",
       tags: ["Fitness", "Brand Partnership", "Motivation"],
     },
   ];
@@ -105,11 +104,10 @@ export function Portfolio() {
       <div className="container-max">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-white mb-4">
-            Our Portfolio
+            Success Stories
           </h2>
           <p className="text-xl text-text-gray max-w-3xl mx-auto">
-            Showcasing our best work - from viral content to successful brand
-            partnerships that have helped creators reach millions.
+            Showcasing our best work - using viral content and in-depth marketing strategies we've helped brands reach millions.
           </p>
         </div>
 
@@ -121,7 +119,7 @@ export function Portfolio() {
               onClick={() => setSelectedCategory(category.id)}
               className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
                 selectedCategory === category.id
-                  ? "bg-primary-orange text-white shadow-lg"
+                  ? "bg-secondary-green text-white shadow-lg"
                   : "bg-sub-background/20 text-text-gray hover:bg-sub-background/40 hover:text-white"
               }`}
             >
