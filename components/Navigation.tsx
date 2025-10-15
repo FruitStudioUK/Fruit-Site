@@ -39,14 +39,14 @@ export function Navigation({ className = "" }: NavigationProps) {
     { href: "/", label: "Home", icon: Video },
     { href: "/services", label: "Services", icon: Briefcase },
     { href: "/about", label: "About", icon: User },
-    { href: "/contact", label: "Contact", icon: Mail },
+    { href: "/contact", label: "Join Us", icon: Mail },
   ];
 
   const brandNavItems = [
-    { href: "/dashboard", label: "Dashboard", icon: Video },
-    { href: "/campaigns", label: "Campaigns", icon: Briefcase },
-    { href: "/partners", label: "Partners", icon: User },
-    { href: "/support", label: "Support", icon: Mail },
+    { href: "/dashboard", label: "Overview", icon: Video },
+    { href: "/campaigns", label: "Benefits", icon: Briefcase },
+    { href: "/partners", label: "About Us", icon: User },
+    { href: "/support", label: "Partner Support", icon: Mail },
   ];
 
   const navItems = role === "creator" ? creatorNavItems : brandNavItems;
