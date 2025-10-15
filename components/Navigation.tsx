@@ -24,12 +24,23 @@ export function Navigation({ className = "" }: NavigationProps) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = [
+  // Two sets of nav items
+  const creatorNavItems = [
     { href: "/", label: "Home", icon: Video },
     { href: "/services", label: "Services", icon: Briefcase },
     { href: "/about", label: "About", icon: User },
     { href: "/contact", label: "Contact", icon: Mail },
   ];
+
+  const brandNavItems = [
+    { href: "/", label: "Dashboard", icon: Video },
+    { href: "/campaigns", label: "Campaigns", icon: Briefcase },
+    { href: "/partners", label: "Partners", icon: User },
+    { href: "/support", label: "Support", icon: Mail },
+  ];
+
+  // Pick which set to use
+  const navItems = role === "creator" ? creatorNavItems : brandNavItems;
 
   const isActive = (href: string) => pathname === href;
 
