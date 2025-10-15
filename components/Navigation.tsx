@@ -25,15 +25,15 @@ export function Navigation({ className = "" }: NavigationProps) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Redirect whenever role changes (including first selection)
-  useEffect(() => {
-    if (role === "brand" && pathname !== "/dashboard") {
+  // Redirect only when role is explicitly changed
+  const handleRoleChange = (newRole: "creator" | "brand") => {
+    setRole(newRole);
+    if (newRole === "creator") {
+      router.push("/");
+    } else {
       router.push("/dashboard");
     }
-    if (role === "creator" && pathname !== "/") {
-      router.push("/");
-    }
-  }, [role, pathname, router]);
+  };
 
   const creatorNavItems = [
     { href: "/", label: "Home", icon: Video },
@@ -108,7 +108,7 @@ export function Navigation({ className = "" }: NavigationProps) {
                   ${role === "creator" ? "left-1 bg-primary-orange" : "right-1 bg-secondary-green"}`}
               />
               <button
-                onClick={() => setRole("creator")}
+                onClick={() => handleRoleChange("creator")}
                 className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
                   role === "creator" ? "text-white" : "text-text-gray"
                 }`}
@@ -116,7 +116,7 @@ export function Navigation({ className = "" }: NavigationProps) {
                 Creator
               </button>
               <button
-                onClick={() => setRole("brand")}
+                onClick={() => handleRoleChange("brand")}
                 className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
                   role === "brand" ? "text-white" : "text-text-gray"
                 }`}
@@ -183,7 +183,7 @@ export function Navigation({ className = "" }: NavigationProps) {
                   />
                   <button
                     onClick={() => {
-                      setRole("creator");
+                      handleRoleChange("creator");
                       setIsOpen(false);
                     }}
                     className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
@@ -194,7 +194,7 @@ export function Navigation({ className = "" }: NavigationProps) {
                   </button>
                   <button
                     onClick={() => {
-                      setRole("brand");
+                      handleRoleChange("brand");
                       setIsOpen(false);
                     }}
                     className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
@@ -225,4 +225,4 @@ export function Navigation({ className = "" }: NavigationProps) {
       </div>
     </nav>
   );
-} 
+}
