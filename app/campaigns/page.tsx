@@ -55,13 +55,13 @@ export default function ServicesPage() {
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-baloo2 font-bold text-white mb-6">
               Professional Services for 
-              <span className="text-primary-orange"> Content Creators</span>
+              <span className="text-secondary-green"> Content Creators</span>
             </h1>
             <p className="text-xl text-text-gray mb-8 leading-relaxed">
               From cutting-edge video editing to strategic brand partnerships, we provide comprehensive solutions 
               that help you create outstanding content and grow your audience.
             </p>
-            <a href="/contact" className="btn-primary inline-flex items-center space-x-2">
+            <a href="/contact" className="btn-secondary inline-flex items-center space-x-2">
               <span>Get Started Today</span>
               <ArrowRight className="w-5 h-5" />
             </a>
@@ -88,10 +88,10 @@ export default function ServicesPage() {
             {processSteps.map((step, index) => (
               <div key={index} className="text-center animate-slide-up" style={{animationDelay: `${index * 0.2}s`}}>
                 <div className="relative mb-6">
-                  <div className="w-20 h-20 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-20 h-20 bg-secondary-green rounded-full flex items-center justify-center mx-auto mb-4">
                     <step.icon className="w-10 h-10 text-white" />
                   </div>
-                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-secondary-green rounded-full flex items-center justify-center">
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-primary-orange rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-sm">{step.step}</span>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {guarantees.map((guarantee, index) => (
               <div key={index} className="card text-center hover:scale-105 transition-all duration-300 animate-slide-up" style={{animationDelay: `${index * 0.2}s`}}>
-                <div className="w-16 h-16 bg-primary-orange rounded-xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-secondary-green rounded-xl flex items-center justify-center mx-auto mb-6">
                   <guarantee.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-baloo2 font-bold text-white mb-3">{guarantee.title}</h3>
@@ -140,7 +140,7 @@ export default function ServicesPage() {
               Join hundreds of successful creators who trust us with their content. Let's discuss your project today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact" className="btn-primary inline-flex items-center space-x-2">
+              <a href="/contact" className="btn-secondary inline-flex items-center space-x-2">
                 <span>Start Your Project</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
