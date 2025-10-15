@@ -25,8 +25,8 @@ export function Footer({ className = "" }: FooterProps) {
                 <Image
                   src={Logo}
                   alt="Fruit logo"
-                  width={40}
-                  height={40}
+                  width={80}
+                  height={80}
                   className="rounded-lg"
                 />
               </div>
