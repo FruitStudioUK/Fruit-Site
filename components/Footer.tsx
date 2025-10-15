@@ -25,16 +25,20 @@ export function Footer({ className = "" }: FooterProps) {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-primary-orange rounded-lg flex items-center justify-center">
-                <div className="w-10 h-10 flex items-center justify-center">
-  <Image
-    src={Logo}
-    alt="Fruit logo"
-    width={40}
-    height={40}
-    className="rounded-lg"
-  />
+  <div className="w-10 h-10 flex items-center justify-center">
+    <Image
+      src={Logo}
+      alt="Fruit logo"
+      width={40}
+      height={40}
+      className="rounded-lg"
+    />
+  </div>
+  <span className="text-2xl font-baloo2 font-bold text-white">
+    fruit.
+  </span>
 </div>
+
 
               <span className="text-2xl font-baloo2 font-bold text-white">
                 fruit.
