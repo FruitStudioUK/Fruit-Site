@@ -1,3 +1,4 @@
+import { useRole } from '@/context/RoleContext';
 import Link from "next/link";
 import { ArrowRight, Play, Star, Users, Award } from "lucide-react";
 
