@@ -1,17 +1,14 @@
 'use client';
 
-import { Hero } from '@/components/Hero';
-import { Services } from '@/components/Services';
-import { Portfolio } from '@/components/Portfolio';
-import { Contact } from '@/components/Contact';
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
-export default function CreatorHome() {
-  return (
-    <main className="animate-fade-in-delayed">
-      <Hero />
-      <Services />
-      <Portfolio />
-      <Contact />
-    </main>
-  );
+export default function LandingRedirect() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace('/role');
+  }, [router]);
+
+  return null; // nothing renders, just redirects
 }
