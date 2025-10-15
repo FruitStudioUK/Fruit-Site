@@ -62,6 +62,7 @@ export function Navigation({ className = "" }: NavigationProps) {
   width={80}
   height={80}
   priority
+  placeholder="blur"
   className="rounded-lg"
 />
 
