@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   title: "Fruit. - Professional Creative & Brand Partnerships",
   description:
     "Transform your content with professional creative services and unlock brand partnership opportunities.",
+  icons: {
+    icon: "/logo.png", // now served from /public
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
