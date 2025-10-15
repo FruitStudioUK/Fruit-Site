@@ -37,22 +37,32 @@ export function Hero() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <Link
-                href="/contact"
-                className="btn-primary inline-flex items-center space-x-2"
-              >
-                <span>Get Started Today</span>
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link
-                href="/portfolio"
-                className="btn-outline inline-flex items-center space-x-2"
-              >
-                <Play className="w-5 h-5" />
-                <span>View Our Work</span>
-              </Link>
-            </div>
+<div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+  <Link
+    href={role === "creator" ? "/contact" : "/support"}
+    className={`btn-primary inline-flex items-center space-x-2 ${
+      role === "creator"
+        ? "bg-primary-orange hover:bg-primary-orange/90"
+        : "bg-secondary-green hover:bg-secondary-green/90"
+    }`}
+  >
+    <span>{role === "creator" ? "Get Started Today" : "Book a call"}</span>
+    <ArrowRight className="w-5 h-5" />
+  </Link>
+
+  <Link
+    href="/portfolio"
+    className={`btn-outline inline-flex items-center space-x-2 ${
+      role === "creator"
+        ? "border-primary-orange text-primary-orange hover:bg-primary-orange/10"
+        : "border-secondary-green text-secondary-green hover:bg-secondary-green/10"
+    }`}
+  >
+    <Play className="w-5 h-5" />
+    <span>View Our Work</span>
+  </Link>
+</div>
+
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8">
