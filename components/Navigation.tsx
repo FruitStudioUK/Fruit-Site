@@ -33,7 +33,7 @@ export function Navigation({ className = "" }: NavigationProps) {
   ];
 
   const brandNavItems = [
-    { href: "/", label: "Dashboard", icon: Video },
+    { href: "/dashboard", label: "Dashboard", icon: Video },
     { href: "/campaigns", label: "Campaigns", icon: Briefcase },
     { href: "/partners", label: "Partners", icon: User },
     { href: "/support", label: "Support", icon: Mail },
