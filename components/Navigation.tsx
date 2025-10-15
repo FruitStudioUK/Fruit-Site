@@ -85,7 +85,7 @@ export function Navigation({ className = "" }: NavigationProps) {
                 className={`absolute top-1 bottom-1 w-1/2 rounded-full transition-all duration-300 ${
                   role === "creator"
                     ? "left-1 bg-primary-orange"
-                    : "left-1/2 bg-primary-green"
+                    : "right-1 bg-primary-green"
                 }`}
               />
               <button
