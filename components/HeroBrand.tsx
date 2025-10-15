@@ -19,7 +19,7 @@ export function Hero() {
           {/* Left Content */}
           <div className="space-y-8 animate-slide-in-left">
             <div className="space-y-4">
-              <div className="flex items-center space-x-2 text-primary-orange">
+              <div className="flex items-center space-x-2 text-secondary-green">
                 <Star className="w-5 h-5 fill-current" />
                 <span className="text-sm font-medium uppercase tracking-wide">
                   Trusted by 50+ Creators
@@ -27,7 +27,7 @@ export function Hero() {
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-baloo2 font-bold text-white leading-tight">
                 Transform Your Content,
-                <span className="text-primary-orange"> Amplify Your Reach</span>
+                <span className="text-secondary-green"> Amplify Your Reach</span>
               </h1>
               <p className="text-xl text-text-gray leading-relaxed max-w-2xl">
                 Professional creative services and strategic brand partnerships
@@ -57,13 +57,13 @@ export function Hero() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-baloo2 font-bold text-primary-orange">
+                <div className="text-3xl font-baloo2 font-bold text-secondary-green">
                   50+
                 </div>
                 <div className="text-text-gray text-sm">Happy Creators</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-baloo2 font-bold text-secondary-green">
+                <div className="text-3xl font-baloo2 font-bold text-primary-orange">
                   2M+
                 </div>
                 <div className="text-text-gray text-sm">Views Generated</div>
@@ -89,7 +89,7 @@ export function Hero() {
               {/* Floating Cards */}
               <div className="absolute -top-6 -left-6 bg-sub-background/90 backdrop-blur-sm rounded-xl p-4 shadow-lg animate-float">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-primary-orange rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 bg-secondary-green rounded-lg flex items-center justify-center">
                     <Award className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -108,7 +108,7 @@ export function Hero() {
                 style={{ animationDelay: "1s" }}
               >
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-secondary-green rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 bg-primary-orange rounded-lg flex items-center justify-center">
                     <Users className="w-5 h-5 text-white" />
                   </div>
                   <div>
