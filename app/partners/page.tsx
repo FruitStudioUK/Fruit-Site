@@ -40,13 +40,13 @@ export default function AboutPage() {
             <div className="animate-slide-in-left">
               <h1 className="text-4xl md:text-6xl font-baloo2 font-bold text-white mb-6">
                 Empowering Creators to 
-                <span className="text-primary-orange"> Reach New Heights</span>
+                <span className="text-secondary-green"> Reach New Heights</span>
               </h1>
               <p className="text-xl text-text-gray mb-8 leading-relaxed">
                 We're passionate about helping content creators transform their vision into compelling content 
                 that resonates with audiences and builds meaningful connections with brands.
               </p>
-              <a href="/contact" className="btn-primary inline-flex items-center space-x-2">
+              <a href="/support" className="btn-secondary inline-flex items-center space-x-2">
                 <span>Work With Us</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
@@ -68,7 +68,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center animate-slide-up" style={{animationDelay: `${index * 0.2}s`}}>
-                <div className="w-16 h-16 bg-primary-orange rounded-xl flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-secondary-green rounded-xl flex items-center justify-center mx-auto mb-4">
                   <stat.icon className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-3xl md:text-4xl font-baloo2 font-bold text-white mb-2">{stat.number}</div>
@@ -123,7 +123,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {values.map((value, index) => (
               <div key={index} className="card hover:scale-105 transition-all duration-300 animate-slide-up" style={{animationDelay: `${index * 0.2}s`}}>
-                <div className="w-16 h-16 bg-primary-orange rounded-xl flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-secondary-green rounded-xl flex items-center justify-center mb-6">
                   <value.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-baloo2 font-bold text-white mb-4">{value.title}</h3>
@@ -174,7 +174,7 @@ export default function AboutPage() {
                   className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
                 />
                 <h3 className="text-xl font-baloo2 font-bold text-white mb-2">{member.name}</h3>
-                <p className="text-primary-orange font-medium mb-3">{member.role}</p>
+                <p className="text-secondary-green font-medium mb-3">{member.role}</p>
                 <p className="text-text-gray text-sm leading-relaxed">{member.bio}</p>
               </div>
             ))}
@@ -193,7 +193,7 @@ export default function AboutPage() {
               Join our community of successful creators and let's build something amazing together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact" className="btn-primary inline-flex items-center space-x-2">
+              <a href="/support" className="btn-secondary inline-flex items-center space-x-2">
                 <span>Get Started</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
