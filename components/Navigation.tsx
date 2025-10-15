@@ -121,10 +121,16 @@ export function Navigation({ className = "" }: NavigationProps) {
 
           {/* CTA */}
           <div className="hidden md:block">
-            <Link href="/contact" className="btn-primary">
-              Get Started
-            </Link>
-          </div>
+  <Link
+    href={role === "creator" ? "/contact" : "/support"}
+    className={`btn-primary ${
+      role === "creator" ? "bg-primary-orange hover:bg-primary-orange/90" : "bg-secondary-green hover:bg-secondary-green/90"
+    }`}
+  >
+    {role === "creator" ? "Get Started" : "Book a call"}
+  </Link>
+</div>
+
 
           {/* Mobile Menu Button */}
           <button
@@ -194,14 +200,17 @@ export function Navigation({ className = "" }: NavigationProps) {
               </div>
 
               <div className="px-4 pt-2">
-                <Link
-                  href="/contact"
-                  onClick={() => setIsOpen(false)}
-                  className="btn-primary w-full text-center block"
-                >
-                  Get Started
-                </Link>
-              </div>
+  <Link
+    href={role === "creator" ? "/contact" : "/support"}
+    onClick={() => setIsOpen(false)}
+    className={`btn-primary w-full text-center block ${
+      role === "creator" ? "bg-primary-orange hover:bg-primary-orange/90" : "bg-secondary-green hover:bg-secondary-green/90"
+    }`}
+  >
+    {role === "creator" ? "Get Started" : "Book a call"}
+  </Link>
+</div>
+
             </div>
           </div>
         )}
