@@ -80,6 +80,7 @@ export function Navigation({ className = "" }: NavigationProps) {
 
             {/* Role Switch */}
             <div className="relative flex bg-sub-background rounded-full p-1 w-48">
+              {/* Sliding highlight */}
               <span
                 className={`absolute top-1 bottom-1 w-1/2 rounded-full transition-all duration-300 ${
                   role === "creator"
@@ -90,9 +91,7 @@ export function Navigation({ className = "" }: NavigationProps) {
               <button
                 onClick={() => setRole("creator")}
                 className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
-                  role === "creator"
-                    ? "text-white"
-                    : "text-text-gray hover:text-primary-orange"
+                  role === "creator" ? "text-white" : "text-text-gray"
                 }`}
               >
                 Creator
@@ -100,9 +99,7 @@ export function Navigation({ className = "" }: NavigationProps) {
               <button
                 onClick={() => setRole("brand")}
                 className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
-                  role === "brand"
-                    ? "text-white"
-                    : "text-text-gray hover:text-primary-green"
+                  role === "brand" ? "text-white" : "text-text-gray"
                 }`}
               >
                 Brand
@@ -163,9 +160,7 @@ export function Navigation({ className = "" }: NavigationProps) {
                       setIsOpen(false);
                     }}
                     className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
-                      role === "creator"
-                        ? "text-white"
-                        : "text-text-gray hover:text-primary-orange"
+                      role === "creator" ? "text-white" : "text-text-gray"
                     }`}
                   >
                     Creator
@@ -176,9 +171,7 @@ export function Navigation({ className = "" }: NavigationProps) {
                       setIsOpen(false);
                     }}
                     className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
-                      role === "brand"
-                        ? "text-white"
-                        : "text-text-gray hover:text-primary-green"
+                      role === "brand" ? "text-white" : "text-text-gray"
                     }`}
                   >
                     Brand
