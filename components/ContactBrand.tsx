@@ -70,7 +70,7 @@ export function Contact() {
 
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="w-14 h-14 bg-primary-orange rounded-xl flex items-center justify-center">
+                <div className="w-14 h-14 bg-secondary-green rounded-xl flex items-center justify-center">
                   <Mail className="w-7 h-7 text-white" />
                 </div>
                 <div>
@@ -88,7 +88,7 @@ export function Contact() {
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="w-14 h-14 bg-secondary-green rounded-xl flex items-center justify-center">
+                <div className="w-14 h-14 bg-primary-orange rounded-xl flex items-center justify-center">
                   <Phone className="w-7 h-7 text-white" />
                 </div>
                 <div>
@@ -98,7 +98,7 @@ export function Contact() {
                   <p className="text-text-gray">+447691227509</p>
                   <a
                     href="tel:+447691227509"
-                    className="inline-block mt-2 py-2 px-4 bg-secondary-green text-white rounded-lg hover:bg-opacity-90 transition-all duration-300"
+                    className="inline-block mt-2 py-2 px-4 bg-primary-orange text-white rounded-lg hover:bg-opacity-90 transition-all duration-300"
                   >
                     Call Now
                   </a>
@@ -156,7 +156,7 @@ export function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-sub-background/30 border border-sub-background/50 rounded-lg text-white placeholder-text-gray focus:outline-none focus:ring-2 focus:ring-primary-orange focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 bg-sub-background/30 border border-sub-background/50 rounded-lg text-white placeholder-text-gray focus:outline-none focus:ring-2 focus:ring-secondary-green focus:border-transparent transition-all duration-300"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -175,7 +175,7 @@ export function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-sub-background/30 border border-sub-background/50 rounded-lg text-white placeholder-text-gray focus:outline-none focus:ring-2 focus:ring-primary-orange focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 bg-sub-background/30 border border-sub-background/50 rounded-lg text-white placeholder-text-gray focus:outline-none focus:ring-2 focus:ring-secondary-green focus:border-transparent transition-all duration-300"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -193,7 +193,7 @@ export function Contact() {
                     value={formData.service}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-sub-background/30 border border-sub-background/50 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-primary-orange focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 bg-sub-background/30 border border-sub-background/50 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-secondary-green focus:border-transparent transition-all duration-300"
                   >
                     <option value="">Select a service</option>
                     <option value="video-editing">Video Editing</option>
@@ -221,7 +221,7 @@ export function Contact() {
                     onChange={handleChange}
                     required
                     rows={4}
-                    className="w-full px-4 py-3 bg-sub-background/30 border border-sub-background/50 rounded-lg text-white placeholder-text-gray focus:outline-none focus:ring-2 focus:ring-primary-orange focus:border-transparent transition-all duration-300 resize-none"
+                    className="w-full px-4 py-3 bg-sub-background/30 border border-sub-background/50 rounded-lg text-white placeholder-text-gray focus:outline-none focus:ring-2 focus:ring-secondary-green focus:border-transparent transition-all duration-300 resize-none"
                     placeholder="Tell us about your project, goals, and any specific requirements..."
                   />
                 </div>
@@ -231,7 +231,7 @@ export function Contact() {
                   disabled={isSubmitting || isSubmitted}
                   className={`w-full py-4 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 ${
                     isSubmitted
-                      ? "bg-secondary-green text-white"
+                      ? "bg-primary-orange text-white"
                       : "btn-primary"
                   }`}
                 >
