@@ -90,15 +90,30 @@ export function Navigation({ className = "" }: NavigationProps) {
               </Link>
             ))}
 
-            {/* Switch Role Button */}
-            <button
-              onClick={() => setRole(null)}
-              className="flex items-center space-x-1 px-3 py-2 rounded-lg border border-white text-white hover:bg-white hover:text-black transition"
-            >
-              <RefreshCcw className="w-4 h-4" />
-              <span className="font-medium">Switch Role</span>
-            </button>
-          </div>
+            {/* Role Switch */}
+<div className="flex items-center bg-sub-background rounded-full p-1">
+  <button
+    onClick={() => setRole("creator")}
+    className={`flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
+      role === "creator"
+        ? "bg-primary-orange text-white"
+        : "text-text-gray hover:text-primary-orange"
+    }`}
+  >
+    Creator
+  </button>
+  <button
+    onClick={() => setRole("brand")}
+    className={`flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
+      role === "brand"
+        ? "bg-primary-green text-white"
+        : "text-text-gray hover:text-primary-green"
+    }`}
+  >
+    Brand
+  </button>
+</div>
+
 
           {/* CTA Button */}
           <div className="hidden md:block">
@@ -139,17 +154,36 @@ export function Navigation({ className = "" }: NavigationProps) {
 
               {/* Switch Role Button (Mobile) */}
               <div className="px-4">
-                <button
-                  onClick={() => {
-                    setRole(null);
-                    setIsOpen(false);
-                  }}
-                  className="w-full flex items-center justify-center space-x-2 px-4 py-3 rounded-lg border border-white text-white hover:bg-white hover:text-black transition"
-                >
-                  <RefreshCcw className="w-5 h-5" />
-                  <span className="font-medium">Switch Role</span>
-                </button>
-              </div>
+  <div className="flex bg-sub-background rounded-full p-1">
+    <button
+      onClick={() => {
+        setRole("creator");
+        setIsOpen(false);
+      }}
+      className={`flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
+        role === "creator"
+          ? "bg-primary-orange text-white"
+          : "text-text-gray hover:text-primary-orange"
+      }`}
+    >
+      Creator
+    </button>
+    <button
+      onClick={() => {
+        setRole("brand");
+        setIsOpen(false);
+      }}
+      className={`flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
+        role === "brand"
+          ? "bg-primary-green text-white"
+          : "text-text-gray hover:text-primary-green"
+      }`}
+    >
+      Brand
+    </button>
+  </div>
+</div>
+
 
               <div className="px-4 pt-2">
                 <Link
