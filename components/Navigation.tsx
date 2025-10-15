@@ -56,7 +56,16 @@ export function Navigation({ className = "" }: NavigationProps) {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
             <div className="w-20 h-20 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <Image src={Logo} alt={"logo"} className="rounded-lg" />
+              <Image
+  src={Logo}
+  alt="logo"
+  width={80}
+  height={80}
+  priority
+  unoptimized
+  className="rounded-lg"
+/>
+
               <Video className="w-6 h-6 text-white" />
             </div>
             <span className="text-2xl font-baloo2 font-bold text-white">
