@@ -225,4 +225,4 @@ export function Navigation({ className = "" }: NavigationProps) {
       </div>
     </nav>
   );
-}
+} 
