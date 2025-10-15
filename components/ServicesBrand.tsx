@@ -118,7 +118,7 @@ export function Services() {
                 className="card group hover:scale-105 transition-all duration-300 animate-slide-up"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="w-16 h-16 bg-primary-orange rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-secondary-green rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <service.icon className="w-8 h-8 text-text-white" />
                 </div>
                 <h4 className="text-2xl font-baloo2 font-bold text-text-dark mb-4">
@@ -159,7 +159,7 @@ export function Services() {
                 className="card group hover:scale-105 transition-all duration-300 animate-slide-up"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="w-16 h-16 bg-secondary-green rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-primary-orange rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <service.icon className="w-8 h-8 text-dark" />
                 </div>
                 <h4 className="text-2xl font-baloo2 font-bold text-text-dark mb-4">
