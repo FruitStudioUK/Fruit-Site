@@ -80,13 +80,9 @@ export function Navigation({ className = "" }: NavigationProps) {
 
             {/* Role Switch */}
             <div className="relative flex bg-sub-background rounded-full p-1 w-48">
-              {/* Sliding highlight */}
               <span
-                className={`absolute top-1 bottom-1 w-1/2 rounded-full transition-all duration-300 ${
-                  role === "creator"
-                    ? "left-1 bg-primary-orange"
-                    : "right-1 bg-primary-green"
-                }`}
+                className={`absolute top-1 bottom-1 w-1/2 rounded-full transition-all duration-300
+                  ${role === "creator" ? "left-1 bg-primary-orange" : "right-1 bg-primary-green"}`}
               />
               <button
                 onClick={() => setRole("creator")}
@@ -148,11 +144,8 @@ export function Navigation({ className = "" }: NavigationProps) {
               <div className="px-4">
                 <div className="relative flex bg-sub-background rounded-full p-1 w-full">
                   <span
-                    className={`absolute top-1 bottom-1 w-1/2 rounded-full transition-all duration-300 ${
-                      role === "creator"
-                        ? "left-1 bg-primary-orange"
-                        : "left-1/2 bg-primary-green"
-                    }`}
+                    className={`absolute top-1 bottom-1 w-1/2 rounded-full transition-all duration-300
+                      ${role === "creator" ? "left-1 bg-primary-orange" : "right-1 bg-primary-green"}`}
                   />
                   <button
                     onClick={() => {
