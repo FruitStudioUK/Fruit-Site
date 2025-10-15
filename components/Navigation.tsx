@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Menu, X, Video, User, Mail, Briefcase } from "lucide-react";
 import Image from "next/image";
 import Logo from "../app/images/logo.png";
@@ -16,6 +16,7 @@ export function Navigation({ className = "" }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
   const { role, setRole } = useRole();
 
   useEffect(() => {
@@ -23,6 +24,16 @@ export function Navigation({ className = "" }: NavigationProps) {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // helper to change role and redirect
+  const handleRoleChange = (newRole: "creator" | "brand") => {
+    setRole(newRole);
+    if (newRole === "creator") {
+      router.push("/");
+    } else {
+      router.push("/dashboard");
+    }
+  };
 
   // Two sets of nav items
   const creatorNavItems = [
@@ -39,7 +50,6 @@ export function Navigation({ className = "" }: NavigationProps) {
     { href: "/support", label: "Support", icon: Mail },
   ];
 
-  // Pick which set to use
   const navItems = role === "creator" ? creatorNavItems : brandNavItems;
 
   const isActive = (href: string) => pathname === href;
@@ -79,15 +89,14 @@ export function Navigation({ className = "" }: NavigationProps) {
                 key={href}
                 href={href}
                 className={`flex items-center space-x-1 px-3 py-2 rounded-lg transition-all duration-300 hover:bg-sub-background/20 ${
-  isActive(href)
-    ? role === "creator"
-      ? "text-primary-orange bg-sub-background/20"
-      : "text-secondary-green bg-sub-background/20"
-    : role === "creator"
-      ? "text-white hover:text-primary-orange"
-      : "text-white hover:text-secondary-green"
-}`}
-
+                  isActive(href)
+                    ? role === "creator"
+                      ? "text-primary-orange bg-sub-background/20"
+                      : "text-secondary-green bg-sub-background/20"
+                    : role === "creator"
+                      ? "text-white hover:text-primary-orange"
+                      : "text-white hover:text-secondary-green"
+                }`}
               >
                 <Icon className="w-4 h-4" />
                 <span className="font-medium">{label}</span>
@@ -101,7 +110,7 @@ export function Navigation({ className = "" }: NavigationProps) {
                   ${role === "creator" ? "left-1 bg-primary-orange" : "right-1 bg-secondary-green"}`}
               />
               <button
-                onClick={() => setRole("creator")}
+                onClick={() => handleRoleChange("creator")}
                 className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
                   role === "creator" ? "text-white" : "text-text-gray"
                 }`}
@@ -109,7 +118,7 @@ export function Navigation({ className = "" }: NavigationProps) {
                 Creator
               </button>
               <button
-                onClick={() => setRole("brand")}
+                onClick={() => handleRoleChange("brand")}
                 className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
                   role === "brand" ? "text-white" : "text-text-gray"
                 }`}
@@ -121,16 +130,17 @@ export function Navigation({ className = "" }: NavigationProps) {
 
           {/* CTA */}
           <div className="hidden md:block">
-  <Link
-    href={role === "creator" ? "/contact" : "/support"}
-    className={`btn-primary ${
-      role === "creator" ? "bg-primary-orange hover:bg-primary-orange/90" : "bg-secondary-green hover:bg-secondary-green/90"
-    }`}
-  >
-    {role === "creator" ? "Get Started" : "Book a call"}
-  </Link>
-</div>
-
+            <Link
+              href={role === "creator" ? "/contact" : "/support"}
+              className={`btn-primary ${
+                role === "creator"
+                  ? "bg-primary-orange hover:bg-primary-orange/90"
+                  : "bg-secondary-green hover:bg-secondary-green/90"
+              }`}
+            >
+              {role === "creator" ? "Get Started" : "Book a call"}
+            </Link>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -147,25 +157,24 @@ export function Navigation({ className = "" }: NavigationProps) {
           <div className="md:hidden absolute top-full left-0 right-0 bg-primary-dark/95 backdrop-blur-md border-t border-sub-background/30">
             <div className="py-4 space-y-2">
               {navItems.map(({ href, label, icon: Icon }) => (
-  <Link
-    key={href}
-    href={href}
-    onClick={() => setIsOpen(false)}
-    className={`flex items-center space-x-3 px-4 py-3 mx-4 rounded-lg transition-all duration-300 ${
-      isActive(href)
-        ? role === "creator"
-          ? "text-primary-orange bg-sub-background/20"
-          : "text-secondary-green bg-sub-background/20"
-        : role === "creator"
-          ? "text-white hover:text-primary-orange hover:bg-sub-background/20"
-          : "text-white hover:text-secondary-green hover:bg-sub-background/20"
-    }`}
-  >
-    <Icon className="w-5 h-5" />
-    <span className="font-medium">{label}</span>
-  </Link>
-))}
-
+                <Link
+                  key={href}
+                  href={href}
+                  onClick={() => setIsOpen(false)}
+                  className={`flex items-center space-x-3 px-4 py-3 mx-4 rounded-lg transition-all duration-300 ${
+                    isActive(href)
+                      ? role === "creator"
+                        ? "text-primary-orange bg-sub-background/20"
+                        : "text-secondary-green bg-sub-background/20"
+                      : role === "creator"
+                        ? "text-white hover:text-primary-orange hover:bg-sub-background/20"
+                        : "text-white hover:text-secondary-green hover:bg-sub-background/20"
+                  }`}
+                >
+                  <Icon className="w-5 h-5" />
+                  <span className="font-medium">{label}</span>
+                </Link>
+              ))}
 
               {/* Role Switch (Mobile) */}
               <div className="px-4">
@@ -176,7 +185,7 @@ export function Navigation({ className = "" }: NavigationProps) {
                   />
                   <button
                     onClick={() => {
-                      setRole("creator");
+                      handleRoleChange("creator");
                       setIsOpen(false);
                     }}
                     className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
@@ -187,7 +196,7 @@ export function Navigation({ className = "" }: NavigationProps) {
                   </button>
                   <button
                     onClick={() => {
-                      setRole("brand");
+                      handleRoleChange("brand");
                       setIsOpen(false);
                     }}
                     className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
@@ -200,17 +209,18 @@ export function Navigation({ className = "" }: NavigationProps) {
               </div>
 
               <div className="px-4 pt-2">
-  <Link
-    href={role === "creator" ? "/contact" : "/support"}
-    onClick={() => setIsOpen(false)}
-    className={`btn-primary w-full text-center block ${
-      role === "creator" ? "bg-primary-orange hover:bg-primary-orange/90" : "bg-secondary-green hover:bg-secondary-green/90"
-    }`}
-  >
-    {role === "creator" ? "Get Started" : "Book a call"}
-  </Link>
-</div>
-
+                <Link
+                  href={role === "creator" ? "/contact" : "/support"}
+                  onClick={() => setIsOpen(false)}
+                  className={`btn-primary w-full text-center block ${
+                    role === "creator"
+                      ? "bg-primary-orange hover:bg-primary-orange/90"
+                      : "bg-secondary-green hover:bg-secondary-green/90"
+                  }`}
+                >
+                  {role === "creator" ? "Get Started" : "Book a call"}
+                </Link>
+              </div>
             </div>
           </div>
         )}
