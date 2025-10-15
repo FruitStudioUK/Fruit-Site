@@ -16,7 +16,7 @@ export function Navigation({ className = "" }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
-  const { role, setRole } = useRole(); // ✅ include role
+  const { role, setRole } = useRole();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -103,3 +103,102 @@ export function Navigation({ className = "" }: NavigationProps) {
                   role === "brand"
                     ? "text-white"
                     : "text-text-gray hover:text-primary-green"
+                }`}
+              >
+                Brand
+              </button>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="hidden md:block">
+            <Link href="/contact" className="btn-primary">
+              Get Started
+            </Link>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden p-2 rounded-lg hover:bg-sub-background/20 transition-colors duration-300"
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <div className="md:hidden absolute top-full left-0 right-0 bg-primary-dark/95 backdrop-blur-md border-t border-sub-background/30">
+            <div className="py-4 space-y-2">
+              {navItems.map(({ href, label, icon: Icon }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  onClick={() => setIsOpen(false)}
+                  className={`flex items-center space-x-3 px-4 py-3 mx-4 rounded-lg transition-all duration-300 ${
+                    isActive(href)
+                      ? "text-primary-orange bg-sub-background/20"
+                      : "text-white hover:text-primary-orange hover:bg-sub-background/20"
+                  }`}
+                >
+                  <Icon className="w-5 h-5" />
+                  <span className="font-medium">{label}</span>
+                </Link>
+              ))}
+
+              {/* Role Switch (Mobile) */}
+              <div className="px-4">
+                <div className="relative flex bg-sub-background rounded-full p-1 w-full">
+                  <span
+                    className={`absolute top-1 bottom-1 w-1/2 rounded-full transition-all duration-300 ${
+                      role === "creator"
+                        ? "left-1 bg-primary-orange"
+                        : "left-1/2 bg-primary-green"
+                    }`}
+                  />
+                  <button
+                    onClick={() => {
+                      setRole("creator");
+                      setIsOpen(false);
+                    }}
+                    className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
+                      role === "creator"
+                        ? "text-white"
+                        : "text-text-gray hover:text-primary-orange"
+                    }`}
+                  >
+                    Creator
+                  </button>
+                  <button
+                    onClick={() => {
+                      setRole("brand");
+                      setIsOpen(false);
+                    }}
+                    className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
+                      role === "brand"
+                        ? "text-white"
+                        : "text-text-gray hover:text-primary-green"
+                    }`}
+                  >
+                    Brand
+                  </button>
+                </div>
+              </div>
+
+              <div className="px-4 pt-2">
+                <Link
+                  href="/contact"
+                  onClick={() => setIsOpen(false)}
+                  className="btn-primary w-full text-center block"
+                >
+                  Get Started
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+}
