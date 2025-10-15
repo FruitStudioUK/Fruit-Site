@@ -3,7 +3,6 @@
 import { useRole } from "@/context/RoleContext";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { useState, useEffect } from "react";
 
 export default function LayoutContent({ children }: { children: React.ReactNode }) {
   const { role } = useRole();
@@ -17,12 +16,12 @@ export default function LayoutContent({ children }: { children: React.ReactNode 
       {/* Header = Navigation (logo + menus) */}
       <Navigation className="animate-fade-in-delayed" />
 
-      {/* Main content fades in separately via siteVisible in page.tsx */}
-      {children}
+      {/* Main content wrapper with top padding to clear fixed nav */}
+      <main className="pt-16 md:pt-24">
+        {children}
+      </main>
 
       <Footer className="animate-fade-in-delayed" />
     </>
   );
 }
-
-
