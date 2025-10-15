@@ -210,7 +210,7 @@ export function Portfolio() {
             </p>
             <a
               href="/contact"
-              className="btn-primary inline-flex items-center space-x-2"
+              className="btn-secondary inline-flex items-center space-x-2"
             >
               <span>Start Your Project</span>
               <Play className="w-5 h-5" />
