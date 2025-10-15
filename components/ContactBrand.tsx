@@ -80,7 +80,7 @@ export function Contact() {
                   <p className="text-text-gray">hey@thisisfruit.co.uk</p>
                   <a
                     href="mailto:hey@thisisfruit.co.uk"
-                    className="inline-block mt-2 py-2 px-4 bg-primary-orange text-white rounded-lg hover:bg-opacity-90 transition-all duration-300"
+                    className="inline-block mt-2 py-2 px-4 bg-secondary-green text-white rounded-lg hover:bg-opacity-90 transition-all duration-300"
                   >
                     Send an Email
                   </a>
