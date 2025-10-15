@@ -82,7 +82,7 @@ export function Navigation({ className = "" }: NavigationProps) {
             <div className="relative flex bg-sub-background rounded-full p-1 w-48">
               <span
                 className={`absolute top-1 bottom-1 w-1/2 rounded-full transition-all duration-300
-                  ${role === "creator" ? "left-1 bg-primary-orange" : "right-1 bg-primary-green"}`}
+                  ${role === "creator" ? "left-1 bg-primary-orange" : "right-1 bg-secondary-green"}`}
               />
               <button
                 onClick={() => setRole("creator")}
@@ -145,7 +145,7 @@ export function Navigation({ className = "" }: NavigationProps) {
                 <div className="relative flex bg-sub-background rounded-full p-1 w-full">
                   <span
                     className={`absolute top-1 bottom-1 w-1/2 rounded-full transition-all duration-300
-                      ${role === "creator" ? "left-1 bg-primary-orange" : "right-1 bg-primary-green"}`}
+                      ${role === "creator" ? "left-1 bg-primary-orange" : "right-1 bg-secondary-green"}`}
                   />
                   <button
                     onClick={() => {
