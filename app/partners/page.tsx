@@ -2,31 +2,31 @@ import { Award, Users, Target, Heart, ArrowRight } from 'lucide-react';
 
 export default function AboutPage() {
   const stats = [
-    { number: '50+', label: 'Happy Creators', icon: Users },
-    { number: '2M+', label: 'Views Generated', icon: Target },
-    { number: '97%', label: 'Satisfaction Rate', icon: Award },
-    { number: '3', label: 'Years Experience', icon: Heart }
+    { number: '100+', label: 'Brands Supported', icon: Users },
+    { number: '2M+', label: 'Campaign Views Delivered', icon: Target },
+    { number: '97%', label: 'Client Satisfaction Rate', icon: Award },
+    { number: '3', label: 'Years Driving ROI', icon: Heart }
   ];
 
   const values = [
     {
-      title: 'Creativity First',
-      description: 'We believe every creator has a unique voice that deserves to be heard and amplified.',
+      title: 'Brand-Centric Creativity',
+      description: 'We design campaigns that amplify your brand’s message and connect authentically with audiences.',
       icon: Heart
     },
     {
-      title: 'Quality Excellence',
-      description: 'We never compromise on quality, ensuring every project meets the highest standards.',
+      title: 'Excellence in Delivery',
+      description: 'We never compromise on quality, ensuring every campaign meets the highest standards and delivers measurable ROI.',
       icon: Award
     },
     {
-      title: 'Authentic Partnerships',
-      description: 'We focus on building genuine relationships between creators and brands that align with their values.',
+      title: 'Trusted Partnerships',
+      description: 'We build long-term, transparent relationships with brands, aligning with your goals and values.',
       icon: Users
     },
     {
-      title: 'Growth-Focused',
-      description: 'Our strategies are designed to help creators build sustainable, long-term success.',
+      title: 'Growth-Focused Strategy',
+      description: 'Our approach is designed to maximize brand impact, drive conversions, and scale your success.',
       icon: Target
     }
   ];
@@ -39,22 +39,22 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-in-left">
               <h1 className="text-4xl md:text-6xl font-baloo2 font-bold text-white mb-6">
-                Empowering Creators to 
-                <span className="text-secondary-green"> Reach New Heights</span>
+                Empowering Brands to 
+                <span className="text-secondary-green"> Achieve More</span>
               </h1>
               <p className="text-xl text-text-gray mb-8 leading-relaxed">
-                We're passionate about helping content creators transform their vision into compelling content 
-                that resonates with audiences and builds meaningful connections with brands.
+                We help brands unlock new opportunities through creator-led campaigns, 
+                data-driven insights, and strategies that deliver measurable results.
               </p>
               <a href="/support" className="btn-secondary inline-flex items-center space-x-2">
-                <span>Work With Us</span>
+                <span>Partner With Us</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
             <div className="animate-slide-in-right">
               <img 
                 src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                alt="Creative team working on content"
+                alt="Brand collaboration strategy session"
                 className="w-full h-96 lg:h-[500px] object-cover rounded-2xl shadow-2xl"
               />
             </div>
@@ -95,13 +95,12 @@ export default function AboutPage() {
                 Our Mission
               </h2>
               <p className="text-xl text-text-gray mb-6 leading-relaxed">
-                To democratize content creation by providing professional-grade editing services and strategic 
-                brand partnerships that enable creators of all sizes to compete at the highest level.
+                To empower brands with creator-driven campaigns that cut through the noise, 
+                deliver measurable ROI, and build lasting connections with audiences.
               </p>
               <p className="text-lg text-text-gray leading-relaxed">
-                We believe that great content should be accessible to everyone, regardless of budget or technical expertise. 
-                That's why we've built a platform that combines cutting-edge technology with human creativity to deliver 
-                results that exceed expectations.
+                We combine cutting-edge analytics with authentic storytelling to ensure every campaign 
+                not only meets but exceeds expectations — with transparency, efficiency, and impact at the core.
               </p>
             </div>
           </div>
@@ -116,7 +115,7 @@ export default function AboutPage() {
               Our Values
             </h2>
             <p className="text-xl text-text-gray max-w-3xl mx-auto">
-              The principles that guide everything we do and shape how we work with creators and brands.
+              The principles that guide how we collaborate with brands and deliver campaigns that drive results.
             </p>
           </div>
 
@@ -142,7 +141,7 @@ export default function AboutPage() {
               Meet Our Team
             </h2>
             <p className="text-xl text-text-gray max-w-3xl mx-auto">
-              A passionate group of creators, editors, and strategists dedicated to your success.
+              A dedicated team of strategists, partnership managers, and creatives focused on delivering brand success.
             </p>
           </div>
 
@@ -150,21 +149,21 @@ export default function AboutPage() {
             {[
               {
                 name: 'Daniel Rose',
-                role: 'Creator Manager & Community Lead',
+                role: 'Brand Strategy & Client Success Lead',
                 image: 'https://i.postimg.cc/kGTvt3tY/Untitled-design-4.png',
-                bio: 'Former Marketing & Sales Director with 8+ years of experience in creator and brand management.'
+                bio: 'Former Marketing & Sales Director with 8+ years of experience in brand growth and campaign management.'
               },
               {
                 name: 'Dev Buchiti',
-                role: 'Brand Partnerships Lead',
+                role: 'Partnerships Director',
                 image: 'https://i.postimg.cc/J4wkPhR3/image-2025-08-15-143606477.png',
                 bio: 'Ex-Social Media partnerships manager who has facilitated $1M+ in brand collaborations.'
               },
               {
                 name: 'Emily Taylor',
-                role: 'Senior Video Editor',
+                role: 'Senior Campaign Producer',
                 image: 'https://i.postimg.cc/KzMYMnk6/image-2024-08-19-181207250.png',
-                bio: 'Award-winning editor specializing in viral content and social media optimization.'
+                bio: 'Award-winning producer specializing in high-impact brand campaigns and social media optimization.'
               }
             ].map((member, index) => (
               <div key={index} className="card text-center hover:scale-105 transition-all duration-300 animate-slide-up" style={{animationDelay: `${index * 0.2}s`}}>
@@ -182,23 +181,25 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
+            {/* CTA Section */}
       <section className="section-padding bg-primary-dark">
         <div className="container-max">
           <div className="bg-card-gradient rounded-2xl p-8 md:p-12 text-center animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-baloo2 font-bold text-white mb-4">
-              Ready to Start Your Journey?
+              Ready to Elevate Your Brand?
             </h2>
             <p className="text-xl text-text-gray mb-8 max-w-2xl mx-auto">
-              Join our community of successful creators and let's build something amazing together.
+              Join the growing list of brands achieving measurable ROI with Fruit. 
+              From 0% management fees on your first campaign to daily analytical reports 
+              and 24/7 support, we’re here to make your next campaign your most impactful yet.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/support" className="btn-secondary inline-flex items-center space-x-2">
                 <span>Get Started</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
-              {/*  <a href="/portfolio" className="btn-outline inline-flex items-center space-x-2">
-                <span>View Portfolio</span> 
+              {/* <a href="/case-studies" className="btn-outline inline-flex items-center space-x-2">
+                <span>View Case Studies</span>
               </a> */}
             </div>
           </div>
