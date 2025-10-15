@@ -8,51 +8,51 @@ import {
 } from "lucide-react";
 
 export function Services() {
-  const editingServices = [
+  const creativeSupport = [
     {
       icon: Video,
       title: "Video Editing",
       description:
-        "Professional video editing with cutting-edge techniques, seamless transitions, and engaging storytelling.",
+        "Professional edits that keep your content sharp, engaging, and ready for brand campaigns.",
       features: [
         "4K/8K Support",
-        "Color Grading",
+        "Cinematic Storytelling",
         "Motion Graphics",
         "Fast Turnaround",
       ],
     },
     {
-      icon: Volume2,
-      title: "Audio Enhancement",
+      icon: Search,
+      title: "SEO Optimization",
       description:
-        "Crystal-clear audio processing, noise reduction, and professional sound design.",
+        "Boost discoverability with tailored SEO strategies that help your videos rank and attract sponsors.",
       features: [
-        "Noise Reduction",
-        "Audio Mixing",
-        "Voice Enhancement",
-        "Sound Effects",
+        "Channel‑wide SEO Setup",
+        "Video Titles & Descriptions",
+        "Keyword & Tag Optimization",
+        "Ongoing SEO Maintenance",
       ],
     },
     {
       icon: Palette,
-      title: "Color Correction",
+      title: "Thumbnails & Branding",
       description:
-        "Professional color grading and correction to make your content visually stunning.",
+        "Consistent visuals that strengthen your identity and make you stand out to sponsors.",
       features: [
-        "Color Matching",
-        "Cinematic Look",
-        "Mood Enhancement",
+        "Color Grading",
         "Brand Consistency",
+        "Custom Thumbnails",
+        "Personal Branding Assets",
       ],
     },
   ];
 
-  const brandServices = [
+  const sponsorshipServices = [
     {
       icon: Handshake,
-      title: "Brand Partnerships",
+      title: "Sponsorship Management",
       description:
-        "Connect with brands that align with your content and audience for authentic collaborations.",
+        "We handle outreach, negotiations, and deal management so you can focus on creating.",
       features: [
         "Brand Matching",
         "Contract Support",
@@ -64,24 +64,24 @@ export function Services() {
       icon: TrendingUp,
       title: "Growth Strategy",
       description:
-        "Data-driven strategies to grow your audience and increase engagement across platforms.",
+        "Data‑driven insights and consulting to help you scale your channel and attract higher‑value sponsors.",
       features: [
-        "Analytics Review",
+        "Monthly Reports",
         "Content Planning",
         "Audience Insights",
-        "Optimization Tips",
+        "Consultation Calls",
       ],
     },
     {
       icon: Target,
-      title: "Monetization",
+      title: "Monetization Support",
       description:
-        "Maximize your earning potential through strategic partnerships and content optimization.",
+        "Unlock new revenue streams and maximize your earning potential with our strategic guidance.",
       features: [
-        "Revenue Optimization",
-        "Sponsorship Deals",
-        "Affiliate Programs",
+        "Paid Community Management",
+        "Affiliate Setup",
         "Merchandise Support",
+        "Revenue Optimization",
       ],
     },
   ];
@@ -94,32 +94,33 @@ export function Services() {
             Our Services
           </h2>
           <p className="text-xl text-text-gray max-w-3xl mx-auto">
-            From professional creative to strategic brand partnerships, we
-            provide everything you need to succeed as a content creator.
+            From securing sponsorships to polishing your content, Fruit gives
+            creators the tools, support, and partnerships they need to grow with
+            confidence.
           </p>
         </div>
 
-        {/* Editing Services */}
+        {/* Creative Support */}
         <div className="mb-20">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-baloo2 font-bold text-white mb-4">
-              Professional Creative Services
+              Creative Support
             </h3>
             <p className="text-lg text-text-gray">
-              Transform your raw footage into captivating content that keeps
-              your audience engaged.
+              High‑quality edits, audio, and branding that make your content
+              shine and keep sponsors coming back.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {editingServices.map((service, index) => (
+            {creativeSupport.map((service, index) => (
               <div
                 key={index}
                 className="card group hover:scale-105 transition-all duration-300 animate-slide-up"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="w-16 h-16 bg-primary-orange rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="w-8 h-8 text-text-white" />
+                  <service.icon className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-2xl font-baloo2 font-bold text-text-dark mb-4">
                   {service.title}
@@ -131,7 +132,9 @@ export function Services() {
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-text-lightdark rounded-full"></div>
-                      <span className="font-nunito font-bold text-text-lightdark">{feature}</span>
+                      <span className="font-nunito font-bold text-text-lightdark">
+                        {feature}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -140,20 +143,20 @@ export function Services() {
           </div>
         </div>
 
-        {/* Brand Partnership Services */}
+        {/* Sponsorship & Growth */}
         <div>
           <div className="text-center mb-12">
             <h3 className="text-3xl font-baloo2 font-bold text-white mb-4">
-              Brand Partnership & Growth
+              Sponsorship & Growth
             </h3>
             <p className="text-lg text-text-gray">
-              Unlock new revenue streams and grow your audience through
-              strategic brand collaborations.
+              Build lasting brand partnerships, scale your income, and protect
+              your reputation with our strategic support.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {brandServices.map((service, index) => (
+            {sponsorshipServices.map((service, index) => (
               <div
                 key={index}
                 className="card group hover:scale-105 transition-all duration-300 animate-slide-up"
@@ -172,7 +175,9 @@ export function Services() {
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-text-lightdark rounded-full"></div>
-                      <span className="font-nunito font-bold text-text-lightdark">{feature}</span>
+                      <span className="font-nunito font-bold text-text-lightdark">
+                        {feature}
+                      </span>
                     </li>
                   ))}
                 </ul>
