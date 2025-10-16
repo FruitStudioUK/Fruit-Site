@@ -9,9 +9,13 @@ export default function LayoutContent({ children }: { children: React.ReactNode 
   const { role } = useRole();
   const pathname = usePathname();
 
-  // On the role selector page, never show nav/footer
   if (pathname === "/role") {
     return <>{children}</>;
+  }
+
+  // Wait until role is loaded
+  if (!role) {
+    return <main>{children}</main>;
   }
 
   return (
