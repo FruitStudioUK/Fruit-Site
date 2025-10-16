@@ -18,7 +18,7 @@ export default function CreatorHomeGuarded() {
     if (!savedRole) {
       router.replace('/role');
     } else if (savedRole === 'brand') {
-      router.replace('/dashboard');
+      router.replace('/overview');
     } else {
       // creator → allow fade‑in
       setReady(true);
