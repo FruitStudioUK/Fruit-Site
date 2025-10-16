@@ -38,11 +38,11 @@ export function Hero() {
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
-                href="/portfolio"
+                href="/services"
                 className="btn-outline inline-flex items-center space-x-2"
               >
                 <Play className="w-5 h-5" />
-                <span>See Creator Success</span>
+                <span>See What We Do</span>
               </Link>
             </div>
 
