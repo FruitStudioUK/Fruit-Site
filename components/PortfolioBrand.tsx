@@ -205,11 +205,11 @@ export function Portfolio() {
               Ready to Create Your Next Hit?
             </h3>
             <p className="text-text-gray mb-8 max-w-2xl mx-auto">
-              Join hundreds of successful creators who trust us with their
-              content. Let's make your next project go viral.
+              Join hundreds of successful companies who trust us with their
+              brands. Let's make your next campaign go viral.
             </p>
             <a
-              href="/contact"
+              href="/partner-support"
               className="btn-secondary inline-flex items-center space-x-2"
             >
               <span>Start Your Project</span>
