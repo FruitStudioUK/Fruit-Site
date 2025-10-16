@@ -13,7 +13,7 @@ export default function RolePage() {
   useEffect(() => {
     const savedRole = localStorage.getItem('userRole');
     if (savedRole === 'creator') router.replace('/');
-    if (savedRole === 'brand') router.replace('/dashboard');
+    if (savedRole === 'brand') router.replace('/overview');
   }, [router]);
 
   const handleSelect = (role: 'creator' | 'brand', e: React.MouseEvent<HTMLButtonElement>) => {
@@ -32,7 +32,7 @@ export default function RolePage() {
 
       // 4) Navigate after fade duration
       setTimeout(() => {
-        if (role === 'brand') router.push('/dashboard');
+        if (role === 'brand') router.push('/overview');
         else router.push('/');
       }, 700); // match CSS duration-700
     });
