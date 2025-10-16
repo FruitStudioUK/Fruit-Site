@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 
 type Role = 'creator' | 'brand' | null;
 
@@ -12,20 +12,13 @@ interface RoleContextType {
 const RoleContext = createContext<RoleContextType | undefined>(undefined);
 
 export function RoleProvider({ children }: { children: React.ReactNode }) {
-  // Initialize directly from localStorage if available
+  // Lazy initializer: runs once, synchronously
   const [role, setRole] = useState<Role>(() => {
     if (typeof window !== 'undefined') {
       return (localStorage.getItem('userRole') as Role) || null;
     }
     return null;
   });
-
-  // Keep localStorage in sync when role changes
-  useEffect(() => {
-    if (role) {
-      localStorage.setItem('userRole', role);
-    }
-  }, [role]);
 
   return (
     <RoleContext.Provider value={{ role, setRole }}>
