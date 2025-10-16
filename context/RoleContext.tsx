@@ -12,15 +12,15 @@ interface RoleContextType {
 const RoleContext = createContext<RoleContextType | undefined>(undefined);
 
 export function RoleProvider({ children }: { children: React.ReactNode }) {
-  const [role, setRole] = useState<Role>(null);
+  // Initialize directly from localStorage if available
+  const [role, setRole] = useState<Role>(() => {
+    if (typeof window !== 'undefined') {
+      return (localStorage.getItem('userRole') as Role) || null;
+    }
+    return null;
+  });
 
-  // Load role from localStorage on mount
-  useEffect(() => {
-    const storedRole = localStorage.getItem('userRole') as Role;
-    if (storedRole) setRole(storedRole);
-  }, []);
-
-  // Persist role to localStorage whenever it changes
+  // Keep localStorage in sync when role changes
   useEffect(() => {
     if (role) {
       localStorage.setItem('userRole', role);
