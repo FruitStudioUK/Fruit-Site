@@ -18,7 +18,6 @@ export default function BrandHome() {
     <main className={siteVisible ? 'animate-fade-in-delayed' : 'opacity-0'}>
       <Hero />
       <Services />
-      <Portfolio />
       <Contact />
     </main>
   );
