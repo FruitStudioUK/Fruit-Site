@@ -7,28 +7,21 @@ export default function RoleSelector() {
   const router = useRouter();
   const { setRole } = useRole();
 
-  const handleSelect = (role: 'creator' | 'brand') => {
-    localStorage.setItem('userRole', role);
+  const handleSelect = (role: "creator" | "brand") => {
     setRole(role);
-
-    if (role === 'brand') {
-      router.push('/dashboard'); // only redirect for Brand
+    if (role === "creator") {
+      router.push("/");          // stay on main page
+    } else {
+      router.push("/dashboard"); // go to brand dashboard
     }
-    // if Creator, do nothing — you’re already on `/`
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center h-screen gap-8">
-      <button
-        onClick={() => handleSelect('creator')}
-        className="btn-primary text-2xl py-5 px-10"
-      >
+    <div className="flex gap-8">
+      <button type="button" onClick={() => handleSelect("creator")}>
         I'm a Creator
       </button>
-      <button
-        onClick={() => handleSelect('brand')}
-        className="btn-secondary text-2xl py-5 px-10"
-      >
+      <button type="button" onClick={() => handleSelect("brand")}>
         I'm a Brand
       </button>
     </div>
