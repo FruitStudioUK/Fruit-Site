@@ -33,11 +33,8 @@ export function Navigation({ className = '' }: NavigationProps) {
 
   const handleRoleChange = (newRole: 'creator' | 'brand') => {
     setRole(newRole);
-    if (newRole === 'creator') {
-      router.push('/');
-    } else {
-      router.push('/dashboard');
-    }
+    if (newRole === 'creator') router.push('/');
+    else router.push('/dashboard');
   };
 
   const creatorNavItems = [
@@ -54,16 +51,10 @@ export function Navigation({ className = '' }: NavigationProps) {
     { href: '/support', label: 'Partner Support', icon: Mail },
   ];
 
-  // Explicitly handle null
+  // Decide nav items
   let navItems: { href: string; label: string; icon: any }[] = [];
-  if (role === 'creator') {
-    navItems = creatorNavItems;
-  } else if (role === 'brand') {
-    navItems = brandNavItems;
-  } else {
-    // role not yet loaded → render nothing
-    return null;
-  }
+  if (role === 'creator') navItems = creatorNavItems;
+  else if (role === 'brand') navItems = brandNavItems;
 
   const isActive = (href: string) => pathname === href;
 
@@ -88,7 +79,6 @@ export function Navigation({ className = '' }: NavigationProps) {
                 priority
                 className={`rounded-lg ${navVisible ? 'animate-pulse-once' : ''}`}
               />
-              <Video className="w-6 h-6 text-white" />
             </div>
             <span className="text-2xl font-baloo2 font-bold text-white">
               fruit.
@@ -97,25 +87,26 @@ export function Navigation({ className = '' }: NavigationProps) {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map(({ href, label, icon: Icon }, idx) => (
-              <Link
-                key={href}
-                href={href}
-                className={`flex items-center space-x-1 px-3 py-2 rounded-lg transition-all duration-300 hover:bg-sub-background/20 ${
-                  isActive(href)
-                    ? role === 'creator'
-                      ? 'text-primary-orange bg-sub-background/20'
-                      : 'text-secondary-green bg-sub-background/20'
-                    : role === 'creator'
-                      ? 'text-white hover:text-primary-orange'
-                      : 'text-white hover:text-secondary-green'
-                } ${navVisible ? 'animate-slide-up' : ''}`}
-                style={{ animationDelay: `${idx * 80}ms` }}
-              >
-                <Icon className="w-4 h-4" />
-                <span className="font-medium">{label}</span>
-              </Link>
-            ))}
+            {navItems.length > 0 &&
+              navItems.map(({ href, label, icon: Icon }, idx) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className={`flex items-center space-x-1 px-3 py-2 rounded-lg transition-all duration-300 hover:bg-sub-background/20 ${
+                    isActive(href)
+                      ? role === 'creator'
+                        ? 'text-primary-orange bg-sub-background/20'
+                        : 'text-secondary-green bg-sub-background/20'
+                      : role === 'creator'
+                        ? 'text-white hover:text-primary-orange'
+                        : 'text-white hover:text-secondary-green'
+                  } ${navVisible ? 'animate-slide-up' : ''}`}
+                  style={{ animationDelay: `${idx * 80}ms` }}
+                >
+                  <Icon className="w-4 h-4" />
+                  <span className="font-medium">{label}</span>
+                </Link>
+              ))}
 
             {/* Role Switch */}
             <div
@@ -178,25 +169,26 @@ export function Navigation({ className = '' }: NavigationProps) {
         {isOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-primary-dark/95 backdrop-blur-md border-t border-sub-background/30 animate-fade-in">
             <div className="py-4 space-y-2">
-              {navItems.map(({ href, label, icon: Icon }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  onClick={() => setIsOpen(false)}
-                  className={`flex items-center space-x-3 px-4 py-3 mx-4 rounded-lg transition-all duration-300 ${
-                    isActive(href)
-                      ? role === 'creator'
-                        ? 'text-primary-orange bg-sub-background/20'
-                        : 'text-secondary-green bg-sub-background/20'
-                      : role === 'creator'
-                        ? 'text-white hover:text-primary-orange hover:bg-sub-background/20'
-                        : 'text-white hover:text-secondary-green hover:bg-sub-background/20'
-                  } animate-slide-up`}
-                >
-                  <Icon className="w-5 h-5" />
-                  <span className="font-medium">{label}</span>
-                </Link>
-              ))}
+              {navItems.length > 0 &&
+                navItems.map(({ href, label, icon: Icon }) => (
+                  <Link
+                    key={href}
+                    href={href}
+                    onClick={() => setIsOpen(false)}
+                    className={`flex items-center space-x-3 px-4 py-3 mx-4 rounded-lg transition-all duration-300 ${
+                      isActive(href)
+                        ? role === 'creator'
+                          ? 'text-primary-orange bg-sub-background/20'
+                          : 'text-secondary-green bg-sub-background/20'
+                        : role === 'creator'
+                          ? 'text-white hover:text-primary-orange hover:bg-sub-background/20'
+                          : 'text-white hover:text-secondary-green hover:bg-sub-background/20'
+                    } animate-slide-up`}
+                  >
+                    <Icon className="w-5 h-5" />
+                    <span className="font-medium">{label}</span>
+                  </Link>
+                ))}
 
                             {/* Role Switch (Mobile) */}
               <div className="px-4">
