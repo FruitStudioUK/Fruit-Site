@@ -35,7 +35,7 @@ export function Navigation({ className = '' }: NavigationProps) {
     setRole(newRole);
     localStorage.setItem('userRole', newRole);
     if (newRole === 'creator') router.push('/');
-    else router.push('/dashboard');
+    else router.push('/overview');
   };
 
   const creatorNavItems = [
@@ -46,10 +46,10 @@ export function Navigation({ className = '' }: NavigationProps) {
   ];
 
   const brandNavItems = [
-    { href: '/dashboard', label: 'Overview', icon: Video },
-    { href: '/campaigns', label: 'Benefits', icon: Briefcase },
-    { href: '/partners', label: 'About Us', icon: User },
-    { href: '/support', label: 'Partner Support', icon: Mail },
+    { href: '/overview', label: 'Overview', icon: Video },
+    { href: '/benefits', label: 'Benefits', icon: Briefcase },
+    { href: '/about-us', label: 'About Us', icon: User },
+    { href: '/partner-support', label: 'Partner Support', icon: Mail },
   ];
 
   // --- FIX: fallback to localStorage if role is null ---
