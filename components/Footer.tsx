@@ -36,20 +36,20 @@ export function Footer({ className = "" }: FooterProps) {
           { href: "/contact", label: "Join Us" },
         ]
       : [
-          { href: "/dashboard", label: "Dashboard" },
-          { href: "/campaigns", label: "Benefits" },
-          { href: "/partners", label: "About Us" },
-          { href: "/support", label: "Partner Support" },
+          { href: "/overview", label: "Overview" },
+          { href: "/benefits", label: "Benefits" },
+          { href: "/about-us", label: "About Us" },
+          { href: "/partner-support", label: "Partner Support" },
         ];
 
   const services =
     effectiveRole === "creator"
       ? [
+          "Sponsorship Management",
+          "Monetisation Support",
           "Video Editing",
-          "Audio Enhancement",
-          "Color Correction",
-          "Brand Partnerships",
-          "Content Strategy",
+          "SEO Optimisation",
+          "Growth Strategy",
         ]
       : [
           "Campaign Management",
