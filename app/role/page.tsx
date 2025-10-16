@@ -9,27 +9,31 @@ export default function RolePage() {
   const { setRole } = useRole();
   const [animating, setAnimating] = useState(false);
 
+  // Auto-skip if role already chosen
   useEffect(() => {
     const savedRole = localStorage.getItem('userRole');
     if (savedRole === 'creator') router.replace('/');
     if (savedRole === 'brand') router.replace('/dashboard');
   }, [router]);
 
-  const handleSelect = (role: 'creator' | 'brand') => {
+  const handleSelect = (role: 'creator' | 'brand', e: React.MouseEvent<HTMLButtonElement>) => {
+    createRipple(e, role === 'creator' ? 'ripple-orange' : 'ripple-green');
     setAnimating(true);
     localStorage.setItem('userRole', role);
     setRole(role);
 
+    // Delay navigation until after fade-out animation
     setTimeout(() => {
-      if (role === 'brand') router.push('/dashboard');
-      else router.push('/');
-    }, 1000);
+      if (role === 'brand') {
+        router.push('/dashboard');
+      } else {
+        router.push('/');
+      }
+    }, 700); // match CSS transition duration
   };
 
-  function createRipple(
-    event: React.MouseEvent<HTMLButtonElement>,
-    colorClass: string
-  ) {
+  // Ripple effect
+  function createRipple(event: React.MouseEvent<HTMLButtonElement>, colorClass: string) {
     const button = event.currentTarget;
     const wrapper = button.parentElement as HTMLElement;
     const circle = document.createElement('span');
@@ -57,10 +61,7 @@ export default function RolePage() {
       <div className="relative">
         <button
           type="button"
-          onClick={(e) => {
-            createRipple(e, 'ripple-orange');
-            handleSelect('creator');
-          }}
+          onClick={(e) => handleSelect('creator', e)}
           className="btn-primary text-2xl py-5 px-10 relative z-10"
         >
           I'm a Creator
@@ -70,10 +71,7 @@ export default function RolePage() {
       <div className="relative">
         <button
           type="button"
-          onClick={(e) => {
-            createRipple(e, 'ripple-green');
-            handleSelect('brand');
-          }}
+          onClick={(e) => handleSelect('brand', e)}
           className="btn-secondary text-2xl py-5 px-10 relative z-10"
         >
           I'm a Brand
