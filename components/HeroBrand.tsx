@@ -30,7 +30,7 @@ export function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <Link
-                href="/support"
+                href="/partner-support"
                 className="btn-primary inline-flex items-center space-x-2 bg-secondary-green hover:bg-secondary-green/90"
               >
                 <span>Book a Call</span>
