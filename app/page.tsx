@@ -10,23 +10,27 @@ import { Contact } from '@/components/Contact';
 export default function CreatorHomeGuarded() {
   const router = useRouter();
   const [ready, setReady] = useState(false);
+  const [siteVisible, setSiteVisible] = useState(false);
 
   useEffect(() => {
     const savedRole = localStorage.getItem('userRole');
 
     if (!savedRole) {
-      router.replace('/role'); // first-time → selector
+      router.replace('/role');
     } else if (savedRole === 'brand') {
-      router.replace('/dashboard'); // brand → brand home
+      router.replace('/dashboard');
     } else {
-      setReady(true); // creator → render creator home
+      // creator → allow fade‑in
+      setReady(true);
+      const timer = setTimeout(() => setSiteVisible(true), 50);
+      return () => clearTimeout(timer);
     }
   }, [router]);
 
   if (!ready) return null;
 
   return (
-    <main className="animate-fade-in-delayed">
+    <main className={siteVisible ? 'animate-fade-in-delayed' : 'opacity-0'}>
       <Hero />
       <Services />
       <Portfolio />
