@@ -1,15 +1,15 @@
+// app/role/page.tsx
 'use client';
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { useRole } from '@/context/RoleContext';
 
 export default function RolePage() {
   const router = useRouter();
-  const { setRole } = useRole();
   const [animating, setAnimating] = useState(false);
+  const [disabled, setDisabled] = useState(false);
 
-  // Auto-skip if role already chosen
+  // Skip if role already chosen
   useEffect(() => {
     const savedRole = localStorage.getItem('userRole');
     if (savedRole === 'creator') router.replace('/');
@@ -17,22 +17,27 @@ export default function RolePage() {
   }, [router]);
 
   const handleSelect = (role: 'creator' | 'brand', e: React.MouseEvent<HTMLButtonElement>) => {
-    createRipple(e, role === 'creator' ? 'ripple-orange' : 'ripple-green');
-    setAnimating(true);
-    localStorage.setItem('userRole', role);
-    setRole(role);
+    if (disabled) return;
+    setDisabled(true); // block second clicks
 
-    // Delay navigation until after fade-out animation
-    setTimeout(() => {
-      if (role === 'brand') {
-        router.push('/dashboard');
-      } else {
-        router.push('/');
-      }
-    }, 700); // match CSS transition duration
+    // 1) Ripple first
+    createRipple(e, role === 'creator' ? 'ripple-orange' : 'ripple-green');
+
+    // 2) Persist role (context will pick it up on destination)
+    localStorage.setItem('userRole', role);
+
+    // 3) Next frame: start fade-out (ensures ripple paints first)
+    requestAnimationFrame(() => {
+      setAnimating(true);
+
+      // 4) Navigate after fade duration
+      setTimeout(() => {
+        if (role === 'brand') router.push('/dashboard');
+        else router.push('/');
+      }, 700); // match CSS duration-700
+    });
   };
 
-  // Ripple effect
   function createRipple(event: React.MouseEvent<HTMLButtonElement>, colorClass: string) {
     const button = event.currentTarget;
     const wrapper = button.parentElement as HTMLElement;
@@ -54,15 +59,17 @@ export default function RolePage() {
 
   return (
     <div
-      className={`flex flex-col md:flex-row items-center justify-center h-screen gap-8 transition-opacity duration-700 ${
+      className={`fixed inset-0 flex flex-col md:flex-row items-center justify-center gap-8 transition-opacity duration-700 ${
         animating ? 'opacity-0' : 'opacity-100'
       }`}
+      // fixed inset-0 ensures the selector fully covers the screen until fade-out completes
     >
       <div className="relative">
         <button
           type="button"
+          disabled={disabled}
           onClick={(e) => handleSelect('creator', e)}
-          className="btn-primary text-2xl py-5 px-10 relative z-10"
+          className="btn-primary text-2xl py-5 px-10 relative z-10 disabled:opacity-60 disabled:cursor-not-allowed"
         >
           I'm a Creator
         </button>
@@ -71,8 +78,9 @@ export default function RolePage() {
       <div className="relative">
         <button
           type="button"
+          disabled={disabled}
           onClick={(e) => handleSelect('brand', e)}
-          className="btn-secondary text-2xl py-5 px-10 relative z-10"
+          className="btn-secondary text-2xl py-5 px-10 relative z-10 disabled:opacity-60 disabled:cursor-not-allowed"
         >
           I'm a Brand
         </button>
