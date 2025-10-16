@@ -9,7 +9,6 @@ export default function RolePage() {
   const { setRole } = useRole();
   const [animating, setAnimating] = useState(false);
 
-  // Auto-skip if role already chosen
   useEffect(() => {
     const savedRole = localStorage.getItem('userRole');
     if (savedRole === 'creator') router.replace('/');
@@ -24,7 +23,7 @@ export default function RolePage() {
     setTimeout(() => {
       if (role === 'brand') router.push('/dashboard');
       else router.push('/');
-    }, 1000); // delay for fade‑out
+    }, 1000);
   };
 
   function createRipple(
