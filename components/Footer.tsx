@@ -14,29 +14,36 @@ export function Footer({ className = "" }: FooterProps) {
   const currentYear = new Date().getFullYear();
   const { role } = useRole();
 
+  // --- FIX: fallback to localStorage if role is null ---
+  let effectiveRole: "creator" | "brand" | null = role;
+  if (!effectiveRole && typeof window !== "undefined") {
+    const stored = localStorage.getItem("userRole") as "creator" | "brand" | null;
+    if (stored) effectiveRole = stored;
+  }
+
   // Role‑specific content
   const tagline =
-    role === "creator"
+    effectiveRole === "creator"
       ? "Empowering content creators with professional creative services and meaningful brand partnerships."
       : "Helping brands connect with creators through impactful campaigns and strategic partnerships.";
 
   const quickLinks =
-    role === "creator"
+    effectiveRole === "creator"
       ? [
           { href: "/", label: "Home" },
           { href: "/services", label: "Services" },
           { href: "/about", label: "About" },
-          { href: "/contact", label: "Contact" },
+          { href: "/contact", label: "Join Us" },
         ]
       : [
           { href: "/dashboard", label: "Dashboard" },
-          { href: "/campaigns", label: "Campaigns" },
-          { href: "/partners", label: "Partners" },
-          { href: "/support", label: "Support" },
+          { href: "/campaigns", label: "Benefits" },
+          { href: "/partners", label: "About Us" },
+          { href: "/support", label: "Partner Support" },
         ];
 
   const services =
-    role === "creator"
+    effectiveRole === "creator"
       ? [
           "Video Editing",
           "Audio Enhancement",
