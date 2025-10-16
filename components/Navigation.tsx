@@ -15,7 +15,7 @@ type NavigationProps = {
 export function Navigation({ className = '' }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [navVisible, setNavVisible] = useState(false); // NEW: fade-in on mount
+  const [navVisible, setNavVisible] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
   const { role, setRole } = useRole();
@@ -26,7 +26,6 @@ export function Navigation({ className = '' }: NavigationProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Mount fade-in (slight delay to sync with page)
   useEffect(() => {
     const t = setTimeout(() => setNavVisible(true), 80);
     return () => clearTimeout(t);
@@ -55,7 +54,17 @@ export function Navigation({ className = '' }: NavigationProps) {
     { href: '/support', label: 'Partner Support', icon: Mail },
   ];
 
-  const navItems = role === 'creator' ? creatorNavItems : brandNavItems;
+  // Explicitly handle null
+  let navItems: { href: string; label: string; icon: any }[] = [];
+  if (role === 'creator') {
+    navItems = creatorNavItems;
+  } else if (role === 'brand') {
+    navItems = brandNavItems;
+  } else {
+    // role not yet loaded → render nothing
+    return null;
+  }
+
   const isActive = (href: string) => pathname === href;
 
   return (
@@ -101,7 +110,7 @@ export function Navigation({ className = '' }: NavigationProps) {
                       ? 'text-white hover:text-primary-orange'
                       : 'text-white hover:text-secondary-green'
                 } ${navVisible ? 'animate-slide-up' : ''}`}
-                style={{ animationDelay: `${idx * 80}ms` }} // stagger
+                style={{ animationDelay: `${idx * 80}ms` }}
               >
                 <Icon className="w-4 h-4" />
                 <span className="font-medium">{label}</span>
@@ -117,7 +126,7 @@ export function Navigation({ className = '' }: NavigationProps) {
             >
               <span
                 className={`absolute top-1 bottom-1 w-1/2 rounded-full transition-all duration-300
-                  ${role === 'creator' ? 'left-1 bg-primary-orange' : 'right-1 bg-secondary-green'}`}
+                  ${role === 'creator' ? 'left-1 bg-primary-orange' : role === 'brand' ? 'right-1 bg-secondary-green' : ''}`}
               />
               <button
                 onClick={() => handleRoleChange('creator')}
@@ -139,7 +148,10 @@ export function Navigation({ className = '' }: NavigationProps) {
           </div>
 
           {/* CTA */}
-          <div className={`hidden md:block ${navVisible ? 'animate-slide-up' : ''}`} style={{ animationDelay: '240ms' }}>
+          <div
+            className={`hidden md:block ${navVisible ? 'animate-slide-up' : ''}`}
+            style={{ animationDelay: '240ms' }}
+          >
             <Link
               href={role === 'creator' ? '/contact' : '/support'}
               className={`btn-primary ${
@@ -186,12 +198,12 @@ export function Navigation({ className = '' }: NavigationProps) {
                 </Link>
               ))}
 
-              {/* Role Switch (Mobile) */}
+                            {/* Role Switch (Mobile) */}
               <div className="px-4">
                 <div className="relative flex bg-sub-background rounded-full p-1 w-full animate-slide-up">
                   <span
                     className={`absolute top-1 bottom-1 w-1/2 rounded-full transition-all duration-300
-                      ${role === 'creator' ? 'left-1 bg-primary-orange' : 'right-1 bg-secondary-green'}`}
+                      ${role === 'creator' ? 'left-1 bg-primary-orange' : role === 'brand' ? 'right-1 bg-secondary-green' : ''}`}
                   />
                   <button
                     onClick={() => {
