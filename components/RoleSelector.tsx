@@ -12,7 +12,7 @@ export default function RoleSelector() {
     if (role === "creator") {
       router.push("/");          // stay on main page
     } else {
-      router.push("/dashboard"); // go to brand dashboard
+      router.push("/overview"); // go to brand dashboard
     }
   };
 
