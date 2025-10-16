@@ -194,13 +194,12 @@ export function Navigation({ className = '' }: NavigationProps) {
                   <span className="font-medium">{label}</span>
                 </Link>
               ))}
-
-                            {/* Role Switch (Mobile) */}
+                                          {/* Role Switch (Mobile) */}
               <div className="px-4">
                 <div className="relative flex bg-sub-background rounded-full p-1 w-full animate-slide-up">
                   <span
                     className={`absolute top-1 bottom-1 w-1/2 rounded-full transition-all duration-300
-                      ${role === 'creator' ? 'left-1 bg-primary-orange' : role === 'brand' ? 'right-1 bg-secondary-green' : ''}`}
+                      ${effectiveRole === 'creator' ? 'left-1 bg-primary-orange' : effectiveRole === 'brand' ? 'right-1 bg-secondary-green' : ''}`}
                   />
                   <button
                     onClick={() => {
@@ -208,7 +207,7 @@ export function Navigation({ className = '' }: NavigationProps) {
                       setIsOpen(false);
                     }}
                     className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
-                      role === 'creator' ? 'text-white' : 'text-text-gray'
+                      effectiveRole === 'creator' ? 'text-white' : 'text-text-gray'
                     }`}
                   >
                     Creator
@@ -219,7 +218,7 @@ export function Navigation({ className = '' }: NavigationProps) {
                       setIsOpen(false);
                     }}
                     className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
-                      role === 'brand' ? 'text-white' : 'text-text-gray'
+                      effectiveRole === 'brand' ? 'text-white' : 'text-text-gray'
                     }`}
                   >
                     Brand
@@ -227,17 +226,18 @@ export function Navigation({ className = '' }: NavigationProps) {
                 </div>
               </div>
 
+              {/* Mobile CTA */}
               <div className="px-4 pt-2 animate-slide-up">
                 <Link
-                  href={role === 'creator' ? '/contact' : '/support'}
+                  href={effectiveRole === 'creator' ? '/contact' : '/support'}
                   onClick={() => setIsOpen(false)}
                   className={`btn-primary w-full text-center block ${
-                    role === 'creator'
+                    effectiveRole === 'creator'
                       ? 'bg-primary-orange hover:bg-primary-orange/90'
                       : 'bg-secondary-green hover:bg-secondary-green/90'
                   }`}
                 >
-                  {role === 'creator' ? 'Get Started' : 'Book a call'}
+                  {effectiveRole === 'creator' ? 'Get Started' : 'Book a call'}
                 </Link>
               </div>
             </div>
@@ -247,3 +247,4 @@ export function Navigation({ className = '' }: NavigationProps) {
     </nav>
   );
 }
+
