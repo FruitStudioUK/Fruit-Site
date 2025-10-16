@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { Hero } from '@/components/HeroBrand';
 import { Services } from '@/components/ServicesBrand';
-import { Portfolio } from '@/components/PortfolioBrand';
+//import { Portfolio } from '@/components/PortfolioBrand';
 import { Contact } from '@/components/ContactBrand';
 
 export default function BrandHome() {
