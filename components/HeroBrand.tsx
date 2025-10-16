@@ -38,11 +38,11 @@ export function Hero() {
               </Link>
 
               <Link
-                href="/portfolio"
+                href="/benefits"
                 className="btn-outline inline-flex items-center space-x-2 border-secondary-green text-secondary-green hover:bg-secondary-green/10"
               >
                 <Play className="w-5 h-5" />
-                <span>View Case Studies</span>
+                <span>What's the benefit?</span>
               </Link>
             </div>
 
