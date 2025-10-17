@@ -105,7 +105,7 @@ export function Contact() {
           <div className="animate-slide-in-right">
             <LeadCatcher
               variant="brand"
-              bookingUrl="https://calendly.com/fruit-brand"
+              bookingUrl="https://calendly.com/contact-fruitstudio/brand-briefing"
             />
           </div>
         </div>
