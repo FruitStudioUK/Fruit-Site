@@ -37,7 +37,6 @@ export default function CreatorHomeGuarded() {
       {/* You can keep Contact if you want a full contact section */}
       <Contact />
       {/* Add the new simplified lead catcher */}
-      <LeadCatcher variant="creator" bookingUrl="https://calendly.com/fruit-creator" />
     </main>
   );
 }
