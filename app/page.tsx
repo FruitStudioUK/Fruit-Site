@@ -6,6 +6,7 @@ import { Hero } from '@/components/Hero';
 import { Services } from '@/components/Services';
 // import { Portfolio } from '@/components/Portfolio';
 import { Contact } from '@/components/Contact';
+import { LeadCatcher } from '@/components/LeadCatcher';
 
 export default function CreatorHomeGuarded() {
   const router = useRouter();
@@ -33,7 +34,10 @@ export default function CreatorHomeGuarded() {
     <main className={siteVisible ? 'animate-fade-in-delayed' : 'opacity-0'}>
       <Hero />
       <Services />
+      {/* You can keep Contact if you want a full contact section */}
       <Contact />
+      {/* Add the new simplified lead catcher */}
+      <LeadCatcher variant="creator" bookingUrl="https://calendly.com/fruit-creator" />
     </main>
   );
 }
