@@ -1,46 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { LeadCatcher } from "@/components/LeadCatcher";
 
 export function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    service: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-
-    // Reset form after success
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: "", email: "", service: "", message: "" });
-    }, 3000);
-  };
-
-  const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
   return (
     <section className="section-padding bg-primary-dark">
       <div className="container-max">
@@ -64,7 +27,7 @@ export function Contact() {
               <p className="text-text-gray leading-relaxed mb-8">
                 Whether you&apos;re looking for some marketing advice
                 or want to find your perfect creators, we&apos;re
-                here to help you level up your brand's audience.
+                here to help you level up your brand&apos;s audience.
               </p>
             </div>
 
@@ -138,125 +101,15 @@ export function Contact() {
             </div>
           </div>
 
-          {/* Contact Form */}
+          {/* Lead Catcher replaces old form */}
           <div className="animate-slide-in-right">
-            <form onSubmit={handleSubmit} className="card">
-              <div className="space-y-6">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-white font-medium mb-2"
-                  >
-                    Your Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-sub-background/30 border border-sub-background/50 rounded-lg text-white placeholder-text-gray focus:outline-none focus:ring-2 focus:ring-secondary-green focus:border-transparent transition-all duration-300"
-                    placeholder="Enter your full name"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-white font-medium mb-2"
-                  >
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-sub-background/30 border border-sub-background/50 rounded-lg text-white placeholder-text-gray focus:outline-none focus:ring-2 focus:ring-secondary-green focus:border-transparent transition-all duration-300"
-                    placeholder="your@email.com"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="service"
-                    className="block text-white font-medium mb-2"
-                  >
-                    Service Interest *
-                  </label>
-                  <select
-                    id="service"
-                    name="service"
-                    value={formData.service}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-sub-background/30 border border-sub-background/50 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-secondary-green focus:border-transparent transition-all duration-300"
-                  >
-                    <option value="">Select a service</option>
-                    <option value="video-editing">Brand Consulation</option>
-                    <option value="audio-enhancement">Influencer Marketing</option>
-                    <option value="color-correction">Campaign Engineering</option>
-                    <option value="brand-partnerships">
-                      Creator Showcase
-                    </option>
-                    <option value="growth-strategy">Growth Strategy</option>
-                    <option value="full-package">Full Package</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-white font-medium mb-2"
-                  >
-                    Project Details *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={4}
-                    className="w-full px-4 py-3 bg-sub-background/30 border border-sub-background/50 rounded-lg text-white placeholder-text-gray focus:outline-none focus:ring-2 focus:ring-secondary-green focus:border-transparent transition-all duration-300 resize-none"
-                    placeholder="Tell us about your project, goals, and any specific requirements..."
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={isSubmitting || isSubmitted}
-                  className={`w-full py-4 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 ${
-                    isSubmitted
-                      ? "bg-primary-orange text-white"
-                      : "btn-primary"
-                  }`}
-                >
-                  {isSubmitting ? (
-                    <>
-                      <div className="loading-spinner"></div>
-                      <span>Sending...</span>
-                    </>
-                  ) : isSubmitted ? (
-                    <>
-                      <CheckCircle className="w-5 h-5" />
-                      <span>Message Sent!</span>
-                    </>
-                  ) : (
-                    <>
-                      <Send className="w-5 h-5" />
-                      <span>Send Message</span>
-                    </>
-                  )}
-                </button>
-              </div>
-            </form>
+            <LeadCatcher
+              variant="brand"
+              bookingUrl="https://calendly.com/fruit-brand"
+            />
           </div>
         </div>
       </div>
     </section>
-  );
+  );
 }
