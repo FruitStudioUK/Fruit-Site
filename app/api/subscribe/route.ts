@@ -1,5 +1,6 @@
 // app/api/subscribe/route.ts
 import { NextResponse } from 'next/server';
+import nodemailer from 'nodemailer';
 
 export async function POST(req: Request) {
   try {
@@ -9,28 +10,30 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Email is required' }, { status: 400 });
     }
 
-    // Normalize and basic validation
     const normalized = email.trim().toLowerCase();
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(normalized)) {
-      return NextResponse.json({ error: 'Invalid email' }, { status: 400 });
-    }
 
-    // Lazy import Resend here so it's only evaluated on the server
-    const { Resend } = await import('resend');
-    const resend = new Resend(process.env.RESEND_API_KEY!);
+    // Create transporter
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT),
+      secure: Number(process.env.SMTP_PORT) === 465, // true for 465, false for 587
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+    });
 
-    // Send notification to your inbox
-    await resend.emails.send({
-      from: 'Fruit <onboarding@resend.dev>', // use a verified sender
+    // Send notification to you
+    await transporter.sendMail({
+      from: `"Fruit" <${process.env.SMTP_USER}>`,
       to: 'hey@thisisfruit.co.uk',
       subject: 'New lead',
       text: `Email: ${normalized}\nSource: ${source || 'unknown'}\nTime: ${new Date().toISOString()}`,
     });
 
-    // Optional: auto‑reply to the lead
-    await resend.emails.send({
-      from: 'Fruit <onboarding@resend.dev>', // keep using a verified sender until you set up your domain
+    // Auto‑reply to the lead
+    await transporter.sendMail({
+      from: `"Fruit" <${process.env.SMTP_USER}>`,
       to: normalized,
       subject: 'Thanks — we’ll send you more info',
       text: `Thanks for your interest! We’ll email you more info shortly.\n\n— Fruit`,
