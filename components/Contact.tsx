@@ -2,12 +2,8 @@
 
 import { Mail, Phone, MapPin } from "lucide-react";
 import { LeadCatcher } from "@/components/LeadCatcher";
-import { InlineWidget } from "react-calendly";
-import { useState } from "react";
 
 export function Contact() {
-  const [showCalendly, setShowCalendly] = useState(false);
-
   return (
     <section className="section-padding bg-primary-dark">
       <div className="container-max">
@@ -105,25 +101,12 @@ export function Contact() {
             </div>
           </div>
 
-          {/* Lead Catcher + Conditional Booking */}
+          {/* Right column: LeadCatcher only */}
           <div className="space-y-8 animate-slide-in-right">
-            <LeadCatcher variant="creator" />
-
-            {!showCalendly ? (
-              <button
-                onClick={() => setShowCalendly(true)}
-                className="w-full py-3 px-6 bg-primary-orange text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300"
-              >
-                Book a Call
-              </button>
-            ) : (
-              <div className="bg-white rounded-lg shadow p-4">
-                <h3 className="text-xl font-bold mb-4 text-black">
-                  Book a Call
-                </h3>
-                <InlineWidget url="https://calendly.com/contact-fruitstudio/30min" />
-              </div>
-            )}
+            <LeadCatcher
+              variant="creator"
+              bookingUrl="https://calendly.com/contact-fruitstudio/30min"
+            />
           </div>
         </div>
       </div>
