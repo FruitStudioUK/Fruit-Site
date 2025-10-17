@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { InlineWidget } from 'react-calendly';
 
 type LeadCatcherProps = {
   className?: string;
@@ -15,6 +16,7 @@ export function LeadCatcher({
 }: LeadCatcherProps) {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [showCalendly, setShowCalendly] = useState(false);
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -85,18 +87,23 @@ export function LeadCatcher({
         <p className="text-text-gray mb-4">
           Book a call and we’ll walk you through the next steps.
         </p>
-        <a
-          href={bookingUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`btn-primary inline-block ${
-            isCreator
-              ? 'bg-primary-orange hover:bg-primary-orange/90'
-              : 'bg-secondary-green hover:bg-secondary-green/90'
-          }`}
-        >
-          Book a call
-        </a>
+
+        {!showCalendly ? (
+          <button
+            onClick={() => setShowCalendly(true)}
+            className={`btn-primary inline-block ${
+              isCreator
+                ? 'bg-primary-orange hover:bg-primary-orange/90'
+                : 'bg-secondary-green hover:bg-secondary-green/90'
+            }`}
+          >
+            Book a call
+          </button>
+        ) : (
+          <div className="bg-white rounded-lg shadow p-4">
+            <InlineWidget url={bookingUrl} />
+          </div>
+        )}
       </div>
     </section>
   );
