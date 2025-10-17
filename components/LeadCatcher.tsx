@@ -25,7 +25,7 @@ export function LeadCatcher({
       const res = await fetch('/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, source: variant }), // 'creator' | 'brand'
       });
       if (!res.ok) throw new Error('Failed');
       setStatus('success');
