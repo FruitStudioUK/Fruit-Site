@@ -2,6 +2,7 @@
 
 import { Mail, Phone, MapPin } from "lucide-react";
 import { LeadCatcher } from "@/components/LeadCatcher";
+import { InlineWidget } from "react-calendly";
 
 export function Contact() {
   return (
@@ -102,11 +103,18 @@ export function Contact() {
           </div>
 
           {/* Lead Catcher replaces old form */}
-          <div className="animate-slide-in-right">
+          <div className="space-y-8 animate-slide-in-right">
             <LeadCatcher
               variant="creator"
-              bookingUrl="https://calendly.com/fruit-call"
+              bookingUrl="https://calendly.com/fruit/intro-call"
             />
+
+            <div className="bg-white rounded-lg shadow p-4">
+              <h3 className="text-xl font-bold mb-4 text-black">
+                Book a Call
+              </h3>
+              <InlineWidget url="https://calendly.com/contact-fruitstudio/30min" />
+            </div>
           </div>
         </div>
       </div>
