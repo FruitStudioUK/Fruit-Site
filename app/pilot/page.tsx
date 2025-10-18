@@ -18,5 +18,5 @@ export default async function BrandRedirectPage({ searchParams }) {
     headers: { "Content-Type": "application/json" },
   }).catch(() => {});
 
-  redirect("https://brand.com");
+  redirect("https://google.com");
 }
