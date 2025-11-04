@@ -4,7 +4,7 @@ export default function TermsAndServices() {
   return (
     <section className="section-padding bg-primary-dark text-text-white font-body">
       <div className="container-max max-w-4xl mx-auto px-4">
-        <h1 className="text-4xl font-heading font-bold mb-6 text-white">
+        <h1 className="text-4xl font-heading font-baloo2 font-bold mb-6 text-white">
           Terms & Services
         </h1>
 
@@ -14,7 +14,7 @@ export default function TermsAndServices() {
 
         <div className="space-y-10 text-text-gray leading-relaxed">
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               1.0 Introduction and Acceptance of Terms
             </h2>
             <p>
@@ -26,7 +26,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               2.0 Description of Services
             </h2>
             <p>
