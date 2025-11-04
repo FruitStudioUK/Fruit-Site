@@ -15,23 +15,33 @@ export default function TermsAndServices() {
         <div className="space-y-8 text-text-gray leading-relaxed">
           <section>
             <h2 className="text-2xl font-heading font-bold text-white mb-2">
-              1. Introduction
+              1.0 Introduction and Acceptance of Terms
             </h2>
             <p>
-              These Terms & Services govern your use of our website and services.
-              By accessing or using our platform, you agree to be bound by these
-              terms.
+              These Terms of Service (the "Terms") govern your use of the Fruit Studio website, including all subdomains, pages, and content (the "Website"). The Website is operated by Fruit Studio Ltd (the "Company," "we," "us," or "our"). By accessing, browsing, or using the Website in any way, you agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, you must not use the Website.
+
+              These Terms apply to all visitors and users (collectively, "Users," "you," or "your"), whether registered or not, and supersede any prior version of these Terms.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-heading font-bold text-white mb-2">
-              2. Use of Services
+              2.0 Description of Services
             </h2>
             <p>
-              You agree to use our services only for lawful purposes and in
-              accordance with these terms. You must not misuse or interfere with
-              the proper functioning of the site.
+              Fruit Studio operates as an influencer marketing and talent management agency. The Website provides information about our services, including:
+
+              - Talent roster management and creator partnerships
+
+              - Influencer marketing campaign coordination
+
+              - Brand-influencer matching and consultation services
+
+              - Performance tracking and reporting tools
+
+              - Educational content and industry insights
+
+              We may offer additional services, updates, modifications, or revisions to our Website and services at any time. Your continued use of the Website after any such changes constitutes your acceptance of the updated Terms.
             </p>
           </section>
 
