@@ -53,7 +53,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               3.0 User Eligibility
             </h2>
             <p>
@@ -77,7 +77,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               4.0 Account Registration and Use
             </h2>
             <p>
@@ -104,7 +104,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               5.0 Intellectual Property Rights
             </h2>
             <p>
@@ -128,7 +128,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               6.0 Acceptable Use Policy
             </h2>
             <p>
@@ -167,7 +167,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               7.0 Payment and Fees
             </h2>
             <p>
@@ -176,7 +176,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               8.0 Limitation of Liability
             </h2>
             <p>
@@ -200,7 +200,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               9.0 Data Protection and Privacy
             </h2>
             <p>
@@ -212,7 +212,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               10.0 Third-Party Links and Content
             </h2>
             <p>
@@ -221,7 +221,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               11.0 Termination and Suspension
             </h2>
             <p>
@@ -230,7 +230,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               12.0 Modifications to Terms and Services
             </h2>
             <p>
@@ -239,7 +239,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               13.0 Governing Law and Dispute Resolution
             </h2>
             <p>
@@ -272,7 +272,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               14.0 Confidentiality
             </h2>
             <p>
@@ -281,7 +281,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               15.0 Limitation on Communications
             </h2>
             <p>
@@ -290,7 +290,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               16.0 Warranties and Representations
             </h2>
             <p>
@@ -308,7 +308,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               17.0 Indemnification
             </h2>
             <p>
@@ -329,7 +329,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               18.0 Force Majeure
             </h2>
             <p>
@@ -338,7 +338,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               19.0 Severability
             </h2>
             <p>
@@ -347,7 +347,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               20.0 Entire Agreement
             </h2>
             <p>
@@ -356,7 +356,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               21.0 Contact Information
             </h2>
             <p>
@@ -381,7 +381,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               22.0 Additional Legal Notices
             </h2>
             <p>
@@ -390,7 +390,7 @@ export default function TermsAndServices() {
             <p>
               If you believe content on the Website infringes your copyright or intellectual property, please contact us with the following information: (1) your name and contact details, (2) a description of the infringing content, (3) a description of the copyrighted work or right you own, and (4) a statement that you have a good-faith belief the content is infringing and that your claim is accurate. We will investigate and take appropriate action.
             </p>
-            <p>
+            <p className=" font-bold">
               Accessibility:
             </p>
             <p>
@@ -399,7 +399,7 @@ export default function TermsAndServices() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               By using the Website, you acknowledge that you have read these Terms, understand them, and agree to be bound by them.
             </h2>
           </section>
