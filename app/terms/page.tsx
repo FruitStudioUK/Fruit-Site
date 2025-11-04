@@ -107,19 +107,19 @@ export default function TermsAndServices() {
             <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               5.0 Intellectual Property Rights
             </h2>
-            <p>
+            <p className=" font-bold">
               Fruit Studio Content:
             </p>
             <p>
               All content on the Website, including text, graphics, logos, images, videos, trademarks, service marks, and other materials (collectively, "Fruit Content"), are the exclusive property of Fruit Studio or our licensors. You are granted a limited, non-exclusive, non-transferable, revocable license to view and use Fruit Content solely for personal, non-commercial purposes. You may not reproduce, distribute, modify, create derivative works, publicly display, or otherwise exploit Fruit Content without our prior written consent.
             </p>
-            <p>
+            <p className=" font-bold">
               User Content:
             </p>
             <p>
              If you submit, post, or upload any content to the Website (such as creator profiles, portfolio materials, or campaign feedback) ("User Content"), you retain ownership of that content. However, you grant Fruit Studio a worldwide, non-exclusive, royalty-free, perpetual license to use, display, reproduce, and modify User Content for the purpose of operating the Website and providing our services. You warrant that you own or have the necessary rights to all User Content you submit.
             </p>
-            <p>
+            <p className=" font-bold">
               Prohibited Use of IP:
             </p>
             <p>
@@ -179,19 +179,19 @@ export default function TermsAndServices() {
             <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               8.0 Limitation of Liability
             </h2>
-            <p>
+            <p className=" font-bold">
               DISCLAIMER:
             </p>
             <p>
               The Website and all Fruit Content are provided "AS IS" without any warranties, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. Fruit Studio does not warrant that the Website will be error-free, secure, or continuously available.
             </p>
-            <p>
+            <p className=" font-bold">
               LIABILITY CAP:
             </p>
             <p>
               To the maximum extent permitted by law, Fruit Studio shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Website, even if advised of the possibility of such damages. This includes loss of data, revenue, profits, or business opportunity. Fruit Studio's total liability to you for any claim shall not exceed the fees paid by you for services in the preceding 12 months, or £100, whichever is greater.
             </p>
-            <p>
+            <p className=" font-bold">
               EXCEPTIONS:
             </p>
             <p>
@@ -242,13 +242,13 @@ export default function TermsAndServices() {
             <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               13.0 Governing Law and Dispute Resolution
             </h2>
-            <p>
+            <p className=" font-bold">
               Governing Law:
             </p>
             <p>
               These Terms are governed by and construed in accordance with the laws of England and Wales, without regard to its conflict of law principles.
             </p>
-            <p>
+            <p className=" font-bold">
               Dispute Resolution:
             </p>
             <p>
@@ -263,7 +263,7 @@ export default function TermsAndServices() {
             <p>
                  3. If mediation fails, either party may pursue litigation in the courts of England and Wales.
             </p>
-            <p>
+            <p className=" font-bold">
               Jurisdiction:
             </p>
             <p>
@@ -293,13 +293,13 @@ export default function TermsAndServices() {
             <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               16.0 Warranties and Representations
             </h2>
-            <p>
+            <p className=" font-bold">
               Fruit Studio Warranties:
             </p>
             <p>
               Fruit Studio represents that it has the right to operate the Website and provide the services described. We warrant that all information we provide is true and accurate to the best of our knowledge.
             </p>
-            <p>
+            <p className=" font-bold">
               User Warranties:
             </p>
             <p>
@@ -384,7 +384,7 @@ export default function TermsAndServices() {
             <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               22.0 Additional Legal Notices
             </h2>
-            <p>
+            <p className=" font-bold">
               DMCA Compliance:
             </p>
             <p>
