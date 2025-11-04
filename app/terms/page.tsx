@@ -164,16 +164,6 @@ export default function TermsAndServices() {
             <p>
               - Fruit Studio may suspend or terminate your account and access to the Website if you violate this policy or any other provision of these Terms. We also reserve the right to report suspected illegal activity to law enforcement.
             </p>
-            <p>
-              Email us at{" "}
-              <a
-                href="mailto:hey@thisisfruit.co.uk"
-                className="text-primary-orange underline"
-              >
-                hey@thisisfruit.co.uk
-              </a>
-              .
-            </p>
           </section>
 
           <section className="space-y-4">
@@ -228,6 +218,190 @@ export default function TermsAndServices() {
             <p>
               The Website may contain links to third-party websites and services. Fruit Studio does not control, endorse, or assume responsibility for the content, accuracy, or practices of these third-party sites. Your use of third-party sites is governed by their terms and policies. We are not liable for any harm or damage resulting from your use of third-party links or content.
             </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
+              11.0 Termination and Suspension
+            </h2>
+            <p>
+              Fruit Studio may suspend or terminate your access to the Website at any time, with or without cause, and with or without notice. Upon termination, your right to use the Website immediately ceases. Sections regarding intellectual property, limitation of liability, governing law, and any outstanding payment obligations survive termination.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
+              12.0 Modifications to Terms and Services
+            </h2>
+            <p>
+              Fruit Studio reserves the right to modify these Terms at any time. We will notify you of material changes by posting the updated Terms on the Website and updating the "Last Updated" date. Your continued use of the Website following such changes constitutes your acceptance of the modified Terms. If you do not agree to the modifications, you must discontinue your use of the Website.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
+              13.0 Governing Law and Dispute Resolution
+            </h2>
+            <p>
+              Governing Law:
+            </p>
+            <p>
+              These Terms are governed by and construed in accordance with the laws of England and Wales, without regard to its conflict of law principles.
+            </p>
+            <p>
+              Dispute Resolution:
+            </p>
+            <p>
+              Any dispute arising out of or relating to these Terms or the Website shall be governed by the following process:
+            </p>
+            <p>
+                 1. Both parties shall attempt to resolve the dispute through good-faith negotiation.
+            </p>
+            <p>
+                 2. If unresolved within 30 days, either party may initiate non-binding mediation.
+            </p>
+            <p>
+                 3. If mediation fails, either party may pursue litigation in the courts of England and Wales.
+            </p>
+            <p>
+              Jurisdiction:
+            </p>
+            <p>
+              You irrevocably submit to the exclusive jurisdiction of the courts of England and Wales for any legal proceedings arising out of or relating to these Terms.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
+              14.0 Confidentiality
+            </h2>
+            <p>
+              Any confidential information you share with Fruit Studio through the Website (including campaign strategies, brand information, or business details) will be treated as confidential and used only for the purpose of providing our services. Fruit Studio will not disclose your confidential information to third parties without your written consent, except where required by law or in connection with providing the services.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
+              15.0 Limitation on Communications
+            </h2>
+            <p>
+              By using the Website, you may opt in to receive communications from Fruit Studio, including marketing emails, campaign updates, or service announcements. You may unsubscribe from non-essential communications at any time by clicking "unsubscribe" in any email or by contacting us. However, we may continue to send transactional communications (such as account confirmations or service notices) that are essential to your use of the Website.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
+              16.0 Warranties and Representations
+            </h2>
+            <p>
+              Fruit Studio Warranties:
+            </p>
+            <p>
+              Fruit Studio represents that it has the right to operate the Website and provide the services described. We warrant that all information we provide is true and accurate to the best of our knowledge.
+            </p>
+            <p>
+              User Warranties:
+            </p>
+            <p>
+              You warrant that all information you provide to Fruit Studio is accurate, truthful, and complete, and that your use of the Website does not violate any applicable law or third-party rights.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
+              17.0 Indemnification
+            </h2>
+            <p>
+              You agree to indemnify, defend, and hold harmless Fruit Studio, its officers, employees, and agents from any claims, damages, losses, or expenses (including attorney's fees) arising out of or relating to:
+            </p>
+            <p>
+              - Your violation of these Terms or any applicable law;
+            </p>
+            <p>
+              - Your User Content or use of the Website;
+            </p>
+            <p>
+              - Your violation of any third-party rights;
+            </p>
+            <p>
+              - Any misrepresentation or inaccuracy in information you provide.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
+              18.0 Force Majeure
+            </h2>
+            <p>
+              Fruit Studio shall not be liable for any failure or delay in performing obligations under these Terms due to events beyond its reasonable control, including natural disasters, pandemics, government actions, strikes, or internet outages. In such cases, obligations are suspended, and timelines will be adjusted as reasonably necessary.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
+              19.0 Severability
+            </h2>
+            <p>
+              If any provision of these Terms is found to be invalid, unenforceable, or illegal, the remaining provisions shall continue in full force and effect. Fruit Studio and the User agree that the invalid provision should be modified to the minimum extent necessary to make it valid and enforceable.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
+              20.0 Entire Agreement
+            </h2>
+            <p>
+              These Terms, together with our Privacy Policy and any service agreements or campaign briefs, constitute the entire agreement between you and Fruit Studio regarding the Website and supersede all prior understandings, negotiations, and agreements. No modification of these Terms is effective unless in writing and signed by both parties.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
+              21.0 Contact Information
+            </h2>
+            <p>
+              For questions about these Terms, to report violations, or for general inquiries:
+            </p>
+            <p>
+              Fruit Studio Ltd
+            </p>
+            <p>
+              London, UK
+            </p>
+            <p>
+              Email us at{" "}
+              <a
+                href="mailto:hey@thisisfruit.co.uk"
+                className="text-primary-orange underline"
+              >
+                hey@thisisfruit.co.uk
+              </a>
+              .
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
+              22.0 Additional Legal Notices
+            </h2>
+            <p>
+              DMCA Compliance:
+            </p>
+            <p>
+              If you believe content on the Website infringes your copyright or intellectual property, please contact us with the following information: (1) your name and contact details, (2) a description of the infringing content, (3) a description of the copyrighted work or right you own, and (4) a statement that you have a good-faith belief the content is infringing and that your claim is accurate. We will investigate and take appropriate action.
+            </p>
+            <p>
+              Accessibility:
+            </p>
+            <p>
+              Fruit Studio is committed to making the Website accessible. If you experience accessibility barriers, please contact us so we can assist you.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
+              By using the Website, you acknowledge that you have read these Terms, understand them, and agree to be bound by them.
+            </h2>
           </section>
         </div>
       </div>
