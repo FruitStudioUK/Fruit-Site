@@ -19,7 +19,8 @@ export default function TermsAndServices() {
             </h2>
             <p>
               These Terms of Service (the "Terms") govern your use of the Fruit Studio website, including all subdomains, pages, and content (the "Website"). The Website is operated by Fruit Studio Ltd (the "Company," "we," "us," or "our"). By accessing, browsing, or using the Website in any way, you agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, you must not use the Website.
-
+            </p>
+            <p>
               These Terms apply to all visitors and users (collectively, "Users," "you," or "your"), whether registered or not, and supersede any prior version of these Terms.
             </p>
           </section>
