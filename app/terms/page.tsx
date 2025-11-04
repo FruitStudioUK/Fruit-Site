@@ -12,12 +12,11 @@ export default function TermsAndServices() {
           Last updated: November 4, 2025
         </p>
 
-        <div className="space-y-8 text-text-gray leading-relaxed">
-          <section>
-            <h2 className="text-2xl font-heading font-bold text-white mb-2">
+        <div className="space-y-10 text-text-gray leading-relaxed">
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
               1.0 Introduction and Acceptance of Terms
             </h2>
-            <div className="space-y-4">
             <p>
               These Terms of Service (the "Terms") govern your use of the Fruit Studio website, including all subdomains, pages, and content (the "Website"). The Website is operated by Fruit Studio Ltd (the "Company," "we," "us," or "our"). By accessing, browsing, or using the Website in any way, you agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, you must not use the Website.
             </p>
@@ -26,65 +25,63 @@ export default function TermsAndServices() {
             </p>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-heading font-bold text-white mb-2">
-              2.0 Description of Services
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
+              2. Use of Services
             </h2>
             <p>
-              Fruit Studio operates as an influencer marketing and talent management agency. The Website provides information about our services, including:
-
-              - Talent roster management and creator partnerships
-
-              - Influencer marketing campaign coordination
-
-              - Brand-influencer matching and consultation services
-
-              - Performance tracking and reporting tools
-
-              - Educational content and industry insights
-
-              We may offer additional services, updates, modifications, or revisions to our Website and services at any time. Your continued use of the Website after any such changes constitutes your acceptance of the updated Terms.
+              You agree to use our services only for lawful purposes and in accordance with these terms.
+            </p>
+            <p>
+              You must not misuse or interfere with the proper functioning of the site, attempt unauthorized access, or engage in any activity that could harm our platform or users.
             </p>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-heading font-bold text-white mb-2">
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
               3. Intellectual Property
             </h2>
             <p>
-              All content, branding, and materials on this site are the property
-              of Fruit Studio unless otherwise stated. You may not reproduce,
-              distribute, or create derivative works without permission.
+              All content, branding, and materials on this site are the property of Fruit Studio unless otherwise stated.
+            </p>
+            <p>
+              You may not reproduce, distribute, or create derivative works from our content without prior written permission.
             </p>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-heading font-bold text-white mb-2">
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
               4. Privacy
             </h2>
             <p>
-              Your privacy is important to us. Please review our Privacy Policy
-              for details on how we collect, use, and protect your data.
+              Your privacy is important to us. We are committed to protecting your personal information and using it only in accordance with our Privacy Policy.
+            </p>
+            <p>
+              Please review our Privacy Policy to understand how we collect, use, and safeguard your data.
             </p>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-heading font-bold text-white mb-2">
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
               5. Changes to Terms
             </h2>
             <p>
-              We reserve the right to update these terms at any time. Continued
-              use of the site after changes constitutes acceptance of the new
-              terms.
+              We reserve the right to update these terms at any time. Changes will be effective immediately upon posting.
+            </p>
+            <p>
+              Continued use of the site after changes constitutes acceptance of the new terms.
             </p>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-heading font-bold text-white mb-2">
+          <section className="space-y-4">
+            <h2 className="text-2xl font-heading font-bold text-white">
               6. Contact
             </h2>
             <p>
-              If you have any questions about these terms, contact us at{" "}
+              If you have any questions about these terms, feel free to reach out to us.
+            </p>
+            <p>
+              Email us at{" "}
               <a
                 href="mailto:hey@thisisfruit.co.uk"
                 className="text-primary-orange underline"
