@@ -18,7 +18,7 @@ export default function TermsAndServices() {
               1.0 Introduction and Acceptance of Terms
             </h2>
             <p>
-              These Terms of Service (the "Terms") govern your use of the Fruit Studio website, including all subdomains, pages, and content (the "Website"). The Website is operated by Fruit Studio Ltd (the "Company," "we," "us," or "our"). By accessing, browsing, or using the Website in any way, you agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, you must not use the Website.
+              These Terms of Service (the "Terms") govern your use of the Fruit Studio website, including all subdomains, pages, and content (the "Website"). The Website is operated by Fruit Studio Ltd (the "Company," "Fruit", "we," "us," or "our"). By accessing, browsing, or using the Website in any way, you agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, you must not use the Website.
             </p>
             <p>
               These Terms apply to all visitors and users (collectively, "Users," "you," or "your"), whether registered or not, and supersede any prior version of these Terms.
@@ -30,7 +30,7 @@ export default function TermsAndServices() {
               2.0 Description of Services
             </h2>
             <p>
-              Fruit Studio operates as an influencer marketing and talent management agency. The Website provides information about our services, including:
+              Fruit operates as an influencer marketing and talent management agency. The Website provides information about our services, including:
             </p>
             <p>
               - Talent roster management and creator partnerships
@@ -72,7 +72,7 @@ export default function TermsAndServices() {
               - Any information you provide is accurate, current, and complete.
             </p>
             <p>
-             Fruit Studio reserves the right to refuse or revoke access to the Website for any User who fails to meet these eligibility requirements.
+             Fruit reserves the right to refuse or revoke access to the Website for any User who fails to meet these eligibility requirements.
             </p>
           </section>
 
@@ -99,7 +99,7 @@ export default function TermsAndServices() {
               - Comply with all applicable laws and regulations.
             </p>
             <p>
-             Fruit Studio is not liable for any unauthorized access to your account or any losses resulting from your failure to protect your account credentials.
+             Fruit is not liable for any unauthorized access to your account or any losses resulting from your failure to protect your account credentials.
             </p>
           </section>
 
@@ -108,16 +108,16 @@ export default function TermsAndServices() {
               5.0 Intellectual Property Rights
             </h2>
             <p className=" font-bold">
-              Fruit Studio Content:
+              Fruit Content:
             </p>
             <p>
-              All content on the Website, including text, graphics, logos, images, videos, trademarks, service marks, and other materials (collectively, "Fruit Content"), are the exclusive property of Fruit Studio or our licensors. You are granted a limited, non-exclusive, non-transferable, revocable license to view and use Fruit Content solely for personal, non-commercial purposes. You may not reproduce, distribute, modify, create derivative works, publicly display, or otherwise exploit Fruit Content without our prior written consent.
+              All content on the Website, including text, graphics, logos, images, videos, trademarks, service marks, and other materials (collectively, "Fruit Content"), are the exclusive property of Fruit or our licensors. You are granted a limited, non-exclusive, non-transferable, revocable license to view and use Fruit Content solely for personal, non-commercial purposes. You may not reproduce, distribute, modify, create derivative works, publicly display, or otherwise exploit Fruit Content without our prior written consent.
             </p>
             <p className=" font-bold">
               User Content:
             </p>
             <p>
-             If you submit, post, or upload any content to the Website (such as creator profiles, portfolio materials, or campaign feedback) ("User Content"), you retain ownership of that content. However, you grant Fruit Studio a worldwide, non-exclusive, royalty-free, perpetual license to use, display, reproduce, and modify User Content for the purpose of operating the Website and providing our services. You warrant that you own or have the necessary rights to all User Content you submit.
+             If you submit, post, or upload any content to the Website (such as creator profiles, portfolio materials, or campaign feedback) ("User Content"), you retain ownership of that content. However, you grant Fruit a worldwide, non-exclusive, royalty-free, perpetual license to use, display, reproduce, and modify User Content for the purpose of operating the Website and providing our services. You warrant that you own or have the necessary rights to all User Content you submit.
             </p>
             <p className=" font-bold">
               Prohibited Use of IP:
@@ -162,7 +162,7 @@ export default function TermsAndServices() {
               - Using the Website for competitive intelligence or to develop competing services.
             </p>
             <p>
-              - Fruit Studio may suspend or terminate your account and access to the Website if you violate this policy or any other provision of these Terms. We also reserve the right to report suspected illegal activity to law enforcement.
+              - Fruit may suspend or terminate your account and access to the Website if you violate this policy or any other provision of these Terms. We also reserve the right to report suspected illegal activity to law enforcement.
             </p>
           </section>
 
@@ -171,7 +171,7 @@ export default function TermsAndServices() {
               7.0 Payment and Fees
             </h2>
             <p>
-              If you engage Fruit Studio for services beyond general Website access, payment terms will be specified in a separate service agreement, campaign brief, or invoice. All fees are exclusive of applicable taxes unless otherwise stated. Payments are generally due within 7 days of invoice unless alternative terms are agreed in writing. Late payments may incur interest at a commercial rate. Refunds are at Fruit Studio's discretion and will be detailed in any applicable service contract.
+              If you engage Fruit for services beyond general Website access, payment terms will be specified in a separate service agreement, campaign brief, or invoice. All fees are exclusive of applicable taxes unless otherwise stated. Payments are generally due within 7 days of invoice unless alternative terms are agreed in writing. Late payments may incur interest at a commercial rate. Refunds are at Fruit's discretion and will be detailed in any applicable service contract.
             </p>
           </section>
 
@@ -183,13 +183,13 @@ export default function TermsAndServices() {
               DISCLAIMER:
             </p>
             <p>
-              The Website and all Fruit Content are provided "AS IS" without any warranties, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. Fruit Studio does not warrant that the Website will be error-free, secure, or continuously available.
+              The Website and all Fruit Content are provided "AS IS" without any warranties, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. Fruit does not warrant that the Website will be error-free, secure, or continuously available.
             </p>
             <p className=" font-bold">
               LIABILITY CAP:
             </p>
             <p>
-              To the maximum extent permitted by law, Fruit Studio shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Website, even if advised of the possibility of such damages. This includes loss of data, revenue, profits, or business opportunity. Fruit Studio's total liability to you for any claim shall not exceed the fees paid by you for services in the preceding 12 months, or £100, whichever is greater.
+              To the maximum extent permitted by law, Fruit shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Website, even if advised of the possibility of such damages. This includes loss of data, revenue, profits, or business opportunity. Fruit's total liability to you for any claim shall not exceed the fees paid by you for services in the preceding 12 months, or £100, whichever is greater.
             </p>
             <p className=" font-bold">
               EXCEPTIONS:
@@ -204,7 +204,7 @@ export default function TermsAndServices() {
               9.0 Data Protection and Privacy
             </h2>
             <p>
-              Your use of the Website is subject to Fruit Studio's Privacy Policy, available at [link]. We collect, process, and store personal data in compliance with the UK GDPR and Data Protection Act 2018. By using the Website, you consent to our data practices as described in the Privacy Policy.
+              Your use of the Website is subject to Fruit's Privacy Policy, available at [link]. We collect, process, and store personal data in compliance with the UK GDPR and Data Protection Act 2018. By using the Website, you consent to our data practices as described in the Privacy Policy.
             </p>
             <p>
               If you are using the Website on behalf of a brand or organization, you warrant that you have the authority to agree to these Terms and our data processing practices on their behalf.
@@ -216,7 +216,7 @@ export default function TermsAndServices() {
               10.0 Third-Party Links and Content
             </h2>
             <p>
-              The Website may contain links to third-party websites and services. Fruit Studio does not control, endorse, or assume responsibility for the content, accuracy, or practices of these third-party sites. Your use of third-party sites is governed by their terms and policies. We are not liable for any harm or damage resulting from your use of third-party links or content.
+              The Website may contain links to third-party websites and services. Fruit does not control, endorse, or assume responsibility for the content, accuracy, or practices of these third-party sites. Your use of third-party sites is governed by their terms and policies. We are not liable for any harm or damage resulting from your use of third-party links or content.
             </p>
           </section>
 
@@ -225,7 +225,7 @@ export default function TermsAndServices() {
               11.0 Termination and Suspension
             </h2>
             <p>
-              Fruit Studio may suspend or terminate your access to the Website at any time, with or without cause, and with or without notice. Upon termination, your right to use the Website immediately ceases. Sections regarding intellectual property, limitation of liability, governing law, and any outstanding payment obligations survive termination.
+              Fruit may suspend or terminate your access to the Website at any time, with or without cause, and with or without notice. Upon termination, your right to use the Website immediately ceases. Sections regarding intellectual property, limitation of liability, governing law, and any outstanding payment obligations survive termination.
             </p>
           </section>
 
@@ -234,7 +234,7 @@ export default function TermsAndServices() {
               12.0 Modifications to Terms and Services
             </h2>
             <p>
-              Fruit Studio reserves the right to modify these Terms at any time. We will notify you of material changes by posting the updated Terms on the Website and updating the "Last Updated" date. Your continued use of the Website following such changes constitutes your acceptance of the modified Terms. If you do not agree to the modifications, you must discontinue your use of the Website.
+              Fruit reserves the right to modify these Terms at any time. We will notify you of material changes by posting the updated Terms on the Website and updating the "Last Updated" date. Your continued use of the Website following such changes constitutes your acceptance of the modified Terms. If you do not agree to the modifications, you must discontinue your use of the Website.
             </p>
           </section>
 
@@ -276,7 +276,7 @@ export default function TermsAndServices() {
               14.0 Confidentiality
             </h2>
             <p>
-              Any confidential information you share with Fruit Studio through the Website (including campaign strategies, brand information, or business details) will be treated as confidential and used only for the purpose of providing our services. Fruit Studio will not disclose your confidential information to third parties without your written consent, except where required by law or in connection with providing the services.
+              Any confidential information you share with Fruit through the Website (including campaign strategies, brand information, or business details) will be treated as confidential and used only for the purpose of providing our services. Fruit will not disclose your confidential information to third parties without your written consent, except where required by law or in connection with providing the services.
             </p>
           </section>
 
@@ -285,7 +285,7 @@ export default function TermsAndServices() {
               15.0 Limitation on Communications
             </h2>
             <p>
-              By using the Website, you may opt in to receive communications from Fruit Studio, including marketing emails, campaign updates, or service announcements. You may unsubscribe from non-essential communications at any time by clicking "unsubscribe" in any email or by contacting us. However, we may continue to send transactional communications (such as account confirmations or service notices) that are essential to your use of the Website.
+              By using the Website, you may opt in to receive communications from Fruit, including marketing emails, campaign updates, or service announcements. You may unsubscribe from non-essential communications at any time by replying "unsubscribe" to any email or by contacting us. However, we may continue to send transactional communications (such as account confirmations or service notices) that are essential to your use of the Website.
             </p>
           </section>
 
@@ -294,16 +294,16 @@ export default function TermsAndServices() {
               16.0 Warranties and Representations
             </h2>
             <p className=" font-bold">
-              Fruit Studio Warranties:
+              Fruit Warranties:
             </p>
             <p>
-              Fruit Studio represents that it has the right to operate the Website and provide the services described. We warrant that all information we provide is true and accurate to the best of our knowledge.
+              Fruit represents that it has the right to operate the Website and provide the services described. We warrant that all information we provide is true and accurate to the best of our knowledge.
             </p>
             <p className=" font-bold">
               User Warranties:
             </p>
             <p>
-              You warrant that all information you provide to Fruit Studio is accurate, truthful, and complete, and that your use of the Website does not violate any applicable law or third-party rights.
+              You warrant that all information you provide to Fruit is accurate, truthful, and complete, and that your use of the Website does not violate any applicable law or third-party rights.
             </p>
           </section>
 
@@ -312,7 +312,7 @@ export default function TermsAndServices() {
               17.0 Indemnification
             </h2>
             <p>
-              You agree to indemnify, defend, and hold harmless Fruit Studio, its officers, employees, and agents from any claims, damages, losses, or expenses (including attorney's fees) arising out of or relating to:
+              You agree to indemnify, defend, and hold harmless Fruit, its officers, employees, and agents from any claims, damages, losses, or expenses (including attorney's fees) arising out of or relating to:
             </p>
             <p>
               - Your violation of these Terms or any applicable law;
@@ -333,7 +333,7 @@ export default function TermsAndServices() {
               18.0 Force Majeure
             </h2>
             <p>
-              Fruit Studio shall not be liable for any failure or delay in performing obligations under these Terms due to events beyond its reasonable control, including natural disasters, pandemics, government actions, strikes, or internet outages. In such cases, obligations are suspended, and timelines will be adjusted as reasonably necessary.
+              Fruit shall not be liable for any failure or delay in performing obligations under these Terms due to events beyond its reasonable control, including natural disasters, pandemics, government actions, strikes, or internet outages. In such cases, obligations are suspended, and timelines will be adjusted as reasonably necessary.
             </p>
           </section>
 
@@ -342,7 +342,7 @@ export default function TermsAndServices() {
               19.0 Severability
             </h2>
             <p>
-              If any provision of these Terms is found to be invalid, unenforceable, or illegal, the remaining provisions shall continue in full force and effect. Fruit Studio and the User agree that the invalid provision should be modified to the minimum extent necessary to make it valid and enforceable.
+              If any provision of these Terms is found to be invalid, unenforceable, or illegal, the remaining provisions shall continue in full force and effect. Fruit and the User agree that the invalid provision should be modified to the minimum extent necessary to make it valid and enforceable.
             </p>
           </section>
 
@@ -351,7 +351,7 @@ export default function TermsAndServices() {
               20.0 Entire Agreement
             </h2>
             <p>
-              These Terms, together with our Privacy Policy and any service agreements or campaign briefs, constitute the entire agreement between you and Fruit Studio regarding the Website and supersede all prior understandings, negotiations, and agreements. No modification of these Terms is effective unless in writing and signed by both parties.
+              These Terms, together with our Privacy Policy and any service agreements or campaign briefs, constitute the entire agreement between you and Fruit regarding the Website and supersede all prior understandings, negotiations, and agreements. No modification of these Terms is effective unless in writing and signed by both parties.
             </p>
           </section>
 
@@ -394,7 +394,7 @@ export default function TermsAndServices() {
               Accessibility:
             </p>
             <p>
-              Fruit Studio is committed to making the Website accessible. If you experience accessibility barriers, please contact us so we can assist you.
+              Fruit is committed to making the Website accessible. If you experience accessibility barriers, please contact us so we can assist you.
             </p>
           </section>
 
