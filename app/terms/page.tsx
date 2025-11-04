@@ -27,14 +27,19 @@ export default function TermsAndServices() {
 
           <section className="space-y-4">
             <h2 className="text-2xl font-heading font-bold text-white">
-              2. Use of Services
+              2.0 Description of Services
             </h2>
             <p>
-              You agree to use our services only for lawful purposes and in accordance with these terms.
+              Fruit Studio operates as an influencer marketing and talent management agency. The Website provides information about our services, including:
             </p>
             <p>
-              You must not misuse or interfere with the proper functioning of the site, attempt unauthorized access, or engage in any activity that could harm our platform or users.
+              - Talent roster management and creator partnerships
             </p>
+             <p>
+              - Influencer marketing campaign coordination 
+            </p>
+            <p>
+              - Brand-influencer matching and consultation services
           </section>
 
           <section className="space-y-4">
