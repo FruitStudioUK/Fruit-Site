@@ -40,6 +40,7 @@ export default function TermsAndServices() {
             </p>
             <p>
               - Brand-influencer matching and consultation services
+            </p>
           </section>
 
           <section className="space-y-4">
