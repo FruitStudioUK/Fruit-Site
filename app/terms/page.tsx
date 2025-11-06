@@ -18,7 +18,9 @@ export default function TermsAndServices() {
               1.0 Introduction and Acceptance of Terms
             </h2>
             <p>
-              These Terms of Service (the "Terms") govern your use of the Fruit Studio website, including all subdomains, pages, and content (the "Website"). The Website is operated by Fruit Studio Ltd (the "Company," "Fruit", "we," "us," or "our"). By accessing, browsing, or using the Website in any way, you agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, you must not use the Website.
+              These Terms of Service (the "Terms") govern your use of the Fruit Studio website, including all subdomains, pages, and content (the "Website"). The Website is operated by Fruit Studio Ltd (the "Company," "Fruit", "we," "us," or "our"). By accessing, browsing, or using the Website in any way, you agree to be bound by these Terms and our <Link href="/privacy" className="text-primary-orange underline">
+  Privacy Policy
+</Link>. If you do not agree to these Terms, you must not use the Website.
             </p>
             <p>
               These Terms apply to all visitors and users (collectively, "Users," "you," or "your"), whether registered or not, and supersede any prior version of these Terms.
@@ -204,7 +206,9 @@ export default function TermsAndServices() {
               9.0 Data Protection and Privacy
             </h2>
             <p>
-              Your use of the Website is subject to Fruit's Privacy Policy, available at [link]. We collect, process, and store personal data in compliance with the UK GDPR and Data Protection Act 2018. By using the Website, you consent to our data practices as described in the Privacy Policy.
+              Your use of the Website is subject to Fruit's Privacy Policy, available at <Link href="/policy" className="text-primary-orange underline">
+  Privacy Policy
+</Link>. We collect, process, and store personal data in compliance with the UK GDPR and Data Protection Act 2018. By using the Website, you consent to our data practices as described in the Privacy Policy.
             </p>
             <p>
               If you are using the Website on behalf of a brand or organization, you warrant that you have the authority to agree to these Terms and our data processing practices on their behalf.
@@ -351,7 +355,9 @@ export default function TermsAndServices() {
               20.0 Entire Agreement
             </h2>
             <p>
-              These Terms, together with our Privacy Policy and any service agreements or campaign briefs, constitute the entire agreement between you and Fruit regarding the Website and supersede all prior understandings, negotiations, and agreements. No modification of these Terms is effective unless in writing and signed by both parties.
+              These Terms, together with our <Link href="/privacy" className="text-primary-orange underline">
+  Privacy Policy
+</Link> and any service agreements or campaign briefs, constitute the entire agreement between you and Fruit regarding the Website and supersede all prior understandings, negotiations, and agreements. No modification of these Terms is effective unless in writing and signed by both parties.
             </p>
           </section>
 
