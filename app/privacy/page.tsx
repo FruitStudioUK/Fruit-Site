@@ -297,7 +297,7 @@ export default function PrivacyPolicy() {
 >
   www.ico.org.uk 
 </a>
-  or your local supervisory authority.
+  , or your local supervisory authority.
             </p>
           </section>
 
