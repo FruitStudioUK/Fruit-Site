@@ -208,7 +208,7 @@ export default function TermsAndServices() {
               9.0 Data Protection and Privacy
             </h2>
             <p>
-              Your use of the Website is subject to Fruit's Privacy Policy, available at <Link href="/policy" className="text-primary-orange underline">
+              Your use of the Website is subject to Fruit's Privacy Policy, available at <Link href="/privacy" className="text-primary-orange underline">
   Privacy Policy
 </Link>. We collect, process, and store personal data in compliance with the UK GDPR and Data Protection Act 2018. By using the Website, you consent to our data practices as described in the Privacy Policy.
             </p>
