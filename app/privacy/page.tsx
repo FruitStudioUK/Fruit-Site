@@ -160,19 +160,19 @@ export default function PrivacyPolicy() {
               Fruit may share data with:
             </p>
             <p>
-              Service providers (web hosting, analytics, payment processors), under confidentiality agreements
+              - Service providers (web hosting, analytics, payment processors), under confidentiality agreements
             </p>
             <p>
-              Talent/clients for partnership coordination, with your prior approval
+              - Talent/clients for partnership coordination, with your prior approval
             </p>
             <p>
-              Authorities or law enforcement, if required by law
+              - Authorities or law enforcement, if required by law
             </p>
             <p>
-              Third parties with whom you have agreed to collaborate via our services
+              - Third parties with whom you have agreed to collaborate via our services
             </p>
             <p>
-              We do not sell or rent your data to marketers or advertisers.
+              - We do not sell or rent your data to marketers or advertisers.
             </p>
           </section>
 
