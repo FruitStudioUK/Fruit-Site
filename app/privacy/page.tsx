@@ -104,7 +104,7 @@ export default function PrivacyPolicy() {
             <p>
               For more details on cookies, please see our <Link href="/cookie" className="text-primary-orange underline">
   cookie policy
-</Link>
+</Link>.
             </p>
           </section>
 
@@ -251,7 +251,9 @@ export default function PrivacyPolicy() {
               We only send email marketing or newsletters with your opt-in consent. You can unsubscribe at any time by replying "unsubscribe" to any email or by contacting us.
             </p>
             <p>
-              We use cookies and analytics to enhance functionality and understand user behavior. For specifics, see our [Cookie Policy].
+              We use cookies and analytics to enhance functionality and understand user behavior. For specifics, see our <Link href="/cookie" className="text-primary-orange underline">
+  cookie policy
+</Link>.
             </p>
           </section>
 
@@ -293,7 +295,7 @@ export default function PrivacyPolicy() {
   rel="noopener noreferrer"
   className="text-primary-orange underline"
 >
-  www.ico.org.uk
+  www.ico.org.uk 
 </a>
   or your local supervisory authority.
             </p>
