@@ -11,7 +11,7 @@ export default function TermsAndServices() {
         </h1>
 
         <p className="mb-8 text-lg text-text-gray">
-          Last updated: November 4, 2025
+          Last updated: November 6, 2025
         </p>
 
         <div className="space-y-10 text-text-gray leading-relaxed">
