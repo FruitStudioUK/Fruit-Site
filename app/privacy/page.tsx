@@ -54,7 +54,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               3.0 What Data We Collect
             </h2>
-            <p>
+            <p className=" font-bold">
               Depending on your interaction with the Website, we may collect:
             </p>
             <p>
@@ -84,7 +84,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               4.0 How We Collect Data
             </h2>
-            <p>
+            <p className=" font-bold">
               We collect data through:
             </p>
             <p>
@@ -114,13 +114,13 @@ export default function PrivacyPolicy() {
             <p>
               - To provide and improve our services
             </p>
-            <p className=" font-bold">
+            <p>
               - To communicate with you regarding your account, partnership, or inquiries
             </p>
             <p>
               - To analyze site usage and improve website functionality
             </p>
-            <p className=" font-bold">
+            <p>
               - To process creator/brand onboarding, campaigns, and talent partnerships
             </p>
             <p>
@@ -135,7 +135,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               6.0 Legal Basis for Processing
             </h2>
-            <p>
+            <p className=" font-bold">
               We rely on the following lawful bases:
             </p>
             <p>
@@ -156,7 +156,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               7.0 Sharing Your Data
             </h2>
-            <p>
+            <p className=" font-bold">
               Fruit may share data with:
             </p>
             <p>
@@ -180,7 +180,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               8.0 International Transfers
             </h2>
-            <p className=" font-bold">
+            <p>
               If we transfer personal data outside the UK or EEA, we ensure appropriate safeguards are in place, such as Standard Contractual Clauses, adequacy decisions, or your explicit consent.
             </p>
           </section>
@@ -189,7 +189,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               9.0 Data Security
             </h2>
-            <p>
+            <p className=" font-bold">
               We employ industry-standard security measures to protect your personal data, including:
             </p>
             <p>
@@ -216,7 +216,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               11.0 Your Rights
             </h2>
-            <p>
+            <p className=" font-bold">
               Under UK GDPR, you have rights including:
             </p>
             <p>
@@ -255,7 +255,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               13.0 Third-Party Links
             </h2>
-            <p className=" font-bold">
+            <p>
               Our Website may include links to third-party sites or platform integrations (for example, YouTube, Instagram, Google APIs). These sites are governed by their own privacy policies over which we have no control. We encourage you to review those policies directly.
             </p>
           </section>
@@ -282,7 +282,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
               16.0 How to Complain
             </h2>
-            <p className=" font-bold">
+            <p>
               If you have unresolved concerns, you have the right to lodge a complaint with the UK Information Commissioner’s Office (ICO) at www.ico.org.uk or your local supervisory authority.
             </p>
           </section>
