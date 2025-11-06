@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function PrivacyPolicy() {
   return (
     <section className="section-padding bg-primary-dark text-text-white font-body">
@@ -100,7 +102,9 @@ export default function PrivacyPolicy() {
               - Use of our dashboard, portals, or campaign management tools
             </p>
             <p>
-              For more details on cookies, please see our [Cookie Policy].
+              For more details on cookies, please see our <Link href="/cookie" className="text-primary-orange underline">
+  cookie policy
+</Link>
             </p>
           </section>
 
@@ -291,7 +295,7 @@ export default function PrivacyPolicy() {
 >
   www.ico.org.uk
 </a>
- or your local supervisory authority.
+  or your local supervisory authority.
             </p>
           </section>
 
