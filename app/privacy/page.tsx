@@ -283,7 +283,15 @@ export default function PrivacyPolicy() {
               16.0 How to Complain
             </h2>
             <p>
-              If you have unresolved concerns, you have the right to lodge a complaint with the UK Information Commissioner’s Office (ICO) at www.ico.org.uk or your local supervisory authority.
+              If you have unresolved concerns, you have the right to lodge a complaint with the UK Information Commissioner’s Office (ICO) at <a
+  href="www.ico.org.uk"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-primary-orange underline"
+>
+  www.ico.org.uk
+</a>
+ or your local supervisory authority.
             </p>
           </section>
 
