@@ -244,7 +244,7 @@ export default function PrivacyPolicy() {
               12.0 Marketing and Cookies
             </h2>
             <p>
-              We only send email marketing or newsletters with your opt-in consent. You can unsubscribe at any time by clicking the link in any marketing email or contacting us.
+              We only send email marketing or newsletters with your opt-in consent. You can unsubscribe at any time by replying "unsubscribe" to any email or by contacting us.
             </p>
             <p>
               We use cookies and analytics to enhance functionality and understand user behavior. For specifics, see our [Cookie Policy].
