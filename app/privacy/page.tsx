@@ -284,7 +284,7 @@ export default function PrivacyPolicy() {
             </h2>
             <p>
               If you have unresolved concerns, you have the right to lodge a complaint with the UK Information Commissioner’s Office (ICO) at <a
-  href="www.ico.org.uk"
+  href="https://www.ico.org.uk"
   target="_blank"
   rel="noopener noreferrer"
   className="text-primary-orange underline"
