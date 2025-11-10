@@ -103,7 +103,7 @@ export function Portfolio() {
     <section className="section-padding bg-primary-dark">
       <div className="container-max">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-text-white mb-4">
             Success Stories
           </h2>
           <p className="text-xl text-text-gray max-w-3xl mx-auto">
@@ -119,8 +119,8 @@ export function Portfolio() {
               onClick={() => setSelectedCategory(category.id)}
               className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
                 selectedCategory === category.id
-                  ? "bg-secondary-green text-white shadow-lg"
-                  : "bg-sub-background/20 text-text-gray hover:bg-sub-background/40 hover:text-white"
+                  ? "bg-secondary-green text-text-white shadow-lg"
+                  : "bg-sub-background/20 text-text-gray hover:bg-sub-background/40 hover:text-text-white"
               }`}
             >
               {category.label}
@@ -143,16 +143,16 @@ export function Portfolio() {
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <Play className="w-12 h-12 text-white" />
+                  <Play className="w-12 h-12 text-text-white" />
                 </div>
                 <div className="absolute top-3 right-3 bg-black/70 rounded-full p-2">
-                  <ExternalLink className="w-4 h-4 text-white" />
+                  <ExternalLink className="w-4 h-4 text-text-white" />
                 </div>
               </div>
 
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-xl font-baloo2 font-bold text-white mb-2">
+                  <h3 className="text-xl font-baloo2 font-bold text-text-white mb-2">
                     {project.title}
                   </h3>
                   <p className="text-text-gray text-sm leading-relaxed">
@@ -201,7 +201,7 @@ export function Portfolio() {
         {/* CTA Section */}
         <div className="text-center mt-16">
           <div className="bg-card-gradient rounded-2xl p-8 md:p-12">
-            <h3 className="text-3xl font-baloo2 font-bold text-white mb-4">
+            <h3 className="text-3xl font-baloo2 font-bold text-text-white mb-4">
               Ready to Create Your Next Hit?
             </h3>
             <p className="text-text-gray mb-8 max-w-2xl mx-auto">
