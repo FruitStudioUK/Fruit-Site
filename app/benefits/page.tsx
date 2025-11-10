@@ -31,8 +31,8 @@ export default function ServicesPage() {
 
   const guarantees = [
     {
-      title: '0% Fees on First Campaign',
-      description: 'No management fees or hidden costs on your first activation.',
+      title: 'Low Fees on First Campaign',
+      description: 'No hidden costs on your first activation.',
       icon: Clock
     },
     {
@@ -53,7 +53,7 @@ export default function ServicesPage() {
       <section className="section-padding bg-hero-gradient">
         <div className="container-max">
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
-            <h1 className="text-4xl md:text-6xl font-baloo2 font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-6xl font-baloo2 font-bold text-text-white mb-6">
               Strategic Services for 
               <span className="text-secondary-green"> Ambitious Brands</span>
             </h1>
@@ -76,7 +76,7 @@ export default function ServicesPage() {
       <section className="section-padding bg-primary-dark">
         <div className="container-max">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-text-white mb-4">
               Our Process
             </h2>
             <p className="text-xl text-text-gray max-w-3xl mx-auto">
@@ -89,13 +89,13 @@ export default function ServicesPage() {
               <div key={index} className="text-center animate-slide-up" style={{animationDelay: `${index * 0.2}s`}}>
                 <div className="relative mb-6">
                   <div className="w-20 h-20 bg-secondary-green rounded-full flex items-center justify-center mx-auto mb-4">
-                    <step.icon className="w-10 h-10 text-white" />
+                    <step.icon className="w-10 h-10 text-text-white" />
                   </div>
                   <div className="absolute -top-2 -right-2 w-8 h-8 bg-primary-orange rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">{step.step}</span>
+                    <span className="text-text-white font-bold text-sm">{step.step}</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-baloo2 font-bold text-white mb-3">{step.title}</h3>
+                <h3 className="text-xl font-baloo2 font-bold text-text-white mb-3">{step.title}</h3>
                 <p className="text-text-gray leading-relaxed">{step.description}</p>
               </div>
             ))}
@@ -107,7 +107,7 @@ export default function ServicesPage() {
       <section className="section-padding bg-primary-dark">
         <div className="container-max">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-text-white mb-4">
               Our Guarantees
             </h2>
             <p className="text-xl text-text-gray max-w-3xl mx-auto">
@@ -119,9 +119,9 @@ export default function ServicesPage() {
             {guarantees.map((guarantee, index) => (
               <div key={index} className="card text-center hover:scale-105 transition-all duration-300 animate-slide-up" style={{animationDelay: `${index * 0.2}s`}}>
                 <div className="w-16 h-16 bg-secondary-green rounded-xl flex items-center justify-center mx-auto mb-6">
-                  <guarantee.icon className="w-8 h-8 text-white" />
+                  <guarantee.icon className="w-8 h-8 text-text-white" />
                 </div>
-                <h3 className="text-xl font-baloo2 font-bold text-white mb-3">{guarantee.title}</h3>
+                <h3 className="text-xl font-baloo2 font-bold text-text-white mb-3">{guarantee.title}</h3>
                 <p className="text-text-gray leading-relaxed">{guarantee.description}</p>
               </div>
             ))}
@@ -133,7 +133,7 @@ export default function ServicesPage() {
       <section className="section-padding bg-primary-dark">
         <div className="container-max">
           <div className="bg-card-gradient rounded-2xl p-8 md:p-12 text-center animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-baloo2 font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-baloo2 font-bold text-text-white mb-4">
               Ready to Maximize Your ROI?
             </h2>
             <p className="text-xl text-text-gray mb-8 max-w-2xl mx-auto">
