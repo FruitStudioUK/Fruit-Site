@@ -126,7 +126,7 @@ export function Services() {
                 <h4 className="text-2xl font-baloo2 font-bold text-white mb-4">
                   {service.title}
                 </h4>
-                <p className="font-nunito font-bold text-text-lightdark mb-6 leading-relaxed">
+                <p className="font-nunito font-bold text-white mb-6 leading-relaxed">
                   {service.description}
                 </p>
                 <ul className="space-y-2">
@@ -169,7 +169,7 @@ export function Services() {
                 <h4 className="text-2xl font-baloo2 font-bold text-white mb-4">
                   {service.title}
                 </h4>
-                <p className="font-nunito font-bold text-text-lightdark mb-6 leading-relaxed">
+                <p className="font-nunito font-bold text-white mb-6 leading-relaxed">
                   {service.description}
                 </p>
                 <ul className="space-y-2">
