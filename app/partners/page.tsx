@@ -2,10 +2,10 @@ import { Award, Users, Target, Heart, ArrowRight } from 'lucide-react';
 
 export default function AboutPage() {
   const stats = [
-    { number: '100+', label: 'Brands Supported', icon: Users },
-    { number: '2M+', label: 'Campaign Views Delivered', icon: Target },
+    { number: '30+', label: 'Brands Supported', icon: Users },
+    { number: '1M+', label: 'Campaign Views Delivered', icon: Target },
     { number: '97%', label: 'Client Satisfaction Rate', icon: Award },
-    { number: '3', label: 'Years Driving ROI', icon: Heart }
+    { number: '0.7', label: 'Years Driving ROI', icon: Heart }
   ];
 
   const values = [
