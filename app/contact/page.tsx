@@ -32,7 +32,7 @@ export default function ContactPage() {
       <section className="section-padding bg-hero-gradient">
         <div className="container-max">
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
-            <h1 className="text-4xl md:text-6xl font-baloo2 font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-6xl font-baloo2 font-bold text-text-white mb-6">
               Let's Create Something 
               <span className="text-primary-orange"> Amazing Together</span>
             </h1>
@@ -71,7 +71,7 @@ export default function ContactPage() {
       <section className="section-padding bg-primary-dark">
         <div className="container-max">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-text-white mb-4">
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-text-gray max-w-3xl mx-auto">
@@ -107,7 +107,7 @@ export default function ContactPage() {
               }
             ].map((faq, index) => (
               <div key={index} className="card animate-slide-up" style={{animationDelay: `${index * 0.1}s`}}>
-                <h3 className="text-xl font-baloo2 font-bold text-white mb-3">{faq.question}</h3>
+                <h3 className="text-xl font-baloo2 font-bold text-text-white mb-3">{faq.question}</h3>
                 <p className="text-text-gray leading-relaxed">{faq.answer}</p>
               </div>
             ))}
