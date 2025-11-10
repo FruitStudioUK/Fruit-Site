@@ -368,7 +368,7 @@ export default function TermsAndServices() {
               21.0 Contact Information
             </h2>
             <p>
-              For questions about these Terms, to report violations, or for general inquiries:
+              For questions about these Terms, to report violations, or for general help:
             </p>
             <p>
               Fruit Studio Ltd
