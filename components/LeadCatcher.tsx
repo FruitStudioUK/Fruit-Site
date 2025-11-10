@@ -44,7 +44,7 @@ export function LeadCatcher({
   return (
     <section className={`space-y-6 ${className}`}>
       <div className="bg-sub-background p-6 rounded-lg">
-        <h3 className="text-xl font-baloo2 font-bold text-white mb-2">
+        <h3 className="text-xl font-baloo2 font-bold text-text-white mb-2">
           Want more info?
         </h3>
         <p className="text-text-gray mb-4">
@@ -81,7 +81,7 @@ export function LeadCatcher({
       </div>
 
       <div className="bg-sub-background p-6 rounded-lg text-center">
-        <h3 className="text-xl font-baloo2 font-bold text-white mb-2">
+        <h3 className="text-xl font-baloo2 font-bold text-text-white mb-2">
           Prefer to talk?
         </h3>
         <p className="text-text-gray mb-4">
