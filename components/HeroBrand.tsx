@@ -17,7 +17,7 @@ export function Hero() {
                   Trusted by 100+ Brands
                 </span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-baloo2 font-bold text-white leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-baloo2 font-bold text-text-white leading-tight">
                 Elevate Your Campaigns,
                 <span className="text-secondary-green"> Maximize Your ROI</span>
               </h1>
@@ -61,7 +61,7 @@ export function Hero() {
                 <div className="text-text-gray text-sm">Campaign Views</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-baloo2 font-bold text-white">
+                <div className="text-3xl font-baloo2 font-bold text-text-white">
                   97%
                 </div>
                 <div className="text-text-gray text-sm">Client Satisfaction</div>
@@ -82,10 +82,10 @@ export function Hero() {
               <div className="absolute -top-6 -left-6 bg-sub-background/90 backdrop-blur-sm rounded-xl p-4 shadow-lg animate-float">
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-primary-orange rounded-lg flex items-center justify-center">
-                    <Award className="w-5 h-5 text-white" />
+                    <Award className="w-5 h-5 text-text-white" />
                   </div>
                   <div>
-                    <div className="text-white font-semibold">
+                    <div className="text-text-white font-semibold">
                       Proven Results
                     </div>
                     <div className="text-text-gray text-sm">
@@ -101,10 +101,10 @@ export function Hero() {
               >
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-secondary-green rounded-lg flex items-center justify-center">
-                    <Users className="w-5 h-5 text-white" />
+                    <Users className="w-5 h-5 text-text-white" />
                   </div>
                   <div>
-                    <div className="text-white font-semibold">
+                    <div className="text-text-white font-semibold">
                       Brand Partnerships
                     </div>
                     <div className="text-text-gray text-sm">
