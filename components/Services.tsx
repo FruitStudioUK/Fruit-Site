@@ -91,7 +91,7 @@ export function Services() {
     <section className="section-padding bg-primary-dark">
       <div className="container-max">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-text-white mb-4">
             Our Services
           </h2>
           <p className="text-xl text-text-gray max-w-3xl mx-auto">
@@ -104,7 +104,7 @@ export function Services() {
         {/* Creative Support */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-baloo2 font-bold text-white mb-4">
+            <h3 className="text-3xl font-baloo2 font-bold text-text-white mb-4">
               Creative Support
             </h3>
             <p className="text-lg text-text-gray">
@@ -121,9 +121,9 @@ export function Services() {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="w-16 h-16 bg-primary-orange rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="w-8 h-8 text-white" />
+                  <service.icon className="w-8 h-8 text-text-white" />
                 </div>
-                <h4 className="text-2xl font-baloo2 font-bold text-white mb-4">
+                <h4 className="text-2xl font-baloo2 font-bold text-text-white mb-4">
                   {service.title}
                 </h4>
                 <p className="font-nunito font-bold text-text-lightbrown mb-6 leading-relaxed">
@@ -133,7 +133,7 @@ export function Services() {
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-text-white rounded-full"></div>
-                      <span className="font-nunito font-bold text-white">
+                      <span className="font-nunito font-bold text-text-white">
                         {feature}
                       </span>
                     </li>
@@ -147,7 +147,7 @@ export function Services() {
         {/* Sponsorship & Growth */}
         <div>
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-baloo2 font-bold text-white mb-4">
+            <h3 className="text-3xl font-baloo2 font-bold text-text-white mb-4">
               Sponsorship & Growth
             </h3>
             <p className="text-lg text-text-gray">
@@ -166,7 +166,7 @@ export function Services() {
                 <div className="w-16 h-16 bg-secondary-green rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <service.icon className="w-8 h-8 text-dark" />
                 </div>
-                <h4 className="text-2xl font-baloo2 font-bold text-white mb-4">
+                <h4 className="text-2xl font-baloo2 font-bold text-text-white mb-4">
                   {service.title}
                 </h4>
                 <p className="font-nunito font-bold text-text-lightbrown mb-6 leading-relaxed">
@@ -176,7 +176,7 @@ export function Services() {
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-text-white rounded-full"></div>
-                      <span className="font-nunito font-bold text-white">
+                      <span className="font-nunito font-bold text-text-white">
                         {feature}
                       </span>
                     </li>
