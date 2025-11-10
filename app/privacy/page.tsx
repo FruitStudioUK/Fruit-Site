@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
   return (
     <section className="section-padding bg-primary-dark text-text-white font-body">
       <div className="container-max max-w-4xl mx-auto px-4">
-        <h1 className="text-4xl font-heading font-baloo2 font-bold mb-6 text-white">
+        <h1 className="text-4xl font-heading font-baloo2 font-bold mb-6 text-text-white">
           Privacy Policy
         </h1>
 
@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
 
         <div className="space-y-10 text-text-gray leading-relaxed">
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-text-white">
               1.0 Introduction
             </h2>
             <p>
@@ -28,7 +28,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-text-white">
               2.0 Contact Information
             </h2>
             <p>
@@ -43,17 +43,17 @@ export default function PrivacyPolicy() {
             <p>
               Email us at{" "}
               <a
-                href="mailto:hey@thisisfruit.co.uk"
+                href="mailto:help@thisisfruit.co.uk"
                 className="text-primary-orange underline"
               >
-                hey@thisisfruit.co.uk
+                help@thisisfruit.co.uk
               </a>
               .
             </p>
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-text-white">
               3.0 What Data We Collect
             </h2>
             <p className=" font-bold">
@@ -83,7 +83,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-text-white">
               4.0 How We Collect Data
             </h2>
             <p className=" font-bold">
@@ -109,7 +109,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-text-white">
               5.0 How We Use Your Data
             </h2>
             <p className=" font-bold">
@@ -136,7 +136,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-text-white">
               6.0 Legal Basis for Processing
             </h2>
             <p className=" font-bold">
@@ -157,7 +157,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-text-white">
               7.0 Sharing Your Data
             </h2>
             <p className=" font-bold">
@@ -181,7 +181,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-text-white">
               8.0 International Transfers
             </h2>
             <p>
@@ -190,7 +190,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-text-white">
               9.0 Data Security
             </h2>
             <p className=" font-bold">
@@ -208,7 +208,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-text-white">
               10.0 Data Retention
             </h2>
             <p>
@@ -217,7 +217,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-text-white">
               11.0 Your Rights
             </h2>
             <p className=" font-bold">
@@ -244,7 +244,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-text-white">
               12.0 Marketing and Cookies
             </h2>
             <p>
@@ -258,7 +258,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-text-white">
               13.0 Third-Party Links
             </h2>
             <p>
@@ -267,7 +267,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-text-white">
               14.0 Minors
             </h2>
             <p>
@@ -276,7 +276,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-text-white">
               15.0 Changes to This Policy
             </h2>
             <p>
@@ -285,7 +285,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-text-white">
               16.0 How to Complain
             </h2>
             <p>
@@ -302,7 +302,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-heading font-baloo2 font-bold text-white">
+            <h2 className="text-2xl font-heading font-baloo2 font-bold text-text-white">
               By using the Website, you agree to the collection, processing, and terms set out in this Privacy Policy.
             </h2>
           </section>
