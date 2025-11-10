@@ -56,7 +56,7 @@ export function Hero() {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-baloo2 font-bold text-secondary-green">
-                  2M+
+                  1M+
                 </div>
                 <div className="text-text-gray text-sm">Campaign Views</div>
               </div>
