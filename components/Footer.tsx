@@ -77,7 +77,7 @@ export function Footer({ className = "" }: FooterProps) {
                   className="rounded-lg"
                 />
               </div>
-              <span className="text-2xl font-baloo2 font-bold text-white">
+              <span className="text-2xl font-baloo2 font-bold text-text-white">
                 fruit.
               </span>
             </div>
@@ -94,7 +94,7 @@ export function Footer({ className = "" }: FooterProps) {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-baloo2 font-bold text-white mb-4">
+            <h3 className="text-xl font-baloo2 font-bold text-text-white mb-4">
               Quick Links
             </h3>
             <ul className="space-y-2">
@@ -113,7 +113,7 @@ export function Footer({ className = "" }: FooterProps) {
 
           {/* Services */}
           <div>
-            <h3 className="text-xl font-baloo2 font-bold text-white mb-4">
+            <h3 className="text-xl font-baloo2 font-bold text-text-white mb-4">
               Services
             </h3>
             <ul className="space-y-2">
@@ -127,7 +127,7 @@ export function Footer({ className = "" }: FooterProps) {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-baloo2 font-bold text-white mb-4">
+            <h3 className="text-xl font-baloo2 font-bold text-text-white mb-4">
               Contact
             </h3>
             <div className="space-y-3">
