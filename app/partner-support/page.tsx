@@ -5,7 +5,7 @@ export default function ContactPage() {
   const contactOptions = [
     {
       title: 'Quick Quote',
-      description: 'Get a tailored campaign quote within 24 hours - with 0% management fees on your first campaign.',
+      description: 'Get a tailored campaign quote within 24 hours - with low management fees on your first campaign.',
       icon: MessageCircle,
       action: 'Get Quote',
       color: 'secondary-green'
@@ -26,12 +26,12 @@ export default function ContactPage() {
       <section className="section-padding bg-hero-gradient">
         <div className="container-max">
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
-            <h1 className="text-4xl md:text-6xl font-baloo2 font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-6xl font-baloo2 font-bold text-text-white mb-6">
               Dedicated <span className="text-secondary-green">Support for Brands</span>
             </h1>
             <p className="text-xl text-text-gray mb-8 leading-relaxed">
               Partner with Fruit and unlock campaigns designed for measurable impact. 
-              Enjoy 0% management fees on your first campaign, 24/7 communication, and daily analytical reports 
+              Enjoy low management fees on your first campaign, 24/7 communication, and daily analytical reports 
               - all backed by our creators and proven ROI‑driven strategies.
             </p>
           </div>
@@ -65,7 +65,7 @@ export default function ContactPage() {
       <section className="section-padding bg-primary-dark">
         <div className="container-max">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-text-white mb-4">
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-text-gray max-w-3xl mx-auto">
@@ -77,7 +77,7 @@ export default function ContactPage() {
             {[
               {
                 question: 'What makes Fruit different for brands?',
-                answer: 'We offer 0% management fees on your first campaign and 0% fees on your first deal. You also get daily analytical reports, 24/7 communication, and guaranteed ROI‑driven deliverables like a free pinned YouTube comment.'
+                answer: 'We offer low management fees on your first campaign in the form of a test pilot for your first time with us. You also get daily analytical reports, 24/7 communication, and guaranteed ROI‑driven deliverables like a free pinned YouTube comment.'
               },
               {
                 question: 'How quickly can a campaign go live?',
@@ -85,7 +85,7 @@ export default function ContactPage() {
               },
               {
                 question: 'What kind of creators do you provide?',
-                answer: 'We match you with vetted creators who align with your brand. For example, your first campaign includes 1 Tech Creator and 1 high‑quality video as part of our USP.'
+                answer: 'We match you only with creators that promote tech brands like yours. For example, your first campaign includes 1-3 Creators and 1-3 high‑quality videos as part of our USP.'
               },
               {
                 question: 'How do you measure ROI?',
@@ -93,7 +93,7 @@ export default function ContactPage() {
               },
               {
                 question: 'What’s included in your pricing?',
-                answer: 'Transparent pricing covers campaign management, creator deliverables, and reporting. With no hidden fees, you only pay for results - and your first campaign has 0% management fees.'
+                answer: 'Transparent pricing covers campaign management, creator deliverables, and reporting. With no hidden fees, you only pay for results - and your first campaign has low management fees.'
               },
               {
                 question: 'Do you offer ongoing support?',
@@ -101,7 +101,7 @@ export default function ContactPage() {
               }
             ].map((faq, index) => (
               <div key={index} className="card animate-slide-up" style={{animationDelay: `${index * 0.1}s`}}>
-                <h3 className="text-xl font-baloo2 font-bold text-white mb-3">{faq.question}</h3>
+                <h3 className="text-xl font-baloo2 font-bold text-text-white mb-3">{faq.question}</h3>
                 <p className="text-text-gray leading-relaxed">{faq.answer}</p>
               </div>
             ))}
