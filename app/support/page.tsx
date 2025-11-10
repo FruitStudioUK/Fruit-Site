@@ -5,7 +5,7 @@ export default function ContactPage() {
   const contactOptions = [
     {
       title: 'Quick Quote',
-      description: 'Get a tailored campaign quote within 24 hours — with 0% management fees on your first campaign.',
+      description: 'Get a tailored campaign quote within 24 hours — with low management fees on your first campaign.',
       icon: MessageCircle,
       action: 'Get Quote',
       color: 'secondary-green'
