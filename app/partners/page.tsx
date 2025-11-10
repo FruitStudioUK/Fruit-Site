@@ -38,7 +38,7 @@ export default function AboutPage() {
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-in-left">
-              <h1 className="text-4xl md:text-6xl font-baloo2 font-bold text-white mb-6">
+              <h1 className="text-4xl md:text-6xl font-baloo2 font-bold text-text-white mb-6">
                 Empowering Brands to 
                 <span className="text-secondary-green"> Achieve More</span>
               </h1>
@@ -69,9 +69,9 @@ export default function AboutPage() {
             {stats.map((stat, index) => (
               <div key={index} className="text-center animate-slide-up" style={{animationDelay: `${index * 0.2}s`}}>
                 <div className="w-16 h-16 bg-secondary-green rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <stat.icon className="w-8 h-8 text-white" />
+                  <stat.icon className="w-8 h-8 text-text-white" />
                 </div>
-                <div className="text-3xl md:text-4xl font-baloo2 font-bold text-white mb-2">{stat.number}</div>
+                <div className="text-3xl md:text-4xl font-baloo2 font-bold text-text-white mb-2">{stat.number}</div>
                 <div className="text-text-gray">{stat.label}</div>
               </div>
             ))}
@@ -91,7 +91,7 @@ export default function AboutPage() {
               />
             </div>
             <div className="animate-slide-in-right">
-              <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-white mb-6">
+              <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-text-white mb-6">
                 Our Mission
               </h2>
               <p className="text-xl text-text-gray mb-6 leading-relaxed">
@@ -111,7 +111,7 @@ export default function AboutPage() {
       <section className="section-padding bg-primary-dark">
         <div className="container-max">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-text-white mb-4">
               Our Values
             </h2>
             <p className="text-xl text-text-gray max-w-3xl mx-auto">
@@ -123,9 +123,9 @@ export default function AboutPage() {
             {values.map((value, index) => (
               <div key={index} className="card hover:scale-105 transition-all duration-300 animate-slide-up" style={{animationDelay: `${index * 0.2}s`}}>
                 <div className="w-16 h-16 bg-secondary-green rounded-xl flex items-center justify-center mb-6">
-                  <value.icon className="w-8 h-8 text-white" />
+                  <value.icon className="w-8 h-8 text-text-white" />
                 </div>
-                <h3 className="text-2xl font-baloo2 font-bold text-white mb-4">{value.title}</h3>
+                <h3 className="text-2xl font-baloo2 font-bold text-text-white mb-4">{value.title}</h3>
                 <p className="text-text-gray leading-relaxed">{value.description}</p>
               </div>
             ))}
@@ -137,7 +137,7 @@ export default function AboutPage() {
       <section className="section-padding bg-primary-dark">
         <div className="container-max">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-baloo2 font-bold text-text-white mb-4">
               Meet Our Team
             </h2>
             <p className="text-xl text-text-gray max-w-3xl mx-auto">
@@ -172,7 +172,7 @@ export default function AboutPage() {
                   alt={member.name}
                   className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
                 />
-                <h3 className="text-xl font-baloo2 font-bold text-white mb-2">{member.name}</h3>
+                <h3 className="text-xl font-baloo2 font-bold text-text-white mb-2">{member.name}</h3>
                 <p className="text-secondary-green font-medium mb-3">{member.role}</p>
                 <p className="text-text-gray text-sm leading-relaxed">{member.bio}</p>
               </div>
@@ -185,12 +185,12 @@ export default function AboutPage() {
       <section className="section-padding bg-primary-dark">
         <div className="container-max">
           <div className="bg-card-gradient rounded-2xl p-8 md:p-12 text-center animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-baloo2 font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-baloo2 font-bold text-text-white mb-4">
               Ready to Elevate Your Brand?
             </h2>
             <p className="text-xl text-text-gray mb-8 max-w-2xl mx-auto">
               Join the growing list of brands achieving measurable ROI with Fruit. 
-              From 0% management fees on your first campaign to daily analytical reports 
+              From low management fees on your first campaign to daily analytical reports 
               and 24/7 support, we’re here to make your next campaign your most impactful yet.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
