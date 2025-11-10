@@ -87,7 +87,7 @@ export function Navigation({ className = '' }: NavigationProps) {
                 className={`rounded-lg ${navVisible ? 'animate-pulse-once' : ''}`}
               />
             </div>
-            <span className="text-2xl font-baloo2 font-bold text-white">
+            <span className="text-2xl font-baloo2 font-bold text-text-white">
               fruit.
             </span>
           </Link>
@@ -104,8 +104,8 @@ export function Navigation({ className = '' }: NavigationProps) {
                       ? 'text-primary-orange bg-sub-background/20'
                       : 'text-secondary-green bg-sub-background/20'
                     : effectiveRole === 'creator'
-                      ? 'text-white hover:text-primary-orange'
-                      : 'text-white hover:text-secondary-green'
+                      ? 'text-text-white hover:text-primary-orange'
+                      : 'text-text-white hover:text-secondary-green'
                 } ${navVisible ? 'animate-slide-up' : ''}`}
                 style={{ animationDelay: `${idx * 80}ms` }}
               >
@@ -128,7 +128,7 @@ export function Navigation({ className = '' }: NavigationProps) {
               <button
                 onClick={() => handleRoleChange('creator')}
                 className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
-                  effectiveRole === 'creator' ? 'text-white' : 'text-text-gray'
+                  effectiveRole === 'creator' ? 'text-text-white' : 'text-text-gray'
                 }`}
               >
                 Creator
@@ -136,7 +136,7 @@ export function Navigation({ className = '' }: NavigationProps) {
               <button
                 onClick={() => handleRoleChange('brand')}
                 className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
-                  effectiveRole === 'brand' ? 'text-white' : 'text-text-gray'
+                  effectiveRole === 'brand' ? 'text-text-white' : 'text-text-gray'
                 }`}
               >
                 Brand
@@ -186,8 +186,8 @@ export function Navigation({ className = '' }: NavigationProps) {
                         ? 'text-primary-orange bg-sub-background/20'
                         : 'text-secondary-green bg-sub-background/20'
                       : effectiveRole === 'creator'
-                        ? 'text-white hover:text-primary-orange hover:bg-sub-background/20'
-                        : 'text-white hover:text-secondary-green hover:bg-sub-background/20'
+                        ? 'text-text-white hover:text-primary-orange hover:bg-sub-background/20'
+                        : 'text-text-white hover:text-secondary-green hover:bg-sub-background/20'
                   } animate-slide-up`}
                 >
                   <Icon className="w-5 h-5" />
@@ -207,7 +207,7 @@ export function Navigation({ className = '' }: NavigationProps) {
                       setIsOpen(false);
                     }}
                     className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
-                      effectiveRole === 'creator' ? 'text-white' : 'text-text-gray'
+                      effectiveRole === 'creator' ? 'text-text-white' : 'text-text-gray'
                     }`}
                   >
                     Creator
@@ -218,7 +218,7 @@ export function Navigation({ className = '' }: NavigationProps) {
                       setIsOpen(false);
                     }}
                     className={`relative z-10 flex-1 px-4 py-2 rounded-full text-sm font-medium transition ${
-                      effectiveRole === 'brand' ? 'text-white' : 'text-text-gray'
+                      effectiveRole === 'brand' ? 'text-text-white' : 'text-text-gray'
                     }`}
                   >
                     Brand
