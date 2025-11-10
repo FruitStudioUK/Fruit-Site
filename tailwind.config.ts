@@ -20,6 +20,7 @@ const config: Config = {
         'text-gray': '#d6c3b4',
         'text-dark': '#140c04',
         'text-lightdark': '#19120A',
+        'text-lightbrown': '#edcdac',
       },
       fontFamily: {
         nunito: ['var(--font-nunito)', 'sans-serif'], // changed from inter → nunito
