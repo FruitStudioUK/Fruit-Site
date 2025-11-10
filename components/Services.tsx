@@ -126,14 +126,14 @@ export function Services() {
                 <h4 className="text-2xl font-baloo2 font-bold text-white mb-4">
                   {service.title}
                 </h4>
-                <p className="font-nunito font-bold text-lightbrown mb-6 leading-relaxed">
+                <p className="font-nunito font-bold text-dark mb-6 leading-relaxed">
                   {service.description}
                 </p>
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-text-lightdark rounded-full"></div>
-                      <span className="font-nunito font-bold text-lightbrown">
+                      <span className="font-nunito font-bold text-dark">
                         {feature}
                       </span>
                     </li>
@@ -169,14 +169,14 @@ export function Services() {
                 <h4 className="text-2xl font-baloo2 font-bold text-white mb-4">
                   {service.title}
                 </h4>
-                <p className="font-nunito font-bold text-lightbrown mb-6 leading-relaxed">
+                <p className="font-nunito font-bold text-dark mb-6 leading-relaxed">
                   {service.description}
                 </p>
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-text-lightdark rounded-full"></div>
-                      <span className="font-nunito font-bold text-lightbrown">
+                      <span className="font-nunito font-bold text-dark">
                         {feature}
                       </span>
                     </li>
