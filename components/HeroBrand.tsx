@@ -14,7 +14,7 @@ export function Hero() {
               <div className="flex items-center space-x-2 text-secondary-green">
                 <Star className="w-5 h-5 fill-current" />
                 <span className="text-sm font-medium uppercase tracking-wide">
-                  Trusted by 100+ Brands
+                  Trusted by 30+ Brands
                 </span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-baloo2 font-bold text-text-white leading-tight">
@@ -50,13 +50,13 @@ export function Hero() {
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center">
                 <div className="text-3xl font-baloo2 font-bold text-secondary-green">
-                  100+
+                  30+
                 </div>
                 <div className="text-text-gray text-sm">Brands Supported</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-baloo2 font-bold text-primary-orange">
-                  2M+
+                  1M+
                 </div>
                 <div className="text-text-gray text-sm">Campaign Views</div>
               </div>
